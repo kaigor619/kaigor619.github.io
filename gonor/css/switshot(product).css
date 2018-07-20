@@ -1,0 +1,351 @@
+.model{
+	width: 100%;
+	padding-top:12px;
+	padding-bottom: 12px;
+	background: #1f1f1f;
+}
+.model-menu{
+/*	width:100%;*/
+	display: flex;
+	margin: 0 auto;
+
+}
+.model-menu li{
+	margin-right: 16px;
+}
+.model-menu li a{
+	color:#fff;
+	font-size: 30px;
+	padding: 5px 14px;
+	transition:.3s;
+}
+.model-menu li a.white{
+	background: #fff;
+	color:#000;
+}
+.model-menu li a:hover{
+	background: #fff;
+	color:#000;
+	transition:.3s;	
+}
+
+/*Product*/
+
+.product{
+	width:100%;
+	margin-top: 120px;
+
+}
+.product__text{
+	margin-left: 25px;
+}
+.product .product__cell{
+	width:100%;
+	padding: 45px 15px;
+	border:1px solid black;
+}
+.product__text .product__view{
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 1.17px;
+	color: #434343;
+/*	margin-top: 23px;*/
+	margin-bottom: 22px;
+}
+ .product__text .product__title{
+	font-size: 60px;
+	font-weight: bold;
+	letter-spacing: 3.9px;
+	margin-bottom: 23px;
+ }
+  .product__text .product__price{
+  	display: inline-block;
+  	padding: 4px 5px;
+  	color: #ffffff;
+	font-size: 48px;
+	font-weight: bold;
+	letter-spacing: 3.12px;
+	background: #000;
+	margin-bottom: 25px;
+  }
+    .product__text .product__price.product__price__case {
+    		margin-bottom: 35px;
+    }
+  .product__text .product__about{
+	color: #434343;
+	line-height: 22px;
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 1.17px;
+	margin-bottom: 25px;
+  }
+  .product__text .product__about.product__about__case{
+  	margin-bottom: 35px;
+  }
+ .product__text .product__composition{
+ 	color: #434343;
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 1.17px;
+
+ }
+ /*Метериал (чехол)*/
+ .word-material{
+ 	color: #000;
+ 	font-size: 18px;
+ 	font-weight: bold;
+ 	letter-spacing: 1px;
+ }
+ .product__material .product__material__block{
+ 	margin-top: 24px;
+ 	display: flex;
+ 	align-items: center;
+
+ }
+  .product__material .product__material__block div{
+  	color:#000;
+  	background: #fff;
+  	border:2px solid #000;
+  	padding: 11px 17px;
+  	font-size: 24px;
+  	transition:.3s;
+  	cursor:pointer;
+  	font-weight: bold;
+  	letter-spacing: 2px;
+  }
+  .product__material .product__material__block div:hover{
+  	background:#000;
+  	color: #fff;
+  	transition:.3s;
+  }
+
+  .product__material .product__material__block i{
+  	margin-left: 25px;
+  	font-size: 25px;
+
+  }
+  .product__material .product__material__block a{
+  	color: #000000;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: underline;
+	letter-spacing: 0.78px;
+	margin-left: 10px;
+  }  
+
+
+ /*Размеры*/
+ .product__size{
+ 	margin-top: 15px;
+ 	display: flex;
+ 	align-items: center;
+ }
+ .product__size .word__size{
+ 	font-size: 26px;
+	font-weight: bold;
+	color: #000;
+	letter-spacing: 1.69px;
+ }
+  .product__size .product__size__cell{
+  	padding: 3px 6px;
+  	margin-left: 16px;
+  	border:1px solid #000;
+  	background: #fff;
+  	color:#000;
+  	font-size: 26px;
+	font-weight: bold;
+	letter-spacing: 1.69px;
+	transition:.3s;
+	cursor:pointer;
+  }
+
+ .product__size .product__size__cell:hover{
+ 	background:#000;
+ 	color:#fff;
+ 	transition:.3s;
+ }
+  .product__size .product__size__cell:active{
+ 	background:#000;
+ 	color:#fff;
+ 	transition:.3s;
+ }
+  .what__size{
+  	display: flex;
+  	align-items: center;
+  	margin-left: 10px;
+  }
+  .what__size i{
+  	font-size: 25px;
+  	transition:.3s;
+  }  
+    .what__size a{
+    color: #000000;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: underline;
+	letter-spacing: 0.78px;
+	margin-left: 10px;
+    }
+
+    /*Количество*/
+.product__number{
+	display: flex;
+	align-items: center;
+	margin-top: 34px;
+}   
+.product__number .word__number{
+	color: #000000;
+	font-size: 26px;
+	font-weight: bold;
+	letter-spacing: 1.69px;
+
+
+}
+.product__number .main__number{
+	display: flex;
+	margin-left: 12px;
+
+
+}
+.product__number .main__number .number__block{
+	padding:5px 8px;
+	background: #000;
+	border:1px solid #000;
+	color:#fff;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor:pointer;
+
+}
+.product__number .main__number .number__block:nth-child(2){
+	background: #fff;
+	color:#000;
+	font-size: 24px;
+	font-weight: bold;
+	letter-spacing: 1.17px;
+	padding: 5px 10px;
+
+}
+
+
+/*Предупреждение*/
+.product__warning{
+	margin-top: 30px;
+
+
+}
+.product__warning .warning__word{
+	text-align: center;
+	color: #ea1616;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 1.3px;
+	margin-bottom: 10px;
+}
+.product__warning .product___warning__text{
+	text-align: justify;
+	color: #000000;
+	font-family: "Bebas Neue Regular";
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 1.17px;
+	line-height: 20px;
+}
+/*Кнопки Купить и Добавить в Корзину*/
+.product__button{
+	margin-top: 34px;
+	margin-bottom: 100px;
+	display: flex;
+
+}
+.product__button .product__buy__btn{
+	color: #ffffff;
+	font-size: 40px;
+	font-weight: bold;
+	letter-spacing: 2.92px;
+	background: #000;
+	padding-left: 60px;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	padding-right: 60px;
+}
+.product__button .product__add__btn{
+	color: #ffffff;
+	font-size: 24px;
+	font-weight: bold;
+	letter-spacing: 1.7px;
+	padding: 24px 29px 24px 10px;
+	background: #000;
+	margin-left: 35px;
+}
+.product__button .product__add__btn i{
+	font-size: 25px;
+}
+
+/*Отзывы*/
+.product__reviews{
+	margin-left: 25px;
+}
+.product__reviews .reviews__title{
+	color: #000000;
+	font-size: 30px;
+	font-weight: bold;
+	letter-spacing: 1.95px;
+	margin-bottom: 18px;
+}
+.product__reviews .reviews__comein{
+	color: #000000;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 1.3px;
+	margin-bottom: 20px;
+}
+.product__reviews .reviews__comein i{
+	font-size: 23px;
+	cursor:pointer;
+	margin-left: 5px;
+} 
+.product__reviews .reviews__evaluation{
+	color: #000000;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 1.3px;
+}
+.product__reviews .reviews__evaluation span i{
+	font-size: 26px;
+	cursor:pointer;
+}
+.product__reviews .reviews__evaluation span{
+	margin-left: 10px;
+		cursor:pointer;
+}
+.product__reviews textarea{
+	margin-top: 15px;
+	width: 568px;
+	height: 143px;
+	min-width: 568px;
+	max-width: 568px;
+	min-height: 143px;
+	max-height: 143px;	
+	padding: 9px 14px;
+	line-height: 20px;
+	font-size: 16px;
+	font-family: "Bebas Neue Regular";
+	letter-spacing: 1.6px;
+	margin-bottom: 27px;
+
+}
+.product__reviews .reviews__send{
+	font-size: 30px;
+	color:#fff;
+	outline:none;
+	border:none;
+	background: #000;
+	font-family: "Bebas Neue Regular";
+	padding: 13px 30px;
+	letter-spacing: 2.5px;
+	margin-bottom: 100px;
+	
+}

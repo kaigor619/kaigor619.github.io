@@ -1,0 +1,4 @@
+[2018-07-06 11:55:52] layer "Почта: gonor.store@gmail.com": Unsupported extension: com
+[2018-07-06 11:55:52] layer "telegram: @gonor.support": Unsupported extension: support
+[2018-07-06 11:55:52] layer "2018 gonor.com.ua": Unsupported extension: ua
+[2018-07-06 11:55:53] layer "+380777777777": Expected Either a default asset specification or a layer asset specification but "+" found.

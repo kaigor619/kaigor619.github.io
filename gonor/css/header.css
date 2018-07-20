@@ -1,0 +1,101 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Bebas Neue Regular';
+
+}
+
+.header{
+	width:100%;
+	padding-top: 8px;
+	padding-bottom: 7px;
+	font-family: 'Bebas Neue Regular';
+	font-size: 1.8em;
+	background: #fff;
+}
+
+
+
+
+
+.container{
+
+width: 100%;
+max-width:1170px;
+margin:0 auto;
+
+
+
+}
+.header .logo img{
+	width:100%;
+	max-width:224px;
+/*	min-width:190px;*/
+	height: auto;
+	transition: .3s;
+
+
+}
+.header-menu{
+	margin-left: 56px;
+	display: flex;
+}
+.header-menu li{
+	margin-right: 39px;
+}
+.header-menu li:nth-child(5){
+	margin-right: 0;
+}
+.header-menu li a{
+	color: #000000;
+letter-spacing: 2.34px;
+transition: border-bottom .3s;
+position: relative;
+font-size: 1.05em;
+transition: .3s;
+
+}
+.header-menu li a::after{
+	content:"";
+	display:block;
+	width:0;
+	height:3px;
+	background:#000;
+	transition:width .3s;
+	transition: .3s;
+	position: absolute;
+	left:0;
+	bottom:-25px;
+}
+.header-menu li a:hover::after{
+	width:100%;
+	transition: width .3s;
+}
+.header-menu li a.active::after{
+	width:100%;
+	
+}
+.header-menu li a:hover .header-menu li a:after{
+	width:100%;
+	transition: border-bottom .3s;
+}
+.header .basket{
+	margin-left: 56px;
+}
+.header .basket i{
+font-size:55px ;
+cursor:pointer;
+
+}
+

@@ -1,0 +1,99 @@
+/*Footer*/
+.footer{
+	width:100%;
+	background: #000;
+	color:#fff;
+	padding-top: 40px;
+	padding-bottom: 35px;
+}
+.footer h4{
+		font-size: 20px;
+}
+.footer .support-service{
+	font-size: 16px;
+	margin-bottom: 40px;
+
+}
+.footer .support-service h4, .footer .information h4{
+	font-size: 20px;
+	margin-bottom: 17px;
+	letter-spacing: 1px;
+}
+.footer .support-service p, .footer .information ul li{
+	margin-bottom: 12px;
+	letter-spacing: 1px;
+}
+.footer .support-service .support-service__about{
+	font-size: 14px;
+	margin-bottom: 0;
+	line-height: 20px;
+}
+
+
+.footer .information ul{
+	display: block;
+	list-style:none;
+}
+.footer .information h4, .footer .pay h4, .footer .delivery h4{
+	letter-spacing: 2.7px;
+}
+.footer .information ul li a{
+	font-size: 16px;
+	color:#fff;
+	text-decoration: none;
+	letter-spacing: 1px;
+
+}
+.pay img{
+margin-top: 17px;
+}
+.pay{
+	text-align: center;
+}
+.footer .delivery h4,.footer .social h4{
+	text-align: center;
+	margin-bottom: 17px;
+	
+}
+.footer .delivery__content{
+	text-align: center;
+
+}
+.footer .delivery__content    img:first-child{
+	margin-right: 10px;
+}
+.footer .social__content{
+	display:flex;
+	justify-content:space-around;
+}
+.footer .social__content i{
+	font-size: 30px;
+	border-radius:10px;
+}
+
+.footer .social h4{
+	letter-spacing: 1px;
+}
+
+/*Subfooter*/
+.sub-footer{
+	width:100%;
+	background: #1f1f1f;
+	font-size: 14px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+}
+.sub-footer__root{
+	color: #888;
+	letter-spacing: 1px;
+	
+}
+.sub-footer__right a{
+	font-size: inherit;
+	color:#fff;
+	margin-right: 15px;
+	letter-spacing: 1px;
+}
+
+

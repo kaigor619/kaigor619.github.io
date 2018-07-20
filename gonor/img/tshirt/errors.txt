@@ -1,0 +1,7 @@
+[2018-07-08 16:25:12] layer "+": Expected Either a default asset specification or a layer asset specification but "+" found.
+[2018-07-08 16:25:12] layer "+": Expected Either a default asset specification or a layer asset specification but "+" found.
+[2018-07-08 16:25:11] layer "2018 gonor.com.ua": Unsupported extension: ua
+[2018-07-08 16:25:11] layer "Почта: gonor.store@gmail.com": Unsupported extension: com
+[2018-07-08 16:25:11] layer "telegram: @gonor.support": Unsupported extension: support
+[2018-07-08 16:25:12] layer "1000px-MarvelLogo.svg": Duplicate path: 1000px-MarvelLogo.svg
+[2018-07-08 16:25:12] layer "1000px-MarvelLogo.svg": Duplicate path: 1000px-MarvelLogo.svg

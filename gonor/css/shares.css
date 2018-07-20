@@ -1,0 +1,45 @@
+.carousel-shares-case{
+	width: 100%;
+
+}
+
+.carousel-block-share{
+	width:100%;
+	padding-top: 36px;
+	padding-bottom: 60px;
+	background: #726FDD url('../img/case/bg-shares-case.jpg') 50% 50% no-repeat;
+	background-size: cover;
+}
+.carousel-block-share i,.carousel-block-share span {
+color:#fff;
+margin: 25px;
+font-size: 25px;
+}
+.carousel-block-tshirt i, .carousel-block-tshirt span{
+	margin: 0;
+
+}
+.carousel-block-share span{
+	font-size: 65px;
+}
+.carousel-block-share h1{
+	font-size: 72px;
+	color: #000;
+	padding: 5px 10px;
+	background: #fff;
+	letter-spacing: 6px;
+	
+}
+.carousel-block-tshirt h1{
+		font-size: 68px;
+		letter-spacing: 4px;
+}
+.owl-pagination{
+	position: absolute;
+	left:50%;
+	top:0;
+	transform:translateX(-50%);
+	/*bottom:10px;*/
+	/*display: none;*/
+}
+

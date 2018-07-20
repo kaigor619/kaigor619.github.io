@@ -1,0 +1,472 @@
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+
+}
+body input:required:valid,
+body textarea:required:valid {
+
+}
+/*Затемнение при боковом меню*/
+.cover-background{
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height: 100%;
+	background: rgba(213, 214, 232,.6);
+	opacity:0;
+	transition: .3s;
+}
+/*Боковое Меню*/
+.sidebar{
+	width:250px;
+	height: 100%;
+	position: fixed;
+	top:0;
+	background: #000;
+	transition:left 0.4s;
+	padding-top: 10px;
+	left:-300px;
+	z-index:999;
+
+}
+.sidebar.active{
+	left:0;
+}
+.sidebar__close{
+	position: absolute;
+	top:50%;
+	transform: translateY(-50%);
+	right:20px;
+	color:#fff;
+
+	font-size: 23px;
+	cursor:pointer;
+
+}
+.sidebar ul li {
+	width:100%;
+	position: relative;
+
+}
+
+.sidebar ul li{
+	list-style: none;
+}
+.sidebar ul li a{
+	color: #fff;
+	padding: 35px 25px;
+	font-size:27px;
+	display:block;
+	letter-spacing: 2px;
+	transition:  0.3s ;
+	border-top:2px solid #000;
+	border-bottom:2px solid #000;
+	transition: .4s;
+}
+.sidebar ul li a:hover{
+	border-top:2px solid #fff;
+	border-bottom:2px solid #fff;
+	transition: .4s;
+}
+.sidebar ul li a:hover{
+	padding-left: 33px;
+	transition: 0.3s ;
+}
+.burger i{
+	font-size: 30px;
+}
+.burger{
+	position: absolute;
+	top:30px;
+	left:10px;
+	display: none;
+	cursor:pointer;
+}
+
+.newbasket{
+	font-size: 30px;
+	display: none;
+	position: absolute;
+	right:10px;
+	top:20px;
+	border:1px solid #000;
+	color:#000;
+	padding: 7px 9px 7px 7px;
+	cursor:pointer;
+	transition: 0.3s ;
+}
+.newbasket:hover{
+	background: #000;
+	color:#fff;
+	transition: 0.3s ;
+}
+/*Burger panel*/
+.burger__panel{
+	position: relative;
+	height: 100px;
+	display: none;
+}
+
+
+
+/* Carousel */
+.carousel{
+font-family: 'Bebas Neue Regular';
+width:100%;
+position: relative;
+}
+/*Case*/
+.carousel-block{
+	width:100%;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	background: url('../img/bg-main-carousel.png') 50% 50% no-repeat;
+	background-size: cover;
+	box-sizing: border-box;
+	height:540px;
+}
+.carousel__img{
+	width:100%;
+	display:flex;
+	justify-content: flex-end;
+/*	border:1px solid red;*/
+}
+
+.phone-carousel{
+	width:100%;
+	max-width:210px;
+	height:auto;
+}
+.main-carousel-switshot{
+	width:100%;
+	max-width: ;
+	height:auto;
+}
+.main-carousel-cup{
+	width:100%;
+	max-width:469px;
+	height:auto;
+}
+.main-carousel-tshirt{
+	width:100%;
+	max-width:500px;
+	height:100%;
+	max-height:467px;
+}
+ .carousel-block__text{
+	margin-left: 100px;
+	margin-top: 10px;
+}
+ .carousel-block__text h1{
+	color: #ffffff;
+	font-size: 60px;
+	letter-spacing: 3.9px;
+	padding:10px ;
+	background: #000;
+	display: inline-block;
+}
+ .carousel-block__text .carousel-block__features{
+	margin-top: 20px;
+}
+.carousel-block__text .carousel-block__features li{
+	font-size: 35px;
+	letter-spacing: 2px;
+	font-weight:bold;
+	line-height: 72px;
+
+}
+ .carousel-block__text .btn-order{
+	color:#fff;
+	font-family: 'Bebas Neue Regular';
+	font-size: 36px;
+	font-weight:700;
+	padding: 12px 28px;
+	background: #de3232;
+	margin-top: 34px;
+letter-spacing: 3.34px;
+	display: inline-block;
+}
+
+
+
+
+/* your Disagn */
+.design{
+	width: 100%;
+	padding-top:60px ;
+}
+.play-phone{
+	width:100%;
+	max-width:189px;
+	height:auto;
+}
+.design .design__title h1{
+	text-align: center;
+	font-size: 60px;
+	font-size: 60px;
+	font-weight: bold;
+	letter-spacing: 3.9px;
+	line-height: 90px;
+
+}
+.design .design__content{
+	width:100%;
+	margin-top: 36px;
+	padding-top: 48px;
+	padding-bottom: 67px;
+	 background: url('../img/bg-your-disagn.jpg.png') 50% 50% no-repeat; 
+	 background-size:cover;
+/*	background: rgb(107, 129, 241);*/
+}
+.design .design__block{
+	text-align: center;
+}
+.design .design__button{
+	text-align: center;
+	margin-top: 60px;
+}
+.design .main-cup{
+	width:100%;
+	max-width: 469px;
+	height: auto;
+}
+.design .main-phone{
+	width:100%;
+	max-width: 190px;
+	height: auto;
+}
+.design .main-switshot{
+	width:100%;
+	max-width: 343px;
+	height: auto;
+}
+
+.design .design-btn{
+	color:#fff;
+	font-size:36px ;
+	padding: 20px 40px;
+	background: #de3232;
+	letter-spacing:1.3px;
+
+
+}
+/* Top */
+
+
+
+
+.top{
+	width: 100%;
+	padding-top: 40px;
+}
+.top .top__title h1{
+	text-align: center;
+	font-size: 60px;
+	letter-spacing: 3.9px;
+}
+.top__content{
+	width:100%;
+	margin-top: 40px;
+	color: #fff;
+}
+
+.top__content .container{
+	padding: 0;
+	display: flex;
+	flex-wrap:wrap;
+}
+/*	Топ Категории*/
+
+.top__menu{
+display: block;
+flex-basis:23%;
+z-index:100;
+}
+
+.top__menu li {
+	font-size:35px;
+	text-align: center;
+	background: #000;
+	transition: .4s;
+}
+.top__menu li:hover{
+	transform:scale(1.1);
+	transition: .4s;
+}
+
+.top__menu li a{
+	font-size:inherit;
+	color: #fff;
+	padding: 35px 0;
+	display: block;
+	border-bottom:3px solid #000;
+	border-top:3px solid #000;
+	transition: .3s;
+
+}
+
+.top__menu li a:hover{
+	transition: .3s;
+}
+.top__menu li a.active{
+	border-bottom: 3px solid #fff;
+	border-top: 3px solid #fff;
+	position: relative;
+
+
+}
+/* Справа */
+.top__wrapper{
+	flex-basis:77%;
+	position: relative;
+	background: url('../img/top-background.jpg.png') 50% 50% no-repeat;
+	background-size: cover;
+
+}
+.top__wrapper .carousel-top{
+	width:100%;
+	position: absolute;
+	top:0;
+	left:0;
+	transition:0.3s;
+	height:550px;
+	display: flex;
+	align-items: center;
+}
+.top__wrapper .carousel-top .owl-item{
+	display: flex;
+	justify-content:center;
+}
+
+
+
+
+
+
+/*Img Top*/
+.top__wrapper .carousel-top.case img{
+	width:100%;
+	max-width:189px;
+	height: auto;
+}
+.top__wrapper .carousel-top.cup img{
+	width:100%;
+	max-width:329px;
+	height: auto;
+}
+.top__wrapper .carousel-top.tshirt img{
+	width:100%;
+	max-width:262px;
+	height: auto;
+}
+.top__wrapper .carousel-top.switshot img{
+	width:100%;
+	max-width:268px;
+	height: auto;
+}
+
+
+
+
+
+
+/*Why*/
+.why{
+	padding-top: 44px;
+	padding-bottom: 40px;
+}
+.why .why__title h1{
+		text-align: center;
+	font-size: 60px;
+	letter-spacing: 4.2px;
+	margin-bottom: 109px;
+}
+.why .why__content{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap:wrap;
+}
+.why .why__block{
+	text-align: center;
+	flex-basis: 25%;
+	margin-bottom: 50px;
+/*	border:1px solid red;*/
+}
+.why .why__block h2{
+	font-size: 30px;
+	margin-top: 36px;
+	letter-spacing:2px;
+	line-height: 30px;
+}
+.why__block.watch img{
+	width:100%;
+	max-width:105px;
+	height: auto;
+
+}
+.why__block.car img{
+	width:100%;
+	max-width:253px;
+	height: auto;
+
+}
+.why__block.star img{
+	width:100%;
+	max-width:140px;
+	height: auto;
+
+}
+.why__block.magnifier img{
+	width:100%;
+	max-width:144px;
+	height: auto;
+	
+}
+
+/*Work*/
+.work{
+	padding-top: 40px;
+	padding-bottom: 100px;
+
+
+}
+.work .work__title h1{
+		text-align: center;
+	font-size: 60px;
+	letter-spacing: 4.2px;
+	margin-bottom: 109px;
+}
+.work .work__content{
+	width:98%;
+
+}
+.work .work__content img{
+display: inline-block;
+/*max-width:284px;
+width:100%;*/
+height: auto;
+}
+
+
+
+
+
+
