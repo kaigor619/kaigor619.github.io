@@ -19,7 +19,7 @@
 	background: #000;
 	transition:left 0.4s;
 	padding-top: 10px;
-	left:0px;
+	left:-300px;
 	z-index:999;
 
 }
