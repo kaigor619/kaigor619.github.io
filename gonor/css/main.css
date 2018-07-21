@@ -1,28 +1,4 @@
-*::-webkit-input-placeholder {
-	color: #666;
-	opacity: 1;
-}
-*:-moz-placeholder {
-	color: #666;
-	opacity: 1;
-}
-*::-moz-placeholder {
-	color: #666;
-	opacity: 1;
-}
-*:-ms-input-placeholder {
-	color: #666;
-	opacity: 1;
-}
 
-body input:focus:required:invalid,
-body textarea:focus:required:invalid {
-
-}
-body input:required:valid,
-body textarea:required:valid {
-
-}
 /*Затемнение при боковом меню*/
 .cover-background{
 	position: absolute;
@@ -43,7 +19,7 @@ body textarea:required:valid {
 	background: #000;
 	transition:left 0.4s;
 	padding-top: 10px;
-	left:-300px;
+	left:0px;
 	z-index:999;
 
 }
@@ -77,18 +53,14 @@ body textarea:required:valid {
 	display:block;
 	letter-spacing: 2px;
 	transition:  0.3s ;
-	border-top:2px solid #000;
-	border-bottom:2px solid #000;
+/*	border-top:2px solid #000;*/
+/*	border-bottom:2px solid #000;*/
 	transition: .4s;
 }
+
 .sidebar ul li a:hover{
-	border-top:2px solid #fff;
-	border-bottom:2px solid #fff;
-	transition: .4s;
-}
-.sidebar ul li a:hover{
-	padding-left: 33px;
-	transition: 0.3s ;
+	padding-left: 40px;
+	transition: .4s ;
 }
 .burger i{
 	font-size: 30px;
@@ -129,7 +101,7 @@ body textarea:required:valid {
 
 /* Carousel */
 .carousel{
-font-family: 'Bebas Neue Regular';
+font-family: 'Bebas Neue Regular',sans-serif;
 width:100%;
 position: relative;
 }
@@ -195,7 +167,7 @@ position: relative;
 }
  .carousel-block__text .btn-order{
 	color:#fff;
-	font-family: 'Bebas Neue Regular';
+	font-family: 'Bebas Neue Regular',sans-serif;
 	font-size: 36px;
 	font-weight:700;
 	padding: 12px 28px;

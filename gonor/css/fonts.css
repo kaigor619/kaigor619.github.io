@@ -1,29 +1,10 @@
-/*@font-face {
-font-family: 'Bebas Neue Book';
-src: url('fonts/Bebas Neue/BebasNeueBook.eot');
-src: url('fonts/Bebas Neue/BebasNeueBook.eot?#iefix') format('embedded-opentype'),
-url('fonts/Bebas Neue/BebasNeueBook.woff') format('woff'),
-url('fonts/Bebas Neue/BebasNeueBook.ttf') format('truetype');
-font-weight: normal;
-font-style: normal;
-}
-
 @font-face {
-font-family: 'Bebas Neue Regular';
-src: url('fonts/Bebas Neue/BebasNeueRegular.eot');
-src: url('fonts/Bebas Neue/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
-url('fonts/Bebas Neue/BebasNeueRegular.woff') format('woff'),
-url('fonts/Bebas Neue/BebasNeueRegular.ttf') format('truetype');
-font-weight: normal;
-font-style: normal;
+	font-family: 'Bebas Neue Regular';
+	src: url('../fonts/Bebas Neue/BebasNeueRegular.eot');
+	src: local('../fonts/Bebas Neue/Bebas Neue Regular'), local('BebasNeueRegular'),
+		url('../fonts/Bebas Neue/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Bebas Neue/BebasNeueRegular.woff') format('woff'),
+		url('../fonts/Bebas Neue/BebasNeueRegular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
-@font-face {
-font-family: 'Bebas Neue Bold';
-src: url('fonts/Bebas Neue/BebasNeueBold.eot');
-src: url('fonts/Bebas Neue/BebasNeueBold.eot?#iefix') format('embedded-opentype'),
-url('fonts/Bebas Neue/BebasNeueBold.woff') format('woff'),
-url('fonts/Bebas Neue/BebasNeueBold.ttf') format('truetype');
-font-weight: normal;
-font-style: normal;
-}
-*/
