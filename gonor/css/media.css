@@ -389,7 +389,6 @@ width:100%;
 max-width: 409px;
 min-width: 120px;
 height:auto;
-/*margin-left: -10px;*/
 }
 .main-carousel-tshirt{
 	margin-left: -10px;
@@ -451,7 +450,6 @@ padding:7px ;
 	width:100%;
 	max-width:469px;
 	min-width: 140px;
-	height:auto;
 	margin-left: -10px;
 }
 	.carousel-block__text .carousel-block__features li{
@@ -469,20 +467,42 @@ padding:7px ;
 	font-size: 15px;
 	line-height: 30px;
 }
-	.carousel-block__text.switshot .carousel-block__features li{
-	
-}
 
 }
-/*@media screen and (max-width:320px){
-.carousel-block__text h1{
-font-size: 10px;
-padding:4px ;
+@media screen and (max-width:347px){
+.main-carousel-cup{
+	width:100%;
+	max-width:469px;
+	min-width: 140px;
+	margin-left: -20px;
 }
-.carousel-block__text.switshot{
-	/*margin-left: 0px;*/
 }
-}*/
+@media screen and (max-width:320px){
+.carousel-block__text.cup .carousel-block__features li{
+font-size: 14px;
+}
+.carousel-block__text.cup{
+margin-left: -10px;
+}
+.carousel-block__text.case h1{
+	font-size: 14px;
+}
+.main-carousel-switshot{
+width:100%;
+max-width: 409px;
+min-width: 110px;
+height:auto;
+}
+.main-carousel-tshirt{
+min-width:130px;
+}
+.main-carousel-cup{
+	margin-left: -25px;
+}
+
+
+
+}
 
 
 /*Your disagn*/
@@ -528,8 +548,12 @@ padding:4px ;
 }
 @media screen and (max-width:500px){
 	.play-phone{
-	max-width:80px;
+	max-width:70px;
 
+}
+.design .design__title h1{
+	font-size: 30px;
+	line-height: 50px;
 }
 .design .design__content{
 	width:100%;
@@ -546,7 +570,7 @@ padding:4px ;
 }
 @media screen and (max-width:400px){
 	.play-phone{
-	max-width:70px;
+	max-width:60px;
 
 }
 .design .design-btn{
@@ -559,13 +583,21 @@ padding:4px ;
 
 }
 }
-@media screen and (max-width:300px){
+@media screen and (max-width:320px){
 	.play-phone{
-	max-width:60px;
+	max-width:50px;
 
+}
+.design .design__title h1{
+	font-size: 25px;
+	line-height: 40px;
 }
 }
 /*Why*/
+
+
+
+
 @media screen and (max-width:1035px){
 .why .why__block h2{
 	font-size: 25px;
@@ -596,6 +628,8 @@ padding:4px ;
 }
 }
 @media screen and (max-width:832px){
+
+
 .why__block.watch img{
 	max-width:75px;
 }
@@ -616,6 +650,14 @@ padding:4px ;
 	line-height: 25px;
 }
 }
+@media screen and (max-width:611px){
+	.why .why__title h1{
+		font-size: 40px;
+	}
+	.work .work__title h1{
+	font-size: 40px;
+}
+}
 @media screen and (max-width:768px){
 	.why .why__block{
 		flex-basis:50%;
@@ -623,6 +665,17 @@ padding:4px ;
 	}
 	.why .why__title h1{
 	font-size: 40px;
+}
+.work{
+	padding-top: 0px;
+}
+.why{
+	padding-top: 44px;
+	padding-bottom: 20px;
+}
+.work .work__title h1{
+	font-size: 40px;
+	margin-bottom: 70px;
 }
 }
 @media screen and (max-width:500px){
@@ -634,14 +687,53 @@ padding:4px ;
 	margin-bottom: 50px;
 	line-height: 40px;
 }
+
+}
+@media screen and (max-width:320px){
+		.why .why__title h1{
+		font-size: 25px;
+	}
+	.work .work__title h1{
+	font-size: 33px;
+	margin-bottom: 40px;
+}
+}
+
+
+
+/*Work*/
+@media screen and (max-width:426px){
+.work .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next{
+	height: 95%;
+	width:30px;
+}
+.work .owl-carousel .owl-nav button img{
+  transform: scale(0.7);
+}
+}
+@media screen and (max-width:346px){
+.work .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next{
+	height: 93%;
+	width:25px;
+}
+.work .owl-carousel .owl-nav button img{
+  transform: scale(0.5);
+}
 }
 /*Top*/
 
 
 
+@media screen and (max-width:728px){
+.top__menu li {
+	font-size: 30px;
+	display: block;
+}
+}
 
 @media screen and (max-width:822px){
-	.top__content .container{
+
+		.top__content .container{
 	padding: 0;
 	display: flex;
 	flex-wrap:wrap;
@@ -654,9 +746,10 @@ padding:4px ;
 	.top__menu{
 	display: flex;
 	flex-basis:100%;
-	border:1px solid red;
-/*	justify-content: space-around;*/
 	background: #000;
+height: 80px;
+width:100%;
+position: relative;
 	}
 	.top__wrapper{
 	flex-basis:100%;
@@ -668,41 +761,19 @@ padding:4px ;
 
 
 	.top__menu li a.active{
-	border-bottom: 3px solid #fff;
+	border-bottom:none;
 	border-top:none;
 }
 	.top__menu li:hover{
 	transform:scale(1);
 }
-	.top__menu li a{
-	padding:35px 0;
-	border-top:none;
-}
 
-}
-@media screen and (max-width:728px){
-.top__menu li {
-	font-size: 30px;
-	display: block;
-}
-}
-
-@media screen and (max-width:822px){
-	.top__wrapper .carousel-top.case img{
-	width:100%;
-	max-width:189px;
-	height: auto;
-}
-.top__menu{
-background: #000;
-height: 80px;
-width:100%;
-position: relative;
-
+.slick-list.draggable{
+	overflow:hidden;
 }
 
 .top__menu li{
-	font-size: 30px;
+	font-size: 35px;
 	width:100%;
 	background: #000;
 	height: 80px;
@@ -719,6 +790,11 @@ position: relative;
 	justify-content: center;
 	font-size: inherit;
 	outline:none;
+	padding:0px 0;
+	border-top:none;
+/*	display: inline-block;
+	background: blue;*/
+
 }
 .top__menu li a.active{
 	border-bottom: 0;
@@ -727,6 +803,31 @@ position: relative;
 .top__menu li:active{
 	border:none;
 	outline: none;
+}
+@media screen and (max-width:582px){
+	.top__menu li{
+	font-size: 30px;
+}
+.top__menu button.left__top__arrow,.top__menu button.right__top__arrow{
+	width: 200px;
+	cursor:pointer;
+	outline:none;
+	border:none;
+	background: #000;
+
+}
+.top__menu button img{
+	transform:scale(0.8);
+}
+.top__menu button.left__top__arrow{
+	border-right:2px solid #fff;
+}
+.top__menu button.right__top__arrow{
+
+	border-left:2px solid #fff;
+
+}
+
 }
 
 	
@@ -820,7 +921,7 @@ text-align: center;
 	flex-direction: column;
 	justify-content: flex-end;
 position: absolute;
-right:15%;
+right:16%;
 top:-90px;
 
 
@@ -841,9 +942,24 @@ top:-90px;
 		font-size: 8.5px;
 	}
 	.sub-footer__right{
-		/*text-align: center;*/
+		/*text-align: center;
+	}*/
+}
+@media screen and (max-width:376px){
+	.sub-footer{
+		font-size: 7.5px;
 	}
 }
+@media screen and (max-width:349px){
+	.sub-footer{
+		font-size: 6.5px;
+	}
+	.sub-footer__right a{
+	margin-right: 10px;
+
+}	
+}
+
 @media screen and (max-width:466px){
 	.footer .delivery{
 right:13%;
@@ -854,6 +970,12 @@ right:13%;
 @media screen and (max-width:424px){
 	.footer .delivery{
 right:12%;
+
+
+}
+@media screen and (max-width:320px){
+	.footer .delivery{
+right:10%;
 
 
 }

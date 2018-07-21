@@ -74,13 +74,9 @@
   background: rgba(0,0,0,.7);
   outline:none;
   border:none;
-  opacity:0;
+  opacity:1;
   transition:.3s;
   
-}
-.work .owl-carousel:hover .owl-nav button.owl-prev{
-opacity:1;
-transition:.3s;
 }
 .work .owl-carousel:hover .owl-nav button.owl-next{
 opacity:1;

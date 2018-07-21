@@ -18,7 +18,6 @@
 	top:0;
 	background: #000;
 	transition:left 0.4s;
-	padding-top: 10px;
 	left:-300px;
 	z-index:999;
 
@@ -26,25 +25,32 @@
 .sidebar.active{
 	left:0;
 }
-.sidebar__close{
-	position: absolute;
-	top:50%;
-	transform: translateY(-50%);
-	right:20px;
-	color:#fff;
 
+
+.sidebar ul li  {
+	width:100%;
+/*	position: relative;*/
+	list-style: none;
+
+}
+.sidebar__close{
+
+	position: absolute;
+	top:0;
+	right:0;
+	height:65px;
+	width:25%;
+	color:#fff;
+	display: flex;
+	align-items:center;
+	justify-content: center;
 	font-size: 23px;
 	cursor:pointer;
+	background: #101010;
 
 }
-.sidebar ul li {
-	width:100%;
-	position: relative;
-
-}
-
-.sidebar ul li{
-	list-style: none;
+.sidebar ul li a:first-child{
+padding: 30px 25px;
 }
 .sidebar ul li a{
 	color: #fff;
@@ -155,6 +161,7 @@ position: relative;
 	background: #000;
 	display: inline-block;
 }
+
  .carousel-block__text .carousel-block__features{
 	margin-top: 20px;
 }
@@ -263,7 +270,7 @@ letter-spacing: 3.34px;
 .top__content .container{
 	padding: 0;
 	display: flex;
-	flex-wrap:wrap;
+	flex-wrap:nowrap;
 }
 /*	Топ Категории*/
 
@@ -271,8 +278,11 @@ letter-spacing: 3.34px;
 display: block;
 flex-basis:23%;
 z-index:100;
+overflow:visible;
 }
-
+.slick-list.draggable{
+	overflow:visible;
+}
 .top__menu li {
 	font-size:35px;
 	text-align: center;
@@ -302,9 +312,24 @@ z-index:100;
 	border-bottom: 3px solid #fff;
 	border-top: 3px solid #fff;
 	position: relative;
+}
 
+/*Slick arrow*/
+.top__menu button.left__top__arrow,.top__menu button.right__top__arrow{
+	width: 300px;
+	cursor:pointer;
+	outline:none;
+	border:none;
+	border-right:2px solid #fff;
+	background: #000;
 
 }
+.top__menu button.right__top__arrow{
+
+	border-left:2px solid #fff;
+
+}
+
 /* Справа */
 .top__wrapper{
 	flex-basis:77%;

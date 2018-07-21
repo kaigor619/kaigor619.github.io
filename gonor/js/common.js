@@ -69,10 +69,12 @@ $('#ourWork').owlCarousel({
     nav:true,
     navText:["<img src=\"img/left.png\"/>","<img src=\"img/right.png\"/>"],
     responsive:{
-    
-     320:{
-        items:1,
-     },   
+    0:{
+        items:2,
+    },     
+    320:{
+        items:2
+    },   
     400:{
         items:2,
     },   
@@ -89,7 +91,7 @@ $('#ourWork').owlCarousel({
         items:5,
     },
     1600:{
-        items:7,
+        items:6,
     }    
 },
 });
@@ -127,37 +129,38 @@ $('.top-link').click(function(e){
 }).eq(0).find('a').addClass("active");
 
 
-            // $('.top__menu').slick({    
-            // infinite: false,
-            // slidesToShow: 5,
-            // slidesToScroll: 1,
-            // vertical:true,
-            // arrows:false,
-            // prevArrow:'<div class="left__top__arrow"><img src="img/left.png"/></div>',
-            // nextArrow:'<div class="right__top__arrow"><img src="img/right.png"/></div>',
-            // responsive: [
-            // {
-            //     breakpoint:822,
-            //     settings:{
-            //         vertical:false,
-            //         arrows:false,
-            //         slidesToShow: 5,
 
-            //     }
+            $('.top__menu').slick({    
+            infinite: false,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            vertical:true,
+            arrows:false,
+            prevArrow:'<button class="left__top__arrow"><img src="img/left.png"/></button>',
+            nextArrow:'<button class="right__top__arrow"><img src="img/right.png"/></button>',
+            responsive: [
+            {
+                breakpoint:822,
+                settings:{
+                    vertical:false,
+                    arrows:false,
+                    slidesToShow: 5,
 
-            // },
-            // {
-            //     breakpoint:822,
-            //     settings:{
-            //         vertical:false,
-            //         slidesToShow: 1,
-            //         slidesToScroll: 1,
-            //         arrows:true,
-            //     }
-            // }
+                }
 
-            // ]
-            // }); 
+            },
+            {
+                breakpoint:822,
+                settings:{
+                    vertical:false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows:true,
+                }
+            }
+
+            ]
+            }); 
 
             $('.top__menu').on('afterChange', function(event, slick, currentSlide){
 
