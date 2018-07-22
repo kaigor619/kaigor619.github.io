@@ -102,16 +102,10 @@ $('#ourWork').owlCarousel({
 // Боковое Меню
 $('.burger').on('click',function(){
     $('.sidebar').css('left','0px');
-    // $('.cover-background').css('opacity','1');
 
-    $('.cover-background').on('click',function(){
-        $('.sidebar').css('left','-250px');
-        // $(this).css('opacity','0');       
-    });
 
     $('.sidebar__close').on('click',function(){
     $('.sidebar').css('left','-250px');
-    // $('.cover-background').css('opacity','0');
 });
 
 
@@ -120,6 +114,8 @@ $('.burger').on('click',function(){
 
 
 // Табы
+$('.top-link a').eq(0).css('border-top','none');
+$('.top-link a').eq(4).css('border-bottom','none');
 $('.carousel-top').not(":first").hide();
 $('.top-link').click(function(e){
     e.preventDefault();

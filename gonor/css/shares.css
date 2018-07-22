@@ -1,3 +1,4 @@
+/*Case*/
 .carousel-shares-case{
 	width: 100%;
 
@@ -39,7 +40,5 @@ font-size: 25px;
 	left:50%;
 	top:0;
 	transform:translateX(-50%);
-	/*bottom:10px;*/
-	/*display: none;*/
 }
 

@@ -1,103 +1,5 @@
-/*Header*/
-@media screen and (max-width:1200px){
-	.header .header-menu li a{
-		font-size: 0.85em;
-	}
-	 .header .logo img{
-		width:100%;
-		max-width:180px;
-		height:auto;
-	}
-	.header .basket i{
-		font-size:45px ;
-	}
-	.header-menu li a::after{
-		bottom:-20px;
-	}
-}
-@media screen and (max-width:926px){
-	.header .basket i{
-		font-size:40px ;
-	}
-
-	.header .basket{
-	margin-left: 20px;
-}
-.header-menu li{
-	margin-right: 25px;
-}
-	.header-menu li a::after{
-		bottom:-13px;
-	}
-}
-@media screen and (max-width:800px){
-		.header .logo img{
-		width:100%;
-		max-width:180px;
-		min-width:130px;
-		height:auto;
-	}
-	.header .basket i{
-		font-size:35px ;
-	}
-	.header .header-menu li a{
-		font-size: 0.75em;
-		position: relative;
-		top:-2px;
-	}
-
-
-}
-
-@media screen and (max-width:768px){
-	.burger__panel{
-		display: block;
-	}
-	 .burger{
-		display:block;
-	}
-	.header .header-menu{
-		display:none;
-	}
-	.header .basket{
-		display:none;
-	}
-	.newbasket{
-		display: block;
-	}
-}
-
-/*Sidebar*/
-@media screen and (max-width:768px){
-	.sidebar ul li a{
-	padding: 25px 25px;
-	font-size:27px;
-	}
-
-}
-@media screen and (max-width:576px){
-	.sidebar ul li a{
-	padding: 20px 25px;
-	font-size:20px;
-	}
-}
-
 
 /*Carousel*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width:992px){
 .carousel-block{
 height: 520px;
@@ -570,8 +472,18 @@ min-width:130px;
 }
 @media screen and (max-width:400px){
 	.play-phone{
-	max-width:60px;
+	max-width:70px;
 
+}
+.main-cup{
+	width:100%;
+	min-width:130px;
+	height:auto;
+}
+.main-switshot{
+	width:100%;
+	min-width:100px;
+	height:auto;
 }
 .design .design-btn{
 	color:#fff;
@@ -581,6 +493,24 @@ min-width:130px;
 	letter-spacing:2px;
 
 
+}
+}
+@media screen and (max-width:360px){
+	.play-phone{
+	max-width:70px;
+	min-width:50px;
+
+}
+.main-cup{
+	width:100%;
+	min-width:130px;
+	height:auto;
+	margin-left: -10px;
+}
+}
+@media screen and (max-width:360px){
+	.main-switshot{
+	margin-left: -10px;
 }
 }
 @media screen and (max-width:320px){
@@ -823,160 +753,7 @@ position: relative;
 	border-right:2px solid #fff;
 }
 .top__menu button.right__top__arrow{
-
 	border-left:2px solid #fff;
-
 }
-
-}
-
-	
-
-
-
-}
-/*Footer*/
-@media screen and (max-width:992px){
-	.footer .information{
-		text-align: center;
-		
-	}
-	.footer .pay{
-		text-align: center;
-	}
-	.footer .pay img{
-		margin-right: 10px;
-	}	
-	.footer .pay img:last-child{
-		margin-right: 10px;
-	}	
-	.footer .delivery{
-		text-align: center;
-	}
-	.footer .social__content{
-	display:flex;
-	justify-content:center;
-}
-.footer h4{
-	font-size: 18px;
-	display: block;
-	margin-top: 4px;
-	margin-right: 15px;
-}
-.footer .social{
-
-	display: flex;
-	justify-content:flex-end;
-/*	align-items:center;*/
-	flex-direction: row;
-/*	margin-right: 20px;*/
-}
-
-.footer .social__content i{
-	margin-left: 15px;
-	font-size: 25px;
-}
-.footer .social__content i:first-shild{
-	margin-left: 0px;
-}
-.footer .delivery__content{
-	text-align: center;
-	margin-left: -15px;
-
-}
-}
-@media screen and (max-width:768px){
-	.footer .delivery{
-		display: flex;
-		justify-content: flex-start;
-		align-items: center;
-
-	}
-	.footer .delivery h4{
-		font-size: 18px;
-		margin-top: 10px;
-	}
-	.footer .social{
-		margin-top: 10px;
-	}
-	.footer .delivery__content{
-	margin-left: 0px;
-
-}
-
-}
-@media screen and (max-width:576px){
-	.footer .support-service{
-text-align: center;
-
-}
-.footer .social{
-	display: flex;
-	justify-content:center;
-/*	align-items:center;*/
-	flex-direction: row;
-	margin-right: 20px;
-}
-.footer .delivery{
-	flex-direction: column;
-	justify-content: flex-end;
-position: absolute;
-right:16%;
-top:-90px;
-
-
-}
-	.footer .delivery__content{
-	text-align: center;
-	margin-left: -15px;
-
-}
-.footer .social{
-	margin-top: 40px;
-}
-
-
-}
-@media screen and (max-width:515px){
-	.sub-footer{
-		font-size: 8.5px;
-	}
-	.sub-footer__right{
-		/*text-align: center;
-	}*/
-}
-@media screen and (max-width:376px){
-	.sub-footer{
-		font-size: 7.5px;
-	}
-}
-@media screen and (max-width:349px){
-	.sub-footer{
-		font-size: 6.5px;
-	}
-	.sub-footer__right a{
-	margin-right: 10px;
-
-}	
-}
-
-@media screen and (max-width:466px){
-	.footer .delivery{
-right:13%;
-
-
-}
-}
-@media screen and (max-width:424px){
-	.footer .delivery{
-right:12%;
-
-
-}
-@media screen and (max-width:320px){
-	.footer .delivery{
-right:10%;
-
-
 }
 }

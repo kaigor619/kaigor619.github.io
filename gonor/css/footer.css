@@ -96,4 +96,149 @@ margin-top: 17px;
 	letter-spacing: 1px;
 }
 
+/*Media*/
+@media screen and (max-width:992px){
+	.footer .information{
+		text-align: center;
+		
+	}
+	.footer .pay{
+		text-align: center;
+	}
+	.footer .pay img{
+		margin-right: 10px;
+	}	
+	.footer .pay img:last-child{
+		margin-right: 10px;
+	}	
+	.footer .delivery{
+		text-align: center;
+	}
+	.footer .social__content{
+	display:flex;
+	justify-content:center;
+}
+.footer h4{
+	font-size: 18px;
+	display: block;
+	margin-top: 4px;
+	margin-right: 15px;
+}
+.footer .social{
+
+	display: flex;
+	justify-content:flex-end;
+/*	align-items:center;*/
+	flex-direction: row;
+/*	margin-right: 20px;*/
+}
+
+.footer .social__content i{
+	margin-left: 15px;
+	font-size: 25px;
+}
+.footer .social__content i:first-shild{
+	margin-left: 0px;
+}
+.footer .delivery__content{
+	text-align: center;
+	margin-left: -15px;
+
+}
+}
+@media screen and (max-width:768px){
+	.footer .delivery{
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+
+	}
+	.footer .delivery h4{
+		font-size: 18px;
+		margin-top: 10px;
+	}
+	.footer .social{
+		margin-top: 10px;
+	}
+	.footer .delivery__content{
+	margin-left: 0px;
+
+}
+
+}
+@media screen and (max-width:576px){
+	.footer .support-service{
+text-align: center;
+
+}
+.footer .social{
+	display: flex;
+	justify-content:center;
+/*	align-items:center;*/
+	flex-direction: row;
+	margin-right: 20px;
+}
+.footer .delivery{
+	flex-direction: column;
+	justify-content: flex-end;
+position: absolute;
+right:16%;
+top:-90px;
+
+
+}
+	.footer .delivery__content{
+	text-align: center;
+	margin-left: -15px;
+
+}
+.footer .social{
+	margin-top: 40px;
+}
+
+
+}
+@media screen and (max-width:515px){
+	.sub-footer{
+		font-size: 8.5px;
+	}
+	.sub-footer__right{
+		/*text-align: center;
+	}*/
+}
+@media screen and (max-width:376px){
+	.sub-footer{
+		font-size: 7.5px;
+	}
+}
+@media screen and (max-width:349px){
+	.sub-footer{
+		font-size: 6.5px;
+	}
+	.sub-footer__right a{
+	margin-right: 10px;
+
+}	
+}
+
+@media screen and (max-width:466px){
+	.footer .delivery{
+right:13%;
+
+
+}
+}
+@media screen and (max-width:424px){
+	.footer .delivery{
+right:12%;
+
+
+}
+@media screen and (max-width:320px){
+	.footer .delivery{
+right:10%;
+
+
+}
+}
 
