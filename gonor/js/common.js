@@ -15,21 +15,8 @@ $("#carousel").owlCarousel({
     mouseDrag:true,
     touchDrag:true,
     dots:true,
-    autoplay:false,
-    smartSpeed:700,
-
-});
-
-$("#carousel-shares-case").owlCarousel({
-    items:1,
-    loop:true,
-    center:true,
-    mouseDrag:true,
-    touchDrag:true,
-    dots:true,
     autoplay:true,
     smartSpeed:700,
-
 
 });
 
@@ -63,7 +50,7 @@ $('#ourWork').owlCarousel({
     mouseDrag:true,
     touchDrag:true,
     dots:true,
-    autoplay:false,
+    autoplay:true,
     smartSpeed:700,
     dots:false,
     nav:true,
@@ -139,19 +126,12 @@ $('.top-link').click(function(e){
                 breakpoint:822,
                 settings:{
                     vertical:false,
-                    arrows:false,
-                    slidesToShow: 5,
-
-                }
-
-            },
-            {
-                breakpoint:822,
-                settings:{
-                    vertical:false,
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     arrows:true,
+                    autoplay:true,
+                    autoplaySpeed:5000,
+
                 }
             }
 
@@ -166,45 +146,6 @@ $('.top-link').click(function(e){
     $(".carousel-top").eq($('.top-link').eq(currentSlide).index()).fadeIn('fast');
 }
 }); 
-
-
-
-
-
-// $(window).resize(function(){
-//       let win = $(window);
-//       if (win.width() <= 576) { 
-//         // $('.top__menu').addClass('slider');
-//             $('.top__menu').slick({
-//             infinite: false,
-//             arrows:true,
-//             prevArrow:'<div class="left__top__arrow"><img src="img/left.png"/></div>',
-//             nextArrow:'<div class="right__top__arrow"><img src="img/right.png"/></div>'
-//             }); 
-
-//             $('.top__menu').on('afterChange', function(event, slick, currentSlide){
-//   if (currentSlide == 5) { alert("ggrr");}
-// }); 
-//        }
-//        else {
-//         $('.top__menu').removeClass('slider');
-//         $('.top__menu').removeClass('slick-initialized');
-//         $('.top__menu').removeClass('slick-slider');
-
-
-//        }
-// });
-
-
-
-
-
-
-
-
-
-
-
 
 
 
