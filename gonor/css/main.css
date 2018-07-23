@@ -88,7 +88,15 @@ position: relative;
 	margin-top: 34px;
 letter-spacing: 3.34px;
 	display: inline-block;
+	 box-shadow: 0  17px 10px -10px rgba(0, 0, 0, 0.4);
+	transition: all ease-in-out 300ms;
 }
+ .carousel-block__text .btn-order:hover{
+ 		transition: all ease-in-out 300ms;
+ 		    box-shadow: 0  37px 20px -20px rgba(0, 0, 0, 0.2);
+
+    transform: translate(0, -5px) scale(1.05);
+ }
 
 
 
@@ -130,13 +138,9 @@ letter-spacing: 3.34px;
 }
 .design .main-cup{
 	width:100%;
-	max-width: 469px;
+	max-width: 400px;
 	height: auto;
-}
-.design .main-phone{
-	width:100%;
-	max-width: 190px;
-	height: auto;
+	margin-top: 50px;
 }
 .design .main-switshot{
 	width:100%;
@@ -147,11 +151,20 @@ letter-spacing: 3.34px;
 .design .design-btn{
 	color:#fff;
 	font-size:36px ;
-	padding: 20px 40px;
+	padding: 20px 50px;
 	background: #de3232;
 	letter-spacing:1.3px;
+	display: inline-block;
+	 box-shadow: 0  17px 10px -10px rgba(0, 0, 0, 0.4);
+	transition: all ease-in-out 300ms;
 
 
+}
+.design .design-btn:hover{
+    box-shadow: 0  37px 20px -20px rgba(0, 0, 0, 0.2);
+
+    transform: translate(0, -10px) scale(1.05);
+	transition: all ease-in-out 300ms;
 }
 /* Top */
 
@@ -259,11 +272,28 @@ overflow:visible;
 	height:550px;
 	display: flex;
 	align-items: center;
+	cursor:pointer;
 }
 .top__wrapper .carousel-top .owl-item{
 	display: flex;
 	justify-content:center;
 }
+/*Dots*/
+.top__wrapper .carousel-top .owl-dots{
+	position: absolute;
+	top:90%;
+	left:50%;
+	transform:translateX(-50%);
+	display: flex;
+}
+  .top__wrapper  .owl-theme .owl-dots .owl-dot span {
+    
+    background: #A6B4AF;
+     }
+  .top__wrapper  .owl-theme .owl-dots .owl-dot.active span {
+    
+    background: #707070;
+     }
 
 
 
@@ -276,11 +306,7 @@ overflow:visible;
 	max-width:189px;
 	height: auto;
 }
-.top__wrapper .carousel-top.cup img{
-	width:100%;
-	max-width:329px;
-	height: auto;
-}
+
 .top__wrapper .carousel-top.tshirt img{
 	width:100%;
 	max-width:262px;
