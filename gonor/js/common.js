@@ -20,7 +20,7 @@ $("#carousel").owlCarousel({
 
 });
 
-$(".carousel-top").not('#carousel-top-cup').owlCarousel({
+$(".carousel-top").not('#carousel-top-cup').not('.carousel-top.case').owlCarousel({
     items:3,
     loop:true,
     center:true,
@@ -48,9 +48,8 @@ $("#carousel-top-cup").owlCarousel({
     mouseDrag:true,
     touchDrag:true,
     dots:true,
-    autoplay:false,
+    autoplay:true,
     smartSpeed:700,
-    dots:true,
     responsive:{
         578:{
             items:2
@@ -62,16 +61,34 @@ $("#carousel-top-cup").owlCarousel({
 
 
 });
+$(".carousel-top.case").owlCarousel({
+    items:3,
+    loop:true,
+    center:false,
+    mouseDrag:true,
+    touchDrag:true,
+    dots:true,
+    autoplay:true,
+    smartSpeed:700,
+    responsive:{
+        500:{
+            items:3
+        },
+        0:{
+            items:1,
+        },
+    }
+
+
+});
 
 
 $('#ourWork').owlCarousel({
-    items:4,
     loop:true,
     margin:5,
     center:true,
     mouseDrag:true,
     touchDrag:true,
-    dots:true,
     autoplay:true,
     smartSpeed:700,
     dots:false,
@@ -80,27 +97,18 @@ $('#ourWork').owlCarousel({
     responsive:{
     0:{
         items:2,
-    },     
-    320:{
-        items:2
-    },   
-    400:{
-        items:2,
-    },   
+    },        
     576:{
         items:3,
     },
     768:{
         items:4,
     },
-    992:{
-        items:4,
-    },
-    1400:{
+    1300:{
         items:5,
     },
     1600:{
-        items:6,
+        items:8,
     }    
 },
 });

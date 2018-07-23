@@ -24,8 +24,8 @@
 	<!-- Стили -->
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="stylesheet" href="css/header.css" />
-	<link rel="stylesheet" href="css/footer.css" />
 	<link rel="stylesheet" href="css/media.css" />
+		<link rel="stylesheet" href="css/footer.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
 
 
@@ -95,10 +95,10 @@
  		<div class="carousel-block">
 			<div class="container">
 				<div class="row">
-					<div class="col-4">
+					<div class="col-4 d-flex align-items-center">
 						<div class="carousel__img">	
 							<div>				
-							<img src="img/main-carousel-phone.png" class='phone-carousel'>
+							<img src="img/main-carousel-phone2.png" class='phone-carousel'>
 							</div>
 						</div>
 					</div>
@@ -233,17 +233,25 @@
 			<div class="design__content">
 				<div class="container">
 					<div class="row align-items-center">
-						<div class="col-5 design__block">
-							<img src="img/main-cup.png" alt="Чашка" class='main-cup'>
+						<div class="col-5">
+							<div class="design__block cup">
+								<img src="img/main-cup.png" alt="Чашка">
+							</div>
 						</div>
-						<div class="col-3 design__block">
-							<img src="img/phone-play.png" alt="Чехол" class='play-phone'>
+						<div class="col-3">
+							<div class="design__block phone">
+								<img src="img/main-carousel-phone2.png" alt="Чехол">
+							</div>
 						</div>
-						<div class="col-4 design__block">
-							<img src="img/main-switshot.png" alt="Свитшот" class='main-switshot'>
+						<div class="col-4 design__block switshot">
+							<div class="design__block switshot">
+								<img src="img/main-switshot.png" alt="Свитшот">
+							</div>
 						</div>
-						<div class="col-12 design__button">
-							<a href="#" class="design-btn">Создать свой дизайн</a>
+						<div class="col-12">
+							<div class="design__button">
+								<a href="#" class="design-btn">Создать свой дизайн</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -410,6 +418,7 @@
 					</div>
 				</div>
 			</div>
+		</div>	
 			<div class="work__content owl-carousel" id='ourWork'>
 						<a href="img/our-work1.png" data-lightbox="roadtrip"><img src="img/our-work1.png" alt="Наши работы"></a>
 						<a href="img/our-work2.png" data-lightbox="roadtrip"><img src="img/our-work2.png" alt="Наши работы"></a>

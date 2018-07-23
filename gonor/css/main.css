@@ -22,8 +22,9 @@ position: relative;
 	width:100%;
 	padding-top: 40px;
 	padding-bottom: 20px;
-	background: url('../img/bg-main-carousel.png') 50% 50% no-repeat;
+	background: url('../img/background4.jpg') 50% 50% no-repeat;
 	background-size: cover;
+/*	background: #3A3DBD;*/
 	box-sizing: border-box;
 	height:540px;
 }
@@ -46,7 +47,7 @@ position: relative;
 }
 .main-carousel-cup{
 	width:100%;
-	max-width:469px;
+	max-width:450px;
 	height:auto;
 }
 .main-carousel-tshirt{
@@ -106,11 +107,6 @@ letter-spacing: 3.34px;
 	width: 100%;
 	padding-top:60px ;
 }
-.play-phone{
-	width:100%;
-	max-width:189px;
-	height:auto;
-}
 .design .design__title h1{
 	text-align: center;
 	font-size: 60px;
@@ -136,13 +132,18 @@ letter-spacing: 3.34px;
 	text-align: center;
 	margin-top: 60px;
 }
-.design .main-cup{
+.design .design__block.cup img{
 	width:100%;
 	max-width: 400px;
 	height: auto;
 	margin-top: 50px;
 }
-.design .main-switshot{
+.design .design__block.phone img{
+	width:100%;
+	max-width:189px;
+	height:auto;
+}
+.design .design__block.switshot img{
 	width:100%;
 	max-width: 343px;
 	height: auto;
@@ -300,29 +301,6 @@ overflow:visible;
 
 
 
-/*Img Top*/
-.top__wrapper .carousel-top.case img{
-	width:100%;
-	max-width:189px;
-	height: auto;
-}
-
-.top__wrapper .carousel-top.tshirt img{
-	width:100%;
-	max-width:262px;
-	height: auto;
-}
-.top__wrapper .carousel-top.switshot img{
-	width:100%;
-	max-width:268px;
-	height: auto;
-}
-
-
-
-
-
-
 /*Why*/
 .why{
 	padding-top: 44px;
@@ -379,7 +357,7 @@ overflow:visible;
 /*Work*/
 .work{
 	padding-top: 40px;
-	padding-bottom: 100px;
+	padding-bottom: 40px;
 
 
 }
@@ -389,9 +367,8 @@ overflow:visible;
 	letter-spacing: 4.2px;
 	margin-bottom: 109px;
 }
-.work .work__content{
-	width:98%;
-
+.work .work__content.owl-carousel{
+	width:100%;
 }
 .work .work__content img{
 display: inline-block;
