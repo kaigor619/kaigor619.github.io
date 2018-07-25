@@ -22,18 +22,12 @@ position: relative;
 	width:100%;
 	padding-top: 40px;
 	padding-bottom: 20px;
-/*	background: #3A3DBD;*/
+		background: url('../img/background1.jpg') 50% 50% no-repeat;
+	background-size: cover;
 	box-sizing: border-box;
 	height:540px;
 }
- .carousel-block.case{
-	background: url('../img/background1.jpg') 50% 50% no-repeat;
-	background-size: cover;
-}
- .carousel-block.cup{
-	background: url('../img/background2.jpg') 50% 50% no-repeat;
-	background-size: cover;
-}
+
 
 
 .carousel__img{
@@ -129,7 +123,7 @@ letter-spacing: 3.34px;
 	margin-top: 36px;
 	padding-top: 48px;
 	padding-bottom: 67px;
-	 background: url('../img/bg-your-disagn.jpg.png') 50% 50% no-repeat; 
+	 background: url('../img/background2.jpg') center center no-repeat; 
 	 background-size:cover;
 /*	background: rgb(107, 129, 241);*/
 }
