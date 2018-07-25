@@ -22,12 +22,20 @@ position: relative;
 	width:100%;
 	padding-top: 40px;
 	padding-bottom: 20px;
-	background: url('../img/background4.jpg') 50% 50% no-repeat;
-	background-size: cover;
 /*	background: #3A3DBD;*/
 	box-sizing: border-box;
 	height:540px;
 }
+ .carousel-block.case{
+	background: url('../img/background1.jpg') 50% 50% no-repeat;
+	background-size: cover;
+}
+ .carousel-block.cup{
+	background: url('../img/background2.jpg') 50% 50% no-repeat;
+	background-size: cover;
+}
+
+
 .carousel__img{
 	width:100%;
 	display:flex;
