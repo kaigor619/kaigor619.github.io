@@ -24,6 +24,7 @@ position: relative;
 	padding-bottom: 20px;
 	background: url('../img/background4.jpg') 50% 50% no-repeat;
 	background-size: cover;
+/*	background: #3A3DBD;*/
 	box-sizing: border-box;
 	height:540px;
 }

@@ -43,11 +43,7 @@ margin:0 auto;
 .header .logo img{
 	width:100%;
 	max-width:224px;
-/*	min-width:190px;*/
 	height: auto;
-	transition: .3s;
-
-
 }
 .header-menu{
 	margin-left: 56px;
@@ -164,7 +160,7 @@ cursor:pointer;
 	top:0;
 	background: #000;
 	transition:left 0.4s;
-	left:-300px;
+	left:-250px;
 	z-index:999;
 
 }
@@ -195,9 +191,6 @@ cursor:pointer;
 	background: #101010;
 
 }
-.sidebar ul li a:first-child{
-padding: 30px 25px;
-}
 .sidebar ul li a{
 	color: #fff;
 	padding: 35px 25px;
@@ -205,8 +198,6 @@ padding: 30px 25px;
 	display:block;
 	letter-spacing: 2px;
 	transition:  0.3s ;
-/*	border-top:2px solid #000;*/
-/*	border-bottom:2px solid #000;*/
 	transition: .4s;
 }
 
@@ -281,8 +272,58 @@ padding: 30px 25px;
 }
 @media screen and (max-width:576px){
 	.sidebar ul li a{
-	padding: 20px 25px;
+	padding: 25px 25px;
 	font-size:20px;
 	}
 }
+/*Burger and Newbasket*/
+@media screen and (max-width:275px){
+.burger i{
+	font-size: 25px;
+}
+.newbasket i{
+	font-size: 25px;
+}
+.sidebar{
+	width:200px;
+	left:-200px;
+}
+	.sidebar ul li a{
+	padding: 20px 25px;
+	font-size:18px;
+	}
+	.sidebar ul li:first-child a{
+	padding: 15px 25px;
+	font-size:18px;
+	}
+	.sidebar__close{
+	height:40px;
+	width:20%;
+	font-size: 18px;
+	}
 
+}
+/*Logo*/
+@media screen and (max-width:320px){
+.header .logo img{
+	max-width:120px;
+}
+.burger__panel{
+	height: 70px;
+}
+.burger{
+	position: absolute;
+	top:10px;
+	left:10px;
+}
+
+.newbasket{
+	position: absolute;
+	right:10px;
+	top:10px;
+	padding:0px 6px 5px 5px;
+	font-size: 25px;
+
+}
+
+}

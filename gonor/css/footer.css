@@ -294,6 +294,10 @@ font-size: 14px;
 margin-top: 5px;
 margin-left: -5px;
 }
+	.footer .delivery{
+right:13%;
+}
+
 
 }
 /*Sub footer*/
@@ -316,6 +320,29 @@ margin-left: -5px;
 
 }
 }	
+@media screen and (max-width:307px){
+	.sub-footer{
+		font-size: 6.5px;
+	}
+	.sub-footer__right a{
+	margin-right: 5px;
+
+}
+	.sub-footer__right a:last-child{
+	margin-right: 0px;
+
+}
+
+
+}
+@media screen and (max-width:284px){
+	.sub-footer__right a{
+	display: block;
+	line-height: 10px;
+	text-align: center;
+}
+
+}
 
 
 

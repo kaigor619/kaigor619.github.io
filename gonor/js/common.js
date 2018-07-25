@@ -15,7 +15,7 @@ $("#carousel").owlCarousel({
     mouseDrag:true,
     touchDrag:true,
     dots:true,
-    autoplay:true,
+    autoplay:false,
     smartSpeed:700,
 
 });
@@ -118,11 +118,11 @@ $('#ourWork').owlCarousel({
 
 // Боковое Меню
 $('.burger').on('click',function(){
-    $('.sidebar').css('left','0px');
+    $('.sidebar').addClass('active');
 
 
     $('.sidebar__close').on('click',function(){
-    $('.sidebar').css('left','-250px');
+    $('.sidebar').removeClass('active');
 });
 
 
