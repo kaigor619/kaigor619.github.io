@@ -780,6 +780,21 @@ margin-top: -5px;
 	line-height: 25px;
 }
 }
+@media screen and (max-width:320px){
+.why__block.watch img{
+	max-width:65px;
+}
+.why__block.car img{
+	max-width:160px;
+	margin-left: -20px;
+}
+.why__block.star img{
+	max-width:90px;
+}
+.why__block.magnifier img{
+	max-width:90px;	
+}
+}
 @media screen and (max-width:300px){
 	.why .why__block h2{
 	font-size: 17px;
@@ -796,19 +811,6 @@ margin-top: -5px;
 .why .why__title h1{
 	font-size: 20px;
 	line-height: 25px;
-}
-.why__block.watch img{
-	max-width:65px;
-}
-.why__block.car img{
-	max-width:160px;
-	margin-left: -20px;
-}
-.why__block.star img{
-	max-width:90px;
-}
-.why__block.magnifier img{
-	max-width:90px;	
 }
 .why .why__block:last-child{
 	margin-bottom: 10px;
