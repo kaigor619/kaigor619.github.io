@@ -608,14 +608,20 @@ min-width: 80px;
 .design .design__block.switshot img{
 	min-width:100px;
 }
+.design .design__content{
+	padding-bottom: 20px;
+}
 .design .design-btn{
 	color:#fff;
 	font-size:20px ;
-	padding: 10px 20px;
+	padding: 7px 10px;
 	background: #de3232;
-	letter-spacing:2px;
+	letter-spacing:1px;
 
 
+}
+.design .design__button{
+	margin-top: 10px;
 }
 }
 @media screen and (max-width:360px){
@@ -627,6 +633,7 @@ min-width: 80px;
 	min-width:130px;
 	margin-left: -10px;
 }
+
 }
 @media screen and (max-width:360px){
 	.design .design__block.switshot img{
@@ -638,8 +645,21 @@ min-width: 80px;
 }
 }
 @media screen and (max-width:320px){
+	.design .design__content{
+	padding-bottom: 10px;
+}
+.design .design__button{
+	margin-top: 0px;
+}
 	.design .design__block.phone img{
 	max-width:50px;
+
+}
+.design .design-btn{
+	font-size:16px ;
+	padding: 5px 8px;
+	letter-spacing:1px;
+
 
 }
 .design .design__block.cup img{
@@ -667,16 +687,21 @@ margin-top: -5px;
 .design .design__block.switshot img{
 	min-width:80px;
 }
-.design .design__button{
-	text-align: center;
-	margin-top: 20px;
-}
 .design .design-btn{
-	color:#fff;
-	font-size:18px ;
-	padding: 10px 10px;
-	background: #de3232;
+	font-size:15px ;
+/*	padding: 10px 10px;*/
 	letter-spacing:1px;
+	padding: 5px 8px;
+	font-weight: lighter;
+
+
+}
+}
+@media screen and (max-width:275px){
+.design .design-btn{
+	font-size:13px ;
+	padding: 3px 5px;
+	font-weight: lighter;
 
 
 }

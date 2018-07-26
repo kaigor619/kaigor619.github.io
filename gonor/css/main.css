@@ -22,12 +22,11 @@ position: relative;
 	width:100%;
 	padding-top: 40px;
 	padding-bottom: 20px;
-		background: url('../img/background1.jpg') 50% 50% no-repeat;
+	background: url('../img/background1.jpg') 50% 50% no-repeat;
 	background-size: cover;
 	box-sizing: border-box;
 	height:540px;
 }
-
 
 
 .carousel__img{
@@ -69,6 +68,7 @@ position: relative;
 	padding:10px ;
 	background: #000;
 	display: inline-block;
+	animation-delay:0.3s;
 }
 
  .carousel-block__text .carousel-block__features{
@@ -79,8 +79,17 @@ position: relative;
 	letter-spacing: 2px;
 	font-weight:bold;
 	line-height: 72px;
-
 }
+.carousel-block__text .carousel-block__features li:nth-child(1){
+animation-delay:0.6s;
+}
+.carousel-block__text .carousel-block__features li:nth-child(2){
+animation-delay:0.9s;
+}
+.carousel-block__text .carousel-block__features li:nth-child(3){
+animation-delay:1.2s;
+}
+
  .carousel-block__text .btn-order{
 	color:#fff;
 	font-family: 'Bebas Neue Regular',sans-serif;
@@ -93,6 +102,7 @@ letter-spacing: 3.34px;
 	display: inline-block;
 	 box-shadow: 0  17px 10px -10px rgba(0, 0, 0, 0.4);
 	transition: all ease-in-out 300ms;
+	animation-delay:1.4s;
 }
  .carousel-block__text .btn-order:hover{
  		transition: all ease-in-out 300ms;
@@ -123,7 +133,7 @@ letter-spacing: 3.34px;
 	margin-top: 36px;
 	padding-top: 48px;
 	padding-bottom: 67px;
-	 background: url('../img/background2.jpg') center center no-repeat; 
+	 background: url('../img/background2.jpg') 50% 50% no-repeat; 
 	 background-size:cover;
 /*	background: rgb(107, 129, 241);*/
 }

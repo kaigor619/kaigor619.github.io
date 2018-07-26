@@ -114,6 +114,16 @@ $('#ourWork').owlCarousel({
 });
 
 
+// Анимация Wow
+new WOW().init();
+
+// Анимация Карусели
+// $('.carousel img').removeClass('animated');
+// $('.carousel .owl-item.active img').addClass('animated');
+// if($('.carousel .owl-item').hasClass('active')){
+
+// }
+
 
 
 // Боковое Меню
