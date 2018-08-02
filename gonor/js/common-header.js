@@ -1,14 +1,12 @@
 $(document).ready(function(){
 $('.burger').on('click',function(){
-    $('.sidebar').css('left','0px');
+    $('.sidebar').addClass('active');
 
 
     $('.sidebar__close').on('click',function(){
-    $('.sidebar').css('left','-250px');
+    $('.sidebar').removeClass('active');
 });
 
-
 });
-
 });
 

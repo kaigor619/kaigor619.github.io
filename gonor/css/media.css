@@ -303,7 +303,7 @@ line-height: 28px;
 }
 .carousel-block__text .btn-order{
 font-size: 13px;
-padding: 5px 5px 3px 5px;
+padding:3px;
 margin-top: 10px;
 letter-spacing: 2px;
 }
@@ -318,10 +318,12 @@ letter-spacing: 2px;
 
 @media screen and (max-width:326px){	
 	.carousel-block__text h1{
+font-family: "Bebas Neue Regular";
+font-weight: normal;
 font-size: 14px;
-padding:5px 5px 3px 5px ;
-letter-spacing: 2px;
-/*font-weight: lighter;*/
+padding:5px ;
+letter-spacing: 1px;
+
 }
 	.carousel-block__text .carousel-block__features li{
 	font-size: 13px;
@@ -553,6 +555,10 @@ min-width: 80px;
 	max-width:80px;
 
 }
+.design .design-btn {
+	font-size: 30px;
+	padding: 10px 30px;
+}
 }
 
 @media screen and (max-width:500px){
@@ -577,8 +583,8 @@ min-width: 80px;
 	}
 .design .design-btn{
 	color:#fff;
-	font-size:26px ;
-	padding: 10px 30px;
+	font-size:23px;
+	padding: 10px 15px;
 	background: #de3232;
 	letter-spacing:1.4px;
 }
@@ -937,13 +943,12 @@ position: relative;
 .top__menu li a{
 	padding:0;
 	color:#fff;
-	height:80px;
+	height:100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	font-size: inherit;
 	outline:none;
-	padding:0px 0;
 	border-top:none;
 
 }
@@ -998,7 +1003,7 @@ height: 60px;
 height: 60px;
 }
 .top__menu li a{
-height:60px;
+height:100%;
 }
 .top__wrapper .carousel-top.case img{
 	max-width:130px;
@@ -1047,7 +1052,7 @@ height: 50px;
 }
 .top__menu li a{
 
-	height:50px;
+	height:100%;
 }
 	.top__wrapper{
 	height:330px;
@@ -1077,7 +1082,7 @@ height: 40px;
 font-size: 18px;
 }
 .top__menu li a{
-height:40px;
+height:100%;
 }
 .top__menu button img{
 	transform:scale(0.4);

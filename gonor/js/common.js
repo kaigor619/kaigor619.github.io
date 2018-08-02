@@ -7,15 +7,13 @@ $(document).ready(function(){
     });
 
 $("#carousel").owlCarousel({
-
-
     items:1,
     loop:true,
     center:true,
     mouseDrag:true,
     touchDrag:true,
     dots:true,
-    autoplay:false,
+    autoplay:true,
     smartSpeed:700,
 
 });

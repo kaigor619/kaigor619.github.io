@@ -61,9 +61,6 @@ margin-top: 17px;
 	text-align: center;
 
 }
-.footer .delivery__content    img:first-child{
-	margin-right: 10px;
-}
 .footer .social__content{
 	display:flex;
 	justify-content:space-around;
