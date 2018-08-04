@@ -1,0 +1,164 @@
+/*Отдельно для панели Свитшоты, Футболки,Чашки....*/
+.model-menu li.model-link a.model-link-a{
+	color:#fff;
+	font-size: 30px;
+	height:70%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-left: 14px;
+	padding-right: 14px;
+	transition:.3s;
+}
+.model-menu li.model-link{
+	margin-right: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height:100%;
+	position: relative;
+}
+.model-menu li.model-link a.model-link-a.white{
+	font-family: "Bebas Neue Bold";
+	font-weight: normal;
+	color:#000;
+	background: #fff;
+}
+.model-menu li.model-link:hover a.model-link-a{
+	color:#000;
+	background: #fff;
+	transition:.3s;
+}
+.product__case.cup .product__main{
+	width:90%;
+}
+.product__case.cup .product__case__block  img{
+width:90%;
+max-width:291px;
+height:auto;
+margin-left: -10px;
+}
+.product__case.cup .product__case__block .product__block__title{
+	margin-top: 10px;
+}
+
+@media screen and (max-width:900px){
+.product__case.cup .product__main{
+	width:100%;
+}
+}
+@media screen and (max-width:767px){
+.product__case.cup .product__main{
+	width:90%;
+}
+}
+@media screen and (max-width:575px){
+.product__case.cup .product__main{
+	width:60%;
+}
+}
+@media screen and (max-width:500px){
+.product__case.cup .product__main{
+	width:70%;
+}
+}
+@media screen and (max-width:360px){
+.product__case.cup .product__main{
+	width:80%;
+}
+
+}
+@media screen and (max-width:320px){
+.product__case.cup .product__main{
+	width:80%;
+}
+.product__case.cup .product__case__block .product__block__title{
+	margin-top: 0px;
+}
+
+}
+@media screen and (max-width:300px){
+.product__case.cup .product__main{
+	width:80%;
+}
+
+
+}
+
+@media screen and (max-width:1011px){
+.model-menu li.model-link a.model-link-a {
+	font-size: 20px;
+	padding: 0px 14px;
+}
+.model-menu li.model-link{
+	margin-right: 16px;
+}
+.model{
+	height:60px;
+}
+}
+@media screen and (max-width:992px){
+.model{
+	height:50px;
+}
+.model-menu li.model-link a.model-link-a {
+	font-size: 25px;
+	padding: 0px 10px;
+}
+.model-menu li.model-link{
+	margin-right: 16px;
+}
+
+}
+@media screen and (max-width:768px){
+.model{
+	height:40px;
+}
+.model-menu li.model-link a.model-link-a {
+	font-size: 20px;
+	padding: 0px 10px;
+}
+.model-menu li.model-link{
+	margin-right: 10px;
+}
+
+}
+@media screen and (max-width:332px){
+.model{
+	height:40px;
+}
+.model-menu li.model-link a.model-link-a {
+	font-size: 18px;
+	padding: 0px 8px;
+}
+.model-menu li.model-link{
+	margin-right: 8px;
+}
+
+}
+@media screen and (max-width:332px){
+.model{
+	height:35px;
+}
+.model-menu li.model-link a.model-link-a {
+	font-size: 17px;
+	padding: 0px 5px;
+}
+.model-menu li.model-link{
+	margin-right: 10px;
+}
+
+}
+@media screen and (max-width:273px){
+.model{
+	height:30px;
+}
+.model-menu li.model-link a.model-link-a {
+	font-size: 16px;
+	padding: 0px 5px;
+}
+.model-menu li.model-link{
+	margin-right: 6px;
+}
+
+}

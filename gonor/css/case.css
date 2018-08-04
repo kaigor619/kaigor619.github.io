@@ -10,13 +10,12 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-		height:100%;
+	height:100%;
 }
 .model-menu{
 	display: flex;
 	align-items: center;
-	height:100%;
-	
+	height:100%;	
 }
 
 .model-menu li.model-link{
@@ -41,14 +40,14 @@
 	padding-right: 14px;
 	transition:.3s;
 }
-.model-menu li.model-link:hover a.model-link-a.white{
+.model-menu.case li.model-link:hover a.model-link-a.white{
 	color:#000;
 }
-.model-menu li.model-link:hover{
+.model-menu.case li.model-link:hover{
 	background: #fff;
 	transition:.3s;	
 }
-.model-menu li.model-link:hover a.model-link-a{
+.model-menu.case li.model-link:hover a.model-link-a{
 	color:#000;
 	transition:.3s;	
 }
@@ -70,7 +69,7 @@
 	display:block;
 }
 .model-menu li .sub__list .sub__list__content{
-	min-width:120px;
+	min-width:140px;
 }
 .model-menu li .sub__list .sub__list__content li{
 	width:100%;
@@ -83,7 +82,7 @@
 }
 .model-menu li .sub__list .sub__list__content li a{
 	color:#000;
-	font-size: 17px;
+	font-size: 20px;
 	padding: 0;
 }
 .model-menu li .sub__list .sub__list__content li a:hover{
@@ -212,10 +211,14 @@
 }
 .carousel-block-share .carousel-case-content{
 	width:100%;
-	display: flex;
-	align-items: center;
-	justify-content: flex-end;
+	display:flex;
+	align-items:center;
+	justify-content:flex-end;
 }
+/*.carousel-block-share.tshirt .carousel-case-content{
+	justify-content:flex-start;
+}*/
+
 .carousel-block-share .carousel-case-content img{
 	/*display: block;*/
 }
@@ -225,9 +228,22 @@ margin: 25px;
 font-size: 25px;
 display:inline-block;
 }
-.carousel-block-tshirt i, .carousel-block-tshirt span{
+.carousel-block-share.tshirt i,.carousel-block-share.tshirt span {
+margin: -5px;
+}
+.carousel-block-share.switshot i {
+margin: 5px;
+}
+.carousel-block-share.switshot span{
 	margin: 0;
-
+	margin-left: 10px;
+}
+.carousel-block-share.cup i {
+margin:5px;
+}
+.carousel-block-share.cup span{
+	margin: 0;
+	margin-left: 10px;
 }
 .carousel-block-share span{
 	font-size: 65px;
@@ -257,6 +273,21 @@ display:inline-block;
 .carousel-block-share.case img{
 	width:100%;
 	max-width:130px;
+	height:auto;
+}
+.carousel-block-share.tshirt img{
+	width:100%;
+	max-width:250px;
+	height:auto;
+}
+.carousel-block-share.switshot img{
+	width:100%;
+	max-width:241px;
+	height:auto;
+}
+.carousel-block-share.cup img{
+	width:100%;
+	max-width:250px;
 	height:auto;
 }
 /*Sowrting*/
@@ -302,6 +333,7 @@ display:inline-block;
 	right:0;
 	z-index:100;
 	width:100%;
+	min-width: 150px;
 
 }
 .sorting .sort__wrapper{
@@ -399,10 +431,6 @@ transition:.3s;
 	margin-top: 30px;
 	letter-spacing: 2px;
 }
-.product__case__block .cup-product{
-position: relative;
-left:-15px;
-}
 
 .product__main .add__wrapper{
 	display:flex;
@@ -411,23 +439,22 @@ left:-15px;
 	background: #232323;
 	margin-top: 29px;
 	color:#fff;
-/*	padding-top: 18px;
-	padding-bottom: 18px;*/
 	height: 60px;
 	border:1px solid black;
 	transition:.3s;
 	width:100%;
+	font-size: 1.6em;
 }
 .product__main  .add__wrapper .add{
 	color:#fff;
-	font-size: 1.6em;
 	letter-spacing: 1px;
 
 }
-.product__main .add__wrapper img{
-	margin-left: 6px;
-	transform:scale(0.9) ;
+.product__main  .add__wrapper i{
+	margin-left: 7px;
+	margin-bottom: 2px;
 }
+
 .product__case__block .price{
 position: absolute;
 top:0;
@@ -459,7 +486,7 @@ font-weight: bold;
 	opacity:0;
 	transition: .3s;
 }
-.product__case__block:hover .product__cover{
+.product__main:hover .product__cover{
 	opacity:1;
 	transition:.3s;
 }

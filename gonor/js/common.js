@@ -13,7 +13,7 @@ $("#carousel").owlCarousel({
     mouseDrag:true,
     touchDrag:true,
     dots:true,
-    autoplay:true,
+    autoplay:false,
     smartSpeed:700,
 
 });

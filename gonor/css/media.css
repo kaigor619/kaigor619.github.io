@@ -1,5 +1,6 @@
 
 /*Carousel*/
+
 @media screen and (max-width:992px){
 .carousel-block{
 height: 520px;
@@ -245,6 +246,7 @@ line-height: 33px;
 .carousel-block__text h1{
 font-size: 15px;
 padding: 5px;
+letter-spacing: 1.5px;
 }
 .main-carousel-cup{
 	min-width: 140px;
@@ -258,7 +260,7 @@ max-width:70px;
 .carousel-block__text .carousel-block__features li{
 font-size: 14px;
 line-height: 33px;
-letter-spacing: 1.4px;
+letter-spacing: 1px;
 }
 .carousel-block__text .btn-order{
 font-size: 14px;
@@ -295,7 +297,7 @@ min-width: 110px;
 
  .carousel-block__text h1{
  	font-size: 14px;
- 	padding: 4px 4px;
+ 	padding: 4px;
  }
 .carousel-block__text .carousel-block__features li{
 font-size: 13px;
@@ -318,15 +320,13 @@ letter-spacing: 2px;
 
 @media screen and (max-width:326px){	
 	.carousel-block__text h1{
-font-family: "Bebas Neue Regular";
-font-weight: normal;
 font-size: 14px;
-padding:5px ;
+padding:5px;
 letter-spacing: 1px;
 
 }
 	.carousel-block__text .carousel-block__features li{
-	font-size: 13px;
+	font-size: 12px;
 	letter-spacing: 1px;
 	line-height: 28px;
 }
@@ -350,12 +350,10 @@ min-width: 110px;
 	.carousel-block__text h1{
 font-size: 13px;
 padding:5px 5px 3px 5px ;
-letter-spacing: 2px;
 }
 
 	.carousel-block__text .carousel-block__features li{
 	font-size: 11px;
-	letter-spacing: 1px;
 	line-height: 25px;
 }
 
@@ -392,7 +390,6 @@ min-width: 90px;
 }
 @media screen and (max-width:275px){
 	.carousel-block{
-	width:100%;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
@@ -407,15 +404,11 @@ min-width: 90px;
 .carousel-block__text h1{
 font-size: 12px;
 padding:2px 4px 2px 4px ;
-letter-spacing: 1.5px;
-font-weight: lighter;
 }
 .carousel-block__text .btn-order{
 font-size: 10px;
-/*padding: 3px 3px 4px 3px;*/
 margin-top: 10px;
-letter-spacing: 1.4px;
-font-weight: lighter;
+letter-spacing: 1px;
 }
 .main-carousel-switshot{
 min-width: 100px;

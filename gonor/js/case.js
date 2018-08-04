@@ -16,22 +16,22 @@ $("#carousel-shares-case").owlCarousel({
     {
        $('.carousel-block-share span').css('display','none');
        $('.carousel-block-share h1').html('Бесплатная доставка');
-       $('.model').insertAfter('.carousel-shares-case').css('display','none');
+       $('.model.case').css('display','none');
     } else {
        $('.carousel-block-share span').css('display','block');
        $('.carousel-block-share h1').html('Бесплатная<br />доставка');
-       $('.model').insertAfter('.sidebar').css('display','block');
+       $('.model.case').css('display','block');
     }
 $( window ).resize(function() {
 	if($(window).width() <= 768)
     {
        $('.carousel-block-share span').css('display','none');
        $('.carousel-block-share h1').html('Бесплатная доставка');
-       $('.model').insertAfter('.carousel-shares-case').css('display','none');
+       $('.model.case').css('display','none');
     } else {
        $('.carousel-block-share span').css('display','block');
        $('.carousel-block-share h1').html('Бесплатная<br />доставка');
-       $('.model').insertAfter('.sidebar').css('display','block');
+       $('.model.case').css('display','block');
     }
 });
 // Выравнивание списка Пк
@@ -97,25 +97,25 @@ for(let i=0;i<$('.drop-model.model-content a').length;i++){
 $('.box-modal .ok').css('display','none');
 
 // Открывающийся Список
-    if($(window).width() > 768){
-    	for(let i=0;i<$('.main-word').length;i++){
-		$('.sub__list__sort').eq(i).click(function(e){
-		e.preventDefault();
-		$(' .sub__sort').eq(i).slideToggle();
-		for(let a=0;a<$('.sub__list__sort').eq(i).find('.sub__sort li').length;a++){
-			$('.sub__list__sort').eq(i).find('.sub__sort li').eq(a).click(function(){
+	if($(window).width() > 768){
+		for(let i=0;i<$('.main-word').length;i++){
+			$('.sub__list__sort').eq(i).click(function(e){
+			e.preventDefault();
+			$(' .sub__sort').eq(i).slideToggle();
+			for(let a=0;a<$('.sub__list__sort').eq(i).find('.sub__sort li').length;a++){
+				$('.sub__list__sort').eq(i).find('.sub__sort li').eq(a).click(function(){
 				$('.sorting .main-word span').eq(i).html($(this).html());
-			});			
+				});			
+			}
+			});	
 		}
-	});	
-}
-    }
-    else{
-    	for(let i=0;i<$('.main-word').length;i++){
+	}
+else{
+	for(let i=0;i<$('.main-word').length;i++){
 		$('.sub__list__sort').eq(i).click(function(e){
 		e.preventDefault();
 		$('.box-modal .sort__modal').remove();
-$('.sub__list__sort').eq(i).find('.sub__sort').clone().removeClass('sub__sort').addClass('sort__modal')
+		$('.sub__list__sort').eq(i).find('.sub__sort').clone().removeClass('sub__sort').addClass('sort__modal')
 		.appendTo('.box-modal');
 		$('#exampleModal').arcticmodal();
 		for(let a=0;a<$('.box-modal .sort__modal li').length;a++){
@@ -125,13 +125,19 @@ $('.sub__list__sort').eq(i).find('.sub__sort').clone().removeClass('sub__sort').
 			$('.box-modal .ok').clone().css('display','inline').appendTo(this);
 			$('.sorting .main-word span').eq(i).html($(this).find('a').text());
 			$('#exampleModal').arcticmodal('close');
-
 			});
 		}
-	});	
+		});	
+	}
+
 }
-    	
-    }
+
+
+
+
+
+
+
 
 
 

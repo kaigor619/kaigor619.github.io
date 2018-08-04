@@ -6,6 +6,8 @@
 
 ul{
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 a{
 	text-decoration: none;
@@ -59,6 +61,9 @@ font-size: 1.05em;
 transition: .3s;
 
 
+}
+.header-menu li:last-child a{
+	color:#DBDBDB;
 }
 .header-menu li a::after{
 	content:"";
