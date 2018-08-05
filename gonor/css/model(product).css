@@ -1,0 +1,91 @@
+.model{
+	width: 100%;
+	font-family: "Bebas Neue Regular";
+	font-weight: normal;
+	height:60px;
+	background: #1f1f1f;
+}
+.model .container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height:100%;
+}
+.model-menu{
+	display: flex;
+	align-items: center;
+	height:100%;	
+}
+
+.model-menu li.model-link{
+	margin-right: 16px;
+	display: block;
+	height:100%;
+	position: relative;
+}
+
+.model-menu li.model-link:last-child{
+	margin-right: 0px;
+}
+.model-menu li.model-link a.model-link-a{
+	color:#fff;
+	font-size: 30px;
+	display: block;
+	height:100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-left: 14px;
+	padding-right: 14px;
+	transition:.3s;
+}
+.model-menu.case li.model-link:hover a.model-link-a.white{
+	color:#000;
+}
+.model-menu.case li.model-link:hover{
+	background: #fff;
+	transition:.3s;	
+}
+.model-menu.case li.model-link:hover a.model-link-a{
+	color:#000;
+	transition:.3s;	
+}
+
+/*Sub List*/
+.model-menu li.model-link .sub__list{
+	display:flex;
+	background:#e6e5e5;
+
+}
+.model-menu li.model-link .sub__content{
+	position: absolute;
+	top:100%;
+	left:0;
+	display: none;
+	z-index:100;
+}
+.model-menu li.model-link:hover .sub__content{
+	display:block;
+}
+.model-menu li .sub__list .sub__list__content{
+	min-width:140px;
+}
+.model-menu li .sub__list .sub__list__content li{
+	width:100%;
+	padding-left: 10px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+.model-menu li .sub__list .sub__list__content li:hover{
+	background: #fff;
+}
+.model-menu li .sub__list .sub__list__content li a{
+	color:#000;
+	font-size: 20px;
+	padding: 0;
+}
+.model-menu li .sub__list .sub__list__content li a:hover{
+	color:#000;
+	padding: 0;
+	background:transparent;
+}

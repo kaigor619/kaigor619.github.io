@@ -20,6 +20,11 @@
 	height:40px;
 }
 }
+@media screen and (max-width:768px){
+.model.case{
+	display: none;
+}
+}
 @media screen and (max-width:992px){
 .model-menu li .sub__list .sub__list__content li a{
 	font-size: 16px;

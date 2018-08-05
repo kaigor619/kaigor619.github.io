@@ -1,76 +1,57 @@
-.model{
-	width: 100%;
-	padding-top:12px;
-	padding-bottom: 12px;
-	background: #1f1f1f;
-}
-.model-menu{
-/*	width:100%;*/
-	display: flex;
-	margin: 0 auto;
 
-}
-.model-menu li{
-	margin-right: 16px;
-}
-.model-menu li a{
-	color:#fff;
-	font-size: 30px;
-	padding: 5px 14px;
-	transition:.3s;
-}
-.model-menu li a.white{
-	background: #fff;
-	color:#000;
-}
-.model-menu li a:hover{
-	background: #fff;
-	color:#000;
-	transition:.3s;	
-}
 
 /*Product*/
 
 .product{
 	width:100%;
-	margin-top: 120px;
+	padding-top: 70px;
 
 }
 .product__text{
 	margin-left: 25px;
 }
 .product .product__cell{
-	width:100%;
-	padding: 45px 15px;
+	text-align: center;
+	padding: 30px 15px;
 	border:1px solid black;
+
+}
+.product.case .product__cell div{
+	
+}
+.product.case .product__cell img{
+	width:70%;
+	max-width: 329px;
+	height: auto;
 }
 .product__text .product__view{
+	font-family: "Bebas Neue Bold";
 	font-size: 18px;
-	font-weight: bold;
-	letter-spacing: 1.17px;
+	letter-spacing: 1px;
 	color: #434343;
-/*	margin-top: 23px;*/
-	margin-bottom: 22px;
+	margin-bottom: 15px;
 }
  .product__text .product__title{
+ 	font-family: "Bebas Neue Bold";
 	font-size: 60px;
-	font-weight: bold;
 	letter-spacing: 3.9px;
-	margin-bottom: 23px;
+	margin-bottom: 18px;
  }
   .product__text .product__price{
+  	font-family: "Bebas Neue Bold";
   	display: inline-block;
-  	padding: 4px 5px;
+  	padding: 1px 5px;
   	color: #ffffff;
 	font-size: 48px;
-	font-weight: bold;
 	letter-spacing: 3.12px;
 	background: #000;
 	margin-bottom: 25px;
   }
-    .product__text .product__price.product__price__case {
-    		margin-bottom: 35px;
-    }
+  .product__text .product__price span{
+  	font-size: 30px;
+  	padding-right: 4px;
+  	margin-left: -2px;
+  }
   .product__text .product__about{
 	color: #434343;
 	line-height: 22px;
@@ -79,30 +60,31 @@
 	letter-spacing: 1.17px;
 	margin-bottom: 25px;
   }
-  .product__text .product__about.product__about__case{
+/*  .product__text .product__about.product__about__case{
   	margin-bottom: 35px;
-  }
+  }*/
  .product__text .product__composition{
+ 	font-family: "Bebas Neue Bold";
  	color: #434343;
 	font-size: 18px;
-	font-weight: bold;
 	letter-spacing: 1.17px;
 
  }
  /*Метериал (чехол)*/
  .word-material{
+ 	font-family: "Bebas Neue Bold";
  	color: #000;
  	font-size: 18px;
- 	font-weight: bold;
  	letter-spacing: 1px;
  }
  .product__material .product__material__block{
- 	margin-top: 24px;
+ 	margin-top: 18px;
  	display: flex;
  	align-items: center;
 
  }
   .product__material .product__material__block div{
+  	font-family: "Bebas Neue Bold";
   	color:#000;
   	background: #fff;
   	border:2px solid #000;
@@ -110,9 +92,19 @@
   	font-size: 24px;
   	transition:.3s;
   	cursor:pointer;
-  	font-weight: bold;
   	letter-spacing: 2px;
   }
+/*   .product__material .product__material__block div.active{
+   	  	background:#000;
+  	color: #fff;
+   } */
+  .product__material .product__material__block div:first-child{
+  	border-right:1px solid #000;
+  }  
+    .product__material .product__material__block div:last-child{
+  	border-left:1px solid #000;
+  } 
+
   .product__material .product__material__block div:hover{
   	background:#000;
   	color: #fff;
@@ -136,13 +128,13 @@
 
  /*Размеры*/
  .product__size{
+ 	 font-family: "Bebas Neue Bold";
  	margin-top: 15px;
  	display: flex;
  	align-items: center;
  }
  .product__size .word__size{
  	font-size: 26px;
-	font-weight: bold;
 	color: #000;
 	letter-spacing: 1.69px;
  }
@@ -153,7 +145,6 @@
   	background: #fff;
   	color:#000;
   	font-size: 26px;
-	font-weight: bold;
 	letter-spacing: 1.69px;
 	transition:.3s;
 	cursor:pointer;
@@ -181,7 +172,6 @@
     .what__size a{
     color: #000000;
 	font-size: 12px;
-	font-weight: bold;
 	text-decoration: underline;
 	letter-spacing: 0.78px;
 	margin-left: 10px;
@@ -189,26 +179,27 @@
 
     /*Количество*/
 .product__number{
+	 font-family: "Bebas Neue Bold";
 	display: flex;
 	align-items: center;
 	margin-top: 34px;
 }   
 .product__number .word__number{
-	color: #000000;
+	color: #000;
 	font-size: 26px;
-	font-weight: bold;
 	letter-spacing: 1.69px;
 
 
 }
 .product__number .main__number{
 	display: flex;
-	margin-left: 12px;
+	margin-left: 15px;
 
 
 }
 .product__number .main__number .number__block{
-	padding:5px 8px;
+	height: 40px;
+	width:35px;
 	background: #000;
 	border:1px solid #000;
 	color:#fff;
@@ -219,15 +210,23 @@
 	cursor:pointer;
 
 }
-.product__number .main__number .number__block:nth-child(2){
+.product__number .main__number .number__input{
+	height: 40px;
+	width:35px;
 	background: #fff;
+	border:1px solid #000;
 	color:#000;
 	font-size: 24px;
-	font-weight: bold;
-	letter-spacing: 1.17px;
 	padding: 5px 10px;
 
 }
+/*.product__number .main__number .number__block:nth-child(2){
+	background: #fff;
+	color:#000;
+	font-size: 24px;
+	letter-spacing: 1.17px;
+	padding: 5px 10px;
+}*/
 
 
 /*Предупреждение*/
@@ -255,6 +254,7 @@
 }
 /*Кнопки Купить и Добавить в Корзину*/
 .product__button{
+	font-family: "Bebas Neue Bold";
 	margin-top: 34px;
 	margin-bottom: 100px;
 	display: flex;
@@ -263,25 +263,26 @@
 .product__button .product__buy__btn{
 	color: #ffffff;
 	font-size: 40px;
-	font-weight: bold;
 	letter-spacing: 2.92px;
 	background: #000;
-	padding-left: 60px;
-	padding-top: 14px;
-	padding-bottom: 14px;
-	padding-right: 60px;
+	padding: 14px 60px;
+	display: flex;
+	align-items: center;
 }
 .product__button .product__add__btn{
 	color: #ffffff;
-	font-size: 24px;
-	font-weight: bold;
+	font-size: 1.9em;
 	letter-spacing: 1.7px;
-	padding: 24px 29px 24px 10px;
+	padding: 14px 40px;
 	background: #000;
 	margin-left: 35px;
+	display: flex;
+	align-items: center;
 }
 .product__button .product__add__btn i{
-	font-size: 25px;
+font-size:90%;
+margin-bottom: 4px;
+margin-left: 10px;
 }
 
 /*Отзывы*/

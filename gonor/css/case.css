@@ -6,6 +6,9 @@
 	height:60px;
 	background: #1f1f1f;
 }
+.model.case{
+	display: block;
+}
 .model .container{
 	display: flex;
 	justify-content: center;
