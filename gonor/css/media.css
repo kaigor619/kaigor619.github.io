@@ -1,7 +1,7 @@
 
 /*Carousel*/
 @media screen and (max-device-width: 480px){
-  body{
+  html{
   	text-size-adjust: none;
     -webkit-text-size-adjust: none;
     -moz-text-size-adjust:none;
