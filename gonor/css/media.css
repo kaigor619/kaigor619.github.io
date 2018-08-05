@@ -406,7 +406,7 @@ min-width: 90px;
 	}
 	.carousel-block__text .carousel-block__features li{
 	font-size: 10px;
-	letter-spacing: 1px;
+	letter-spacing: -1px;
 	line-height: 22px;
 }
 .carousel-block__text h1{
@@ -460,7 +460,6 @@ min-width: 80px;
 @media screen and (max-width:242px){
 		.carousel-block__text .carousel-block__features li{
 	font-size: 9px;
-	letter-spacing: 1px;
 	line-height: 22px;
 }
 }
