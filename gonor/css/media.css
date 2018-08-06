@@ -395,6 +395,11 @@ min-width: 90px;
 .carousel-block__text.case{
 	margin-left: 0px;
 }
+.carousel-block__text .carousel-block__features li{
+	font-size: 10px;
+	letter-spacing: 0px;
+	line-height: 22px;
+}
 }
 @media screen and (max-width:275px){
 	.carousel-block{
@@ -404,11 +409,6 @@ min-width: 90px;
 			.carousel-block{
 		height: 160px;
 	}
-	.carousel-block__text .carousel-block__features li{
-	font-size: 10px;
-	letter-spacing: -1px;
-	line-height: 22px;
-}
 .carousel-block__text h1{
 font-size: 12px;
 padding:2px 4px 2px 4px ;
@@ -416,7 +416,7 @@ padding:2px 4px 2px 4px ;
 .carousel-block__text .btn-order{
 font-size: 10px;
 margin-top: 10px;
-letter-spacing: 1px;
+letter-spacing: 0px;
 }
 .main-carousel-switshot{
 min-width: 100px;
@@ -460,6 +460,7 @@ min-width: 80px;
 @media screen and (max-width:242px){
 		.carousel-block__text .carousel-block__features li{
 	font-size: 9px;
+	letter-spacing: 1px;
 	line-height: 22px;
 }
 }

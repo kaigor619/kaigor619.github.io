@@ -58,9 +58,68 @@ for(let i=0;i<$('.model-menu li.model-link .sub__content').length;i++){
 	
 	
 }
-$(".number__input").keypress(function(event) {
-  return /\d/.test(String.fromCharCode(event.keyCode));
+
+
+// Количество
+for(let i=0;i<$('.product__number .number__block').length;i++){
+$('.product__number .number__block').eq(i).click(function(){
+  if(i==1) return;
+  else{
+    let number=+$('.product__number .number__block').eq(1).text();
+    if(i==2){  
+      number++;
+      if(number<=1) {
+      number=1;
+    }
+    }
+    else if(i==0){
+      number--;
+     if(number<=1) {
+      number=1;
+    }
+    }
+
+    $('.product__number .number__block').eq(1).html(number);   
+  }
 });
+}
+
+// Материал
+for(let i=0;i<$('.product__material .product__material__block .material__block').length;i++){
+  $('.product__material .product__material__block .material__block').eq(i).click(function(){
+    $('.product__material .product__material__block .material__block').removeClass('active');
+    $(this).addClass('active');
+  });
+  $('.product__material .product__material__block .material__block').eq(i).mouseover(function(){
+    $('.product__material .product__material__block .material__block').removeClass('active');
+    $(this).addClass('active');
+  });  
+}
+// Звездочки
+for(let i=0;i<$('.product__reviews .reviews__evaluation span i').length;i++){
+  $('.product__reviews .reviews__evaluation span i').eq(i).click(function(){
+    $('.product__reviews .reviews__evaluation span i').removeClass('active');
+    let number=$(this).index();
+    number++;
+    for(let b=0;b<number;b++){
+        $('.product__reviews .reviews__evaluation span i').eq(b).addClass('active');
+    }
+    
+  });
+  $('.product__reviews .reviews__evaluation span i').eq(i).mouseover(function(){
+    $('.product__reviews .reviews__evaluation span i').removeClass('active');
+    let number=$(this).index();
+    number++;
+    for(let b=0;b<number;b++){
+        $('.product__reviews .reviews__evaluation span i').eq(b).addClass('active');
+    }
+    
+  });
+
+}
+
+
+
 
 
 
