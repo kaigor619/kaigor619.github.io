@@ -1,0 +1,419 @@
+@media screen and (max-width:1122px){
+.product__button .product__buy__btn{
+	font-size: 2.3em;
+}	
+.product__button .product__add__btn{
+	font-size: 1.8em;	
+}
+}
+@media screen and (max-width:1092px){
+.product__button .product__buy__btn{
+	font-size: 1.9em;
+	padding: 14px 40px;
+}	
+.product__button .product__add__btn{
+	font-size: 1.7em;	
+	padding: 14px 30px;	
+}
+}
+@media screen and (max-width:992px){
+.product{
+	font-size: 80%;
+}
+.product.case .product__cell img{
+	width:60%;
+}
+.reviews .reviews__about p{
+	line-height:20px;
+}
+}
+@media screen and (max-width:888px){
+.product{
+	font-size: 70%;
+
+}
+
+}
+@media screen and (max-width:814px){
+.product{
+	font-size: 70%;
+}
+.product__number .main__number .number__block{
+	height: 35px;
+	width:30px;
+}
+.product__reviews{
+	margin-left: 10px;
+}
+.product__number .main__number .number__block:nth-child(2){
+	width:35px;
+}
+  .product__text .product__price{
+  	  	margin-bottom: 15px;
+  }
+    .product__text .product__about{
+	margin-bottom: 15px;
+  }
+ .product__material .product__material__block{
+ 	margin-top: 10px;
+
+ }  
+  .product__material .product__material__block i{
+  	margin-left: 10px;
+  }
+  .product__material .product__material__block a{
+  	margin-left: 5px;
+  }  
+
+
+.product__number{
+	margin-top: 25px;
+}  
+.product__text{
+	margin-left: 10px;
+}
+.product__button{
+	margin-top: 30px;
+} 
+.product__reviews textarea{
+	min-height: 120px;
+	max-height: 120px;	
+}   
+}
+@media screen and (max-width:784px){
+.product__button .product__buy__btn{
+	font-size: 2.2em;
+padding: 0.35em 0.9em;
+}
+.product__button .product__add__btn{
+	font-size: 1.9em;
+	padding: 0.46em 1em;	
+}
+.product__reviews .reviews__send{
+	font-size: 1.575em;
+}
+}
+@media screen and (max-width:768px){
+.product__reviews .reviews__comein{
+	margin-bottom: 10px;
+	line-height:20px;
+}
+.product.case .product__cell img{
+	width:75%;
+}
+.product__number .main__number .number__block{
+	height: 30px;
+	width:25px;
+}
+.product__number .main__number .number__block:nth-child(2){
+	width:28px;
+}
+  .product__material .product__material__block div{
+  	font-size: 1.3em;
+}
+.product__reviews .reviews__send{
+	font-size: 1.375em;
+}
+}
+@media screen and (max-width:718px){
+.product__button .product__buy__btn{
+	font-size: 2.1em;
+padding: 0.35em 0.9em;
+}
+.product__button .product__add__btn{
+	font-size: 1.7em;
+	padding: 0.46em 1em;	
+}
+}
+@media screen and (max-width:700px){
+.product{
+	font-size: 65%;
+}
+.product__number .main__number .number__block{
+	height: 25px;
+	width:25px;
+}
+.product__number .main__number .number__block:nth-child(2){
+	width:25px;
+}
+}
+@media screen and (max-width:650px){
+.product.case .product__cell img{
+	width:80%;
+}
+.product__button .product__buy__btn{
+	font-size: 2em;
+padding: 0.35em 0.7em;
+}
+.product__button .product__add__btn{
+	font-size: 1.5em;
+	padding: 0.46em 0.8em;	
+}
+
+}
+@media screen and (max-width:584px){
+.product__button .product__add__btn{
+	font-size: 1.5em;
+	padding: 0.46em 0.8em;	
+	margin-left: 15px;
+}
+}
+@media screen and (max-width:575px){
+.product{
+	font-size: 80%;
+}
+.product__reviews, .product__text{
+	margin-left: 0;
+}	
+.product{
+	padding-top: 30px;
+}
+  .product__text .product__price{
+  	font-size: 2.5em;
+  }
+.product .product__cell{
+width:50%;
+margin: 0 auto;
+}
+.product.case .product__cell img{
+	width:50%;
+}
+.product__text .product__view{
+	margin-top: 20px;
+}
+  .product__text .product__about{
+  	width:100%;
+  	max-width: 400px;
+}
+.reviews__main__container{
+	margin-top: 50px;
+}
+.reviews .reviews__block:nth-child(3){
+margin-bottom:10px;
+}
+.reviews .reviews__about p{
+	width:80%;
+}
+.product__reviews{
+	margin-top:40px;
+}
+.product__reviews .reviews__title{
+	margin-bottom: 8px;
+}
+.product__reviews .reviews__comein i{
+		font-size: 1.2em;
+}
+.product__reviews .reviews__comein{
+	letter-spacing: 1px;
+}
+
+}
+@media screen and (max-width:500px){
+.product .product__cell{
+width:60%;
+margin: 0 auto;
+}
+.product.case .product__cell img{
+	width:70%;
+/*	max-width: 150px;*/
+}
+}
+@media screen and (max-width:414px){
+	.see__more{
+	font-size: 1em;
+	letter-spacing: 1px;
+}
+.see__more img{
+	width:100%;
+	max-width:10px;
+
+}
+.see__more__wrapper{
+	padding: 0.4em 0.6em;
+}
+  .product__material .product__material__block div{
+  	padding: 0.35em 0.8em;  	
+  	font-size: 1.3em;
+  	letter-spacing: 1px;
+  }
+ .product__text .product__view{
+	font-size: 1.1em;
+	letter-spacing: 1px;
+	margin-bottom: 5px;
+} 
+ .product__text .product__title{
+	font-size: 3em;
+	letter-spacing: 2.5px;
+	margin-bottom: 10px;
+ }
+  .product__text .product__price{
+  	padding: 0.04em 0.1em;
+	font-size: 2em;
+	letter-spacing: 2px;
+	margin-bottom: 15px;
+  }
+  .product__text .product__price span{
+  	font-size: 0.65em;
+  } 
+  .product__text .product__about{
+	line-height: 20px;
+	font-size: 1em;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+  } 
+ .word-material{
+ 	font-size: 1em;
+ 	letter-spacing: 1px;
+ } 
+  .product__material .product__material__block i{
+  	margin-left: 10px;
+  	font-size: 1.3em;
+
+  } 
+  .product__material .product__material__block a{
+
+	font-size: 0.7em;
+	letter-spacing: 1px;
+	margin-left: 5px;
+  } 
+.product__number .word__number{
+	font-size: 1.4em;
+	letter-spacing: 1px;
+}    
+.product__number .main__number .number__block:nth-child(2){
+	font-size:1.2em;
+		height: 25px;
+	width:25px;
+}
+.product__number .main__number .number__block{
+	height: 25px;
+	width:25px;
+	font-size: 1em;
+} 
+.reviews__main__container{
+	margin-top: 40px;
+}   
+.reviews .reviews__line h3{
+	font-family: "Bebas Neue Bold"
+	font-size: 1.2em;
+	letter-spacing: 1px;
+}
+.reviews .reviews__about{
+	margin-top: 5px;
+}
+.reviews .reviews__about p{
+	font-size:1.1em;
+	letter-spacing: 0.5px;
+}
+.product__reviews .reviews__title{
+	font-size: 1.8em;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+}
+.product__reviews .reviews__comein{
+	font-family: "Bebas Neue Bold";
+	font-size: 1.1em;
+	letter-spacing: 1px;
+}
+.product__reviews .reviews__evaluation{
+	font-size: 1.2em;
+	letter-spacing: 1px;
+}
+.product__reviews .reviews__evaluation span i{
+	font-size: 1.3em;
+}
+.product__reviews .reviews__input{
+	letter-spacing: 1px;
+}
+.product__reviews textarea{
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+.product__reviews .reviews__send{
+	font-size: 1.2em;
+	padding: 0.4em 0.8em;
+	letter-spacing: 1.5px;
+	margin-bottom: 100px;
+
+	
+}
+}
+@media screen and (max-width:400px){
+.product .product__cell{
+width:70%;
+margin: 0 auto;
+}
+.product.case .product__cell img{
+	width:70%;
+
+}
+.product__button .product__add__btn i{
+margin-bottom: 10px;
+}
+}
+@media screen and (max-width:360px){
+.product__button .product__buy__btn{
+font-size: 1.5em;
+padding: 0.4em 0.8em;
+letter-spacing: 1.5px;
+}
+.product__button .product__add__btn i{
+margin-bottom: 3px;
+margin-left: 5px;
+}
+.product__button .product__add__btn{
+	font-size: 1.4em;
+	padding: 0.4em 0.8em;	
+	margin-left: 15px;
+}
+  .product__material .product__material__block div{
+  	padding: 0.35em 0.6em;  	
+  	font-size: 1.2em;
+  	letter-spacing: 1px;
+  }
+  .product.case .product__cell{
+	width:80%;
+}
+.product.case .product__cell img{
+	width:80%;
+
+}
+}
+
+@media screen and (max-width:300px){
+ .product__text .product__title{
+	font-size: 2.5em;
+	letter-spacing: 2.5px;
+ }
+   .product__text .product__about{
+	line-height: 20px;
+	font-size: 0.9em;
+  } 
+ .product__number .word__number{
+	font-size: 1.2em;
+}  
+.product__reviews .reviews__title{
+	font-size: 1.6em;
+	letter-spacing: 1px;
+	margin-bottom: 8px;
+}
+.product__reviews .reviews__comein{
+	font-size: 1em;
+	letter-spacing: 1px;
+}
+
+
+}
+@media screen and (max-width:275px){
+.reviews .reviews__about p{
+	font-size:1em;
+	letter-spacing: 0.5px;
+}
+.product__button .product__add__btn i{
+margin-bottom: 5px;
+
+}
+
+
+}
+

@@ -280,7 +280,7 @@ margin:5px;
 }
 .carousel-block-share.tshirt img{
 	width:100%;
-	max-width:250px;
+	max-width:500px;
 	height:auto;
 }
 .carousel-block-share.switshot img{
@@ -505,8 +505,6 @@ font-weight: bold;
 
 /*See More*/
 .see__more{
-
-
 	color:#fff;
 	background: #000;
 	font-size: 32px;

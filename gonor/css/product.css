@@ -5,19 +5,22 @@
 .product{
 	width:100%;
 	padding-top: 70px;
+	font-size: 100%;
 
 }
+/*.product .container{
+	border:1px solid red;
+}*/
 .product__text{
 	margin-left: 25px;
 }
 .product .product__cell{
 	text-align: center;
+	display: flex;
+	justify-content: center;
 	padding: 30px 15px;
 	border:1px solid black;
 
-}
-.product.case .product__cell div{
-	
 }
 .product.case .product__cell img{
 	width:70%;
@@ -40,7 +43,7 @@
   .product__text .product__price{
   	font-family: "Bebas Neue Bold";
   	display: inline-block;
-  	padding: 1px 5px;
+  	padding: 0.02em 0.1em;
   	color: #ffffff;
 	font-size: 3em;
 	letter-spacing: 3.12px;
@@ -48,11 +51,12 @@
 	margin-bottom: 25px;
   }
   .product__text .product__price span{
-  	font-size: 30px;
+  	font-size: 0.7em;
   	padding-right: 4px;
   	margin-left: -2px;
   }
   .product__text .product__about{
+  	width:100%;
   	font-family: "Bebas Neue Bold";
 	color: #434343;
 	line-height: 22px;
@@ -68,7 +72,6 @@
  	color: #434343;
 	font-size: 1.125em;
 	letter-spacing: 1.17px;
-
  }
  /*Метериал (чехол)*/
  .word-material{
@@ -88,7 +91,7 @@
   	color:#000;
   	background: #fff;
   	border:2px solid #000;
-  	padding: 11px 17px;
+  	padding: 0.45em 1em;  	
   	font-size: 1.5em;
   	transition:.3s;
   	cursor:pointer;
@@ -188,8 +191,6 @@
 	color: #000;
 	font-size: 1.62em;
 	letter-spacing: 1.69px;
-
-
 }
 .product__number .main__number{
 	display: flex;
@@ -246,7 +247,6 @@
 .product__button{
 	font-family: "Bebas Neue Bold";
 	margin-top: 34px;
-	margin-bottom: 100px;
 	display: flex;
 
 }
@@ -255,7 +255,8 @@
 	font-size: 2.5em;
 	letter-spacing: 2.92px;
 	background: #000;
-	padding: 14px 60px;
+/*	padding: 14px 60px;*/
+padding: 0.35em 1em;
 	display: flex;
 	align-items: center;
 }
@@ -263,7 +264,7 @@
 	color: #ffffff;
 	font-size: 1.9em;
 	letter-spacing: 1.7px;
-	padding: 14px 40px;
+	padding: 0.46em 1.1em;
 	background: #000;
 	margin-left: 35px;
 	display: flex;
@@ -276,6 +277,9 @@ margin-left: 10px;
 }
 
 /*Отзывы*/
+.reviews__main__container{
+	margin-top: 100px;
+}
 .product__reviews{
 	margin-left: 25px;
 }
@@ -292,9 +296,10 @@ margin-left: 10px;
 	font-size: 1.25em;
 	letter-spacing: 1.3px;
 	margin-bottom: 20px;
+	line-height:20px;
 }
 .product__reviews .reviews__comein i{
-	font-size: 23px;
+	font-size: 1.43em;
 	cursor:pointer;
 	margin-left: 5px;
 } 
@@ -309,9 +314,11 @@ margin-left: 10px;
 	cursor:pointer;
 	color:#CBCBCB;
 	margin-right: 3px;
+	transition:all .3s;
 }
 .product__reviews .reviews__evaluation span i.active{
 	color:red;
+	transition:all .3s;
 }
 .product__reviews .reviews__evaluation span{
 	margin-left: 10px;
@@ -344,13 +351,13 @@ margin-left: 10px;
 
 }
 .product__reviews .reviews__send{
-	font-size: 1.875em;
+	font-size: 1.775em;
 	color:#fff;
 	outline:none;
 	border:none;
 	background: #000;
 	font-family: "Bebas Neue Regular";
-	padding: 13px 30px;
+	padding: 0.47em 1em;
 	letter-spacing: 2.5px;
 	margin-bottom: 100px;
 	cursor:pointer;
@@ -363,7 +370,7 @@ margin-bottom: 25px;
 }
 .reviews .reviews__line h3{
 	font-family: "Bebas Neue Bold";
-	font-size: 23px;
+	font-size: 1.43em;
 	color: #e71313;
 	text-decoration: underline;
 	margin-right: 7px;
@@ -371,7 +378,7 @@ margin-bottom: 25px;
 	display: inline-block;
 }
 .reviews .reviews__line i{
-	font-size: 18px;
+	font-size: 1.125em;
 	display:inline-block;
 	color:#e71313;
 }
@@ -386,27 +393,29 @@ margin-bottom: 25px;
 .reviews .reviews__about p{
 	font-family: "Bebas Neue Bold";
 	color: #263744;
-	font-size: 18px;
+	font-size:1.125em;
 	letter-spacing: 0.5px;
+	line-height:25px;
 }
 /*See More*/
 .see__more{
-	font-family: "Bebas Neue Bold";	
 	color:#fff;
 	background: #000;
-	padding: 0px 8px;
-	padding-right: 0;
+	font-size: 1.1em;
+	letter-spacing: 1.4px;
 	display: flex;
 	align-items: center;
 }
-.see__more span{
-	letter-spacing: 1.4px;
-	font-size: 18px;
-}
 .see__more img{
-	transform: scale(0.3);
-	margin-left: -10px;
+	width:100%;
+	max-width:13px;
+	height:auto;
+	margin-left: 7px;
+
 }
 .see__more__wrapper{
+	background: #000;
 	display: inline-block;
+	padding: 0.5em 0.7em;
+
 }

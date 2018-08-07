@@ -20,6 +20,30 @@
 	height:40px;
 }
 }
+@media screen and (max-width:1011px){
+.model.case .model-menu li.model-link a.model-link-a {
+	font-size: 25px;
+	padding: 5px 14px;
+}
+.model.case .model-menu li.model-link{
+	margin-right: 0px;
+}
+.model.case{
+	height:50px;
+}
+}
+@media screen and (max-width:847px){
+.model.case .model-menu li.model-link a.model-link-a {
+	font-size: 25px;
+	padding: 5px 10px;
+}
+.model.case .model-menu li.model-link{
+	margin-right: 0px;
+}
+.model.case{
+	height:50px;
+}
+}
 @media screen and (max-width:768px){
 .model.case{
 	display: none;
