@@ -7,7 +7,7 @@ $("#carousel-shares-case").owlCarousel({
     mouseDrag:true,
     touchDrag:true,
     dots:false,
-    autoplay:false,
+    autoplay:true,
     smartSpeed:700,
 });
 
