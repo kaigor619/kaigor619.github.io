@@ -348,6 +348,8 @@ margin-left: 10px;
 	font-family: "Bebas Neue Regular";
 	letter-spacing: 1.6px;
 	margin-bottom: 27px;
+	outline:none;
+	border:1px solid #9F9F9F;
 
 }
 .product__reviews .reviews__send{
