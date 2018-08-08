@@ -89,6 +89,10 @@
 	letter-spacing: 1.17px;
 	line-height:1.5em;
  }
+ .product__text .product__composition span{
+ 	font-family: "Bebas Neue Regular";
+ 	font-size: 1em;
+ }
  /*Метериал (чехол)*/
  .word-material{
  	font-family: "Bebas Neue Bold";
