@@ -90,23 +90,24 @@ for(let i=0;i<$('.product__material .product__material__block .material__block')
     $('.product__material .product__material__block .material__block').removeClass('active');
     $(this).addClass('active');
   });
-  $('.product__material .product__material__block .material__block').eq(i).mouseover(function(){
-    $('.product__material .product__material__block .material__block').removeClass('active');
-    $(this).addClass('active');
-  });  
+  // $('.product__material .product__material__block .material__block').eq(i).mouseover(function(){
+  //   $('.product__material .product__material__block .material__block').removeClass('active');
+  //   $(this).addClass('active');
+    
+  // });  
 }
+// Размеры 
+for(let i=0;i<$('  .product__size .product__size__cell').length;i++){
+  $('.product__size .product__size__cell').eq(i).click(function(){
+    $('.product__size .product__size__cell').removeClass('active');
+    $(this).addClass('active');
+  });
+}
+
+
 // Звездочки
 for(let i=0;i<$('.product__reviews .reviews__evaluation span i').length;i++){
   $('.product__reviews .reviews__evaluation span i').eq(i).click(function(){
-    $('.product__reviews .reviews__evaluation span i').removeClass('active');
-    let number=$(this).index();
-    number++;
-    for(let b=0;b<number;b++){
-        $('.product__reviews .reviews__evaluation span i').eq(b).addClass('active');
-    }
-    
-  });
-  $('.product__reviews .reviews__evaluation span i').eq(i).mouseover(function(){
     $('.product__reviews .reviews__evaluation span i').removeClass('active');
     let number=$(this).index();
     number++;

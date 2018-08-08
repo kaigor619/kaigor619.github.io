@@ -11,6 +11,7 @@
 	<meta name="description" content="Чехлы,Чашки, Футболки, Свитшоты" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="favicon.png" />
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.min.css" />
 	<!-- Font Awesome -->
@@ -19,20 +20,23 @@
 	<link rel="stylesheet" href="libs/owl-carousel-2/owl.carousel.css" />
 	<link rel="stylesheet" href="libs/owl-carousel-2/owl.theme.css">
 	<link rel="stylesheet" href="libs/owl-carousel-2/owl.transitions.css">
-	<!-- Модальное окно ArticModal -->
-	<link rel="stylesheet" href="libs/articmodal/simple.css">
-	<link rel="stylesheet" href="libs/articmodal/jquery.arcticmodal-0.3.css">
-	<!-- Стили -->
+	<!--Normalize  -->
 	<link rel="stylesheet" href="css/normalize.css" />
+	<!-- Font -->
 	<link rel="stylesheet" href="css/fonts.css" />
+	<!-- Шапка -->
 	<link rel="stylesheet" href="css/header.css" />
-	<link rel="stylesheet" href="css/case.css" />
+	<!-- Футер -->
 	<link rel="stylesheet" href="css/footer.css" />
-	<link rel="stylesheet" href="css/case-media.css" />
-		<link rel="stylesheet" href="css/switshot.css" />
+	<!-- Стили -->
+	<link rel="stylesheet" href="css/shares.css" />	
+	<link rel="stylesheet" href="css/model(product).css" />	
+	<link rel="stylesheet" href="css/product.css">
+	<link rel="stylesheet" href="css/product-media.css">
+	<link rel="stylesheet" href="css/switshot.css" />
 </head>
 <body>
-<header class="header" id="header">
+	<header class="header" id="header">
 		<div class="container ">
 			<div class="row justify-content-between align-items-center">
 				<div class="col-md-3 col-12 d-flex justify-content-center">
@@ -57,7 +61,7 @@
 		</div>
 	</header>
 
-		<section class="burger__panel">
+	<section class="burger__panel">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
@@ -85,7 +89,6 @@
 			<li><a href="#">Остальное</a></li>
 		</ul>
 	</div>
-	
 	<section class="model" id="model">
 		<div class="container">
 			<ul class="model-menu">
@@ -144,116 +147,105 @@
 
 	</section>
 
+	
 
-
-
-	<section class="sorting" id="sorting">
-		<div class="container">
-			<div class="row  d-flex justify-content-center align-items-center" >
-			<div class="col-auto d-flex justify-content-center" >
-				<div class='sub__list__sort'><a href='#' class='main-word'>Сортировать:
-				<div class="sort__wrapper"><span>По Популярности</span>
-				<ul class='sub__sort'>
-						<li><a href="#">Обычная</a></li>
-						<li><a href="#">По Популярности</a></li>
-						<li><a href="#">По Новизне</a></li>
-					</ul> 
-				</div><i class="fa fa-caret-down sort__i"></i></a>
-				</div>
-			</div>
-			<div class="col-auto d-flex justify-content-center" >
-				<div class='sub__list__sort'><a href='#' class='main-word'>Цвет:
-				<div class="sort__wrapper"><span>Белый</span>
-				<ul class='sub__sort'>
-						<li><a href="#">Обычная</a></li>
-						<li><a href="#">По Популярности</a></li>
-						<li><a href="#">По Новизне</a></li>
-					</ul> 
-				</div><i class="fa fa-caret-down sort__i"></i></a>
-				</div>
-			</div>
-			<div class="col-auto d-flex justify-content-center" >
-				<div class='sub__list__sort'><a href='#' class='main-word'>Категории:
-				<div class="sort__wrapper"><span>Все</span>
-				<ul class='sub__sort'>
-						<li><a href="#">Обычная</a></li>
-						<li><a href="#">По Популярности</a></li>
-						<li><a href="#">По Новизне</a></li>
-					</ul> 
-				</div><i class="fa fa-caret-down sort__i"></i></a>
-				</div>
-			</div>			
-
-			</div>
-		</div>
-	</section>
-
-
-	<div style="display: none;">
-    <div class="box-modal" id="exampleModal">
-        <div class="box-modal_close arcticmodal-close">&times;</div>
-		<i class='fa fa-check ok'></i>
-    </div>
-</div>
-
-
-	<section id="product__case" class="product__case switshot">
+	
+	<section class="product switshot" id="product">
 		<div class="container">
 			<div class="row">
-
-				<div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
-					<div class="product__main">
-						<div class="product__case__block">
-							<img src="img/switshot/switshot-1.png" alt="">
-							<p class="product__block__title">Winner Winner</p>
-							<div class="product__cover"></div>
-							<a href="#" class='price'>200 <span>грн</span></a>
-						</div>
-						<div class="add__wrapper"><a href="product(switshot).html" class='add'>В Корзину</a> <i class="fa fa-cart-arrow-down" aria-hidden="true"></i></div>
+				<div class="col-sm-5">
+					<div class="product__cell">
+						<div><img src="img/switshot/big-switshot.png" alt=""></div>
 					</div>
 				</div>
+				<div class="col-sm-6">
+					<div class="product__text">
+						<p class="product__view">Свитшот</p>
+						<h2 class="product__title">The Creation of Adam</h2>
+						<h3 class="product__price">400 <span>грн</span></h3>
+						<p class="product__about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora praesentium veniam fugiat officiis nesciunt debitis vitae error, atque dolores eos laborum tempore, labore sit id nobis quam! Ducimus, a ab.</p>
+						<p class="product__composition">состав: Хлопок 80%, полиэстер 20% ( +35% к всеобщему вниманию )</p>
 
-				<div class="col-12 col-sm-6 col-md-4 d-flex  justify-content-center">
-					<div class="product__main">
-						<div class="product__case__block">
-							<img src="img/switshot/switshot-2.png" alt="">
-							<p class="product__block__title">The Creation of Adam</p>
-							<div class="product__cover"></div>
-							<a href="#" class='price'>200 <span>грн</span></a>
+						<div class="product__size">
+							<p class="word__size">Размер:</p>
+							<div class="product__size__cell active">S</div>
+							<div class="product__size__cell">M</div>
+							<div class="product__size__cell ">L</div>
+							<div class="product__size__cell">XL</div>
+							<div class="product__size__cell">2XL</div>
+							<div class="product__size__cell">3XL</div>
+
 						</div>
-						<div class="add__wrapper"><a href="product(switshot).html" class='add'>В Корзину</a> <i class="fa fa-cart-arrow-down" aria-hidden="true"></i></div>
 						
-					</div>
-
-				</div>
-
-				<div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
-					<div class="product__main">
-						<div class="product__case__block">
-							<img src="img/switshot/switshot-3.png" alt=""> 
-							<p class="product__block__title">Smile</p>
-							<div class="product__cover"></div>
-							<a href="#" class='price'>200 <span>грн</span></a>
+							<div class="what__size">
+								<i class="fa fa-question-circle" aria-hidden="true"></i>
+								<a href="#">Какой размер мне нужен?</a>
+							</div>
+													
+						<div class="product__number">
+							<p class="word__number">Количество:</p>
+							<div class="main__number">
+								<div class="number__block"><i class="fa fa-minus" aria-hidden="true"></i></div>
+								<div class="number__block">1</div>
+								<div class="number__block"><i class="fa fa-plus" aria-hidden="true"></i></div>
+							</div>
 						</div>
-						<div class="add__wrapper"><a href="product(switshot).html" class='add'>В Корзину</a> <i class="fa fa-cart-arrow-down" aria-hidden="true"></i></div>
+						<div class="product__warning">
+							<h3 class="warning__word">предупреждение!!!</h3>
+							<p class="product__warning__text">купив данный свитшот есть большой шанс, что на вас будут концентрировать внимание большое количество людей на улице. Это нормально, не беспокойтесь</p>
+						</div>						
+						<div class="product__button">
+							<a href="#" class='product__buy__btn'>купить</a>
+							<a href="#" class='product__add__btn'>В корзину <i class="fa fa-cart-arrow-down" aria-hidden="true"></i></a>
+
+						</div>
+						
+
 					</div>
 
+
 				</div>
-
-
-
-
-
-
 			</div>
+			<div class="reviews__main__container">
 			<div class="row">
-				<div class="col-12 d-flex justify-content-center">
-					<a href='#' class="see__more">Посмотреть еще <img src="img/case/arrow-arrow.png" alt=""></a>
+				<div class="col-sm-5">
+					<div class="reviews">
+						<div class="reviews__block">
+							<div class="reviews__line"><h3 class="reviews__name">Сергей</h3><i class="fa fa-facebook-square facebook" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i> </div>
+							<div class="reviews__about">
+								<p>я благодарен этому интернет-магазину за его быструю доставку и очень качественный продукт.Не один раз заказываю и каждый раз доволен.</p>
+							</div>
+						</div>
+						<div class="reviews__block">
+							<div class="reviews__line"><h3 class="reviews__name">Сергей</h3><i class="fa fa-facebook-square facebook" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i> </div>
+							<div class="reviews__about">
+								<p>я благодарен этому интернет-магазину за его быструю доставку и очень качественный продукт.Не один раз заказываю и каждый раз доволен.</p>
+							</div>
+						</div>
+						<div class="reviews__block">
+							<div class="reviews__line"><h3 class="reviews__name">Сергей</h3><i class="fa fa-facebook-square facebook" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i> </div>
+							<div class="reviews__about">
+								<p>я благодарен этому интернет-магазину за его быструю доставку и очень качественный продукт.Не один раз заказываю и каждый раз доволен.</p>
+							</div>
+						</div>
+
+					<div class="see__more__wrapper"><a href='#' class="see__more">Показать еще <img src="img/case/arrow-arrow.png" alt=""></a></div>
+											
+					</div>					
+				</div>
+				<div class="col-sm-6 ">
+					<div class="product__reviews">
+						<h3 class="reviews__title">отзывы:</h3>
+						<p class="reviews__comein">войдите с помощью <i class="fa fa-vk" aria-hidden="true"></i>  <i class="fa fa-facebook-official" aria-hidden="true"></i>  <i class="fa fa-google-plus-square" aria-hidden="true"></i>  и оставьте свой отзыв:</p>
+
+						<p class="reviews__evaluation">оценка:  <span><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span></p>
+						<input type="text" class='reviews__input' placeholder='Ваше Имя' >
+						<textarea  placeholder='* Ваш комментарий'></textarea>
+						<button class="reviews__send">Отправить</button>
+					</div>
 				</div>
 			</div>
-
-
-		
+			</div>
 		</div>
 	</section>
 
@@ -294,6 +286,7 @@
 						<h4>доставка</h4>
 						<div class="delivery__content">
 							<img src="img/nova.png" alt="Nova Poshta">
+						
 						</div>
 					</div>	
 				</div>
@@ -328,11 +321,9 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section>	
 
-
-
-
+	
 
 
 
@@ -352,10 +343,9 @@
 	<![endif]-->
 	<script src="libs/jquery/jquery-3.3.1.min.js"></script>
 	<script src="libs/owl-carousel-2/owl.carousel.min.js"></script>
-	<script src="libs/articmodal/jquery.arcticmodal-0.3.min.js"></script>
 
 	<script src="js/common-header.js"></script>
-	<script src="js/case.js"></script>
+	<script src="js/common(product).js"></script>
 	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
 	</body>

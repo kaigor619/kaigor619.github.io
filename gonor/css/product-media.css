@@ -6,6 +6,10 @@
 	font-size: 1.8em;	
 }
 }
+@media screen and (max-width:1107px){
+ .product__text .product__title{
+font-size: 3em;
+}
 @media screen and (max-width:1092px){
 .product__button .product__buy__btn{
 	font-size: 1.9em;
@@ -23,6 +27,15 @@
 .product.case .product__cell img{
 	width:60%;
 }
+.product.tshirt .product__cell img{
+	width:100%;
+}
+.product.switshot .product__cell img{
+	width:100%;
+}
+.product.cup .product__ceil img{
+	font-size: 100%;
+}
 .reviews .reviews__about p{
 	line-height:20px;
 }
@@ -30,23 +43,28 @@
 @media screen and (max-width:888px){
 .product{
 	font-size: 70%;
-
 }
-
+.product__number .main__number .number__block{
+	height: 30px;
+	width:30px;
+}
+.product__number .main__number .number__block:nth-child(2){
+	width:30px;
+}
 }
 @media screen and (max-width:814px){
 .product{
 	font-size: 70%;
 }
 .product__number .main__number .number__block{
-	height: 35px;
+	height: 30px;
 	width:30px;
 }
 .product__reviews{
 	margin-left: 10px;
 }
 .product__number .main__number .number__block:nth-child(2){
-	width:35px;
+	width:30px;
 }
   .product__text .product__price{
   	  	margin-bottom: 15px;
@@ -101,6 +119,18 @@ padding: 0.35em 0.9em;
 .product.case .product__cell img{
 	width:75%;
 }
+.product.tshirt .product__cell img{
+	width:100%;
+}
+.product.tshirt .product__cell{
+	width:100%;
+}
+.product.switshot .product__cell img{
+	width:100%;
+}
+.product.switshot .product__cell{
+	width:100%;
+}
 .product__number .main__number .number__block{
 	height: 30px;
 	width:25px;
@@ -108,7 +138,7 @@ padding: 0.35em 0.9em;
 .product__number .main__number .number__block:nth-child(2){
 	width:28px;
 }
-  .product__material .product__material__block div{
+  .product__material .product__material__block .material__block{
   	font-size: 1.3em;
 }
 .product__reviews .reviews__send{
@@ -136,6 +166,17 @@ padding: 0.35em 0.9em;
 .product__number .main__number .number__block:nth-child(2){
 	width:25px;
 }
+.product.tshirt .product__cell img{
+	width:100%;
+}
+.product.switshot .product__cell img{
+	width:100%;
+}
+}
+@media screen and (max-width:674px){
+ .product__text .product__title{
+font-size: 2.5em;
+}
 }
 @media screen and (max-width:650px){
 .product.case .product__cell img{
@@ -150,6 +191,11 @@ padding: 0.35em 0.7em;
 	padding: 0.46em 0.8em;	
 }
 
+}
+@media screen and (max-width:600px){
+ .product__text .product__title{
+font-size: 2.3em;
+}
 }
 @media screen and (max-width:584px){
 .product__button .product__add__btn{
@@ -171,12 +217,34 @@ padding: 0.35em 0.7em;
   .product__text .product__price{
   	font-size: 2.5em;
   }
-.product .product__cell{
+.product.case .product__cell{
 width:50%;
 margin: 0 auto;
 }
+.product.tshirt .product__cell, .product.switshot .product__cell{
+width:70%;
+margin: 0 auto;
+}
+.product.cup .product__cell{
+width:70%;
+margin: 0 auto;
+}
+
 .product.case .product__cell img{
 	width:50%;
+}
+.product.tshirt .product__cell img, .product.switshot .product__cell img {
+	width:80%;
+}
+.product.switshot .product__cell img{
+	width:90%;
+}
+.product__number .main__number .number__block{
+	height: 30px;
+	width:30px;
+}
+.product__number .main__number .number__block:nth-child(2){
+	width:30px;
 }
 .product__text .product__view{
 	margin-top: 20px;
@@ -215,7 +283,6 @@ margin: 0 auto;
 }
 .product.case .product__cell img{
 	width:70%;
-/*	max-width: 150px;*/
 }
 }
 @media screen and (max-width:414px){
@@ -223,6 +290,7 @@ margin: 0 auto;
 	font-size: 1em;
 	letter-spacing: 1px;
 }
+
 .see__more img{
 	width:100%;
 	max-width:10px;
@@ -231,7 +299,19 @@ margin: 0 auto;
 .see__more__wrapper{
 	padding: 0.4em 0.6em;
 }
-  .product__material .product__material__block div{
+
+.product.tshirt .product__cell, .product.switshot .product__cell {
+width:80%;
+margin: 0 auto;
+}
+.product.cup .product__cell{
+width:90%;
+margin: 0 auto;
+}
+.product.tshirt .product__cell img, .product.switshot .product__cell img{
+	width:90%;
+}
+  .product__material .product__material__block .material__block{
   	padding: 0.35em 0.8em;  	
   	font-size: 1.3em;
   	letter-spacing: 1px;
@@ -276,6 +356,20 @@ margin: 0 auto;
 	letter-spacing: 1px;
 	margin-left: 5px;
   } 
+  /*Размеры*/
+  .product__size .word__size{
+ 	font-size: 1.4em;
+	color: #000;
+	letter-spacing: 1px;
+ }
+   .product__size .product__size__cell{
+padding: 0.05em 0.30em;
+  	margin-left: 10px;
+  	font-size: 1.5em;
+	letter-spacing: 1px;
+
+  }
+ /*Количество*/
 .product__number .word__number{
 	font-size: 1.4em;
 	letter-spacing: 1px;
@@ -345,7 +439,13 @@ margin: 0 auto;
 }
 .product.case .product__cell img{
 	width:70%;
-
+}
+.product.tshirt .product__cell, .product.switshot .product__cell{
+width:90%;
+margin: 0 auto;
+}
+.product.tshirt .product__cell img, .product.switshot .product__cell img{
+	width:90%;
 }
 .product__button .product__add__btn i{
 margin-bottom: 10px;
@@ -366,7 +466,7 @@ margin-left: 5px;
 	padding: 0.4em 0.8em;	
 	margin-left: 15px;
 }
-  .product__material .product__material__block div{
+  .product__material .product__material__block .material__block{
   	padding: 0.35em 0.6em;  	
   	font-size: 1.2em;
   	letter-spacing: 1px;
@@ -378,18 +478,58 @@ margin-left: 5px;
 	width:80%;
 
 }
+.product.tshirt .product__cell, .product.switshot .product__cell{
+width:90%;
+margin: 0 auto;
+}
+.product.tshirt .product__cell img, .product.switshot .product__cell img{
+	width:100%;
+}
+ .product__text .product__title{
+	font-size: 2.6em;
+}
+  .product__size .product__size__cell{
+padding: 0.11em 0.30em;
+  	margin-left: 7px;
+  	font-size: 1.6em;
+	letter-spacing: 1px;
+  }
+}
+}
+@media screen and (max-width:350px){
+.product__text .product__title{
+	font-size: 2.4em;
+}
+}
+@media screen and (max-width:320px){
+.product__text .product__title{
+	font-size: 2.4em;
+}
+.product.tshirt .product__cell, .product.switshot .product__cell{
+width:90%;
+margin: 0 auto;
 }
 
+.product.tshirt .product__cell img, .product.switshot .product__cell img{
+	width:100%;
+}
+  .product__size .product__size__cell{
+padding: 0.11em 0.30em;
+  	margin-left: 7px;
+  	font-size: 1.4em;
+	letter-spacing: 1px;
+  }
+}
 @media screen and (max-width:300px){
  .product__text .product__title{
-	font-size: 2.5em;
+	font-size: 2.1em;
 	letter-spacing: 2.5px;
  }
    .product__text .product__about{
 	line-height: 20px;
 	font-size: 0.9em;
   } 
- .product__number .word__number{
+ .product__number .word__number, .product.tshirt .product__size .word__size{
 	font-size: 1.2em;
 }  
 .product__reviews .reviews__title{
@@ -403,16 +543,28 @@ margin-left: 5px;
 }
 
 
+
 }
+
 @media screen and (max-width:275px){
 .reviews .reviews__about p{
 	font-size:1em;
 	letter-spacing: 0.5px;
 }
+ .product__text .product__title{
+	font-size: 2em;
+	letter-spacing: 2.5px;
+ }
 .product__button .product__add__btn i{
 margin-bottom: 5px;
 
 }
+  .product__size .product__size__cell{
+padding: 0.11em 0.25em;
+  	margin-left: 7px;
+  	font-size: 1.4em;
+	letter-spacing: 1px;
+  }
 
 
 }
