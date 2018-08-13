@@ -429,6 +429,7 @@ transition:.3s;
 
 .product__case__block .product__block__title{
 	font-family: "Bebas Neue Bold";
+	color: #000;
 	font-weight: normal;
 	font-size: 1.3em;
 	margin-top: 30px;
@@ -447,6 +448,7 @@ transition:.3s;
 	transition:.3s;
 	width:100%;
 	font-size: 1.6em;
+	cursor:pointer;
 }
 .product__main  .add__wrapper .add{
 	color:#fff;

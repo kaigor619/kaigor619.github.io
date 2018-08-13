@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Gonor</title>
+	<meta name="description" content="Чехлы,Чашки, Футболки, Свитшоты" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="img/icon/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.min.css" />
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
+	<!-- Стили -->
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/header.css" />
+	<link rel="stylesheet" href="css/design.css" />
+	<link rel="stylesheet" href="css/footer.css" />
+	<link rel="stylesheet" href="css/design-media.css" />
+</head>
+<body>
+	<header class="header" id="header">
+		<div class="container ">
+			<div class="row justify-content-between align-items-center">
+				<div class="col-md-3 col-12 d-flex justify-content-center">
+					<div class="logo">
+					<a href="index.html"><img src="img/logo2.png" alt="GONOR" class='logo'></a>
+					</div>
+				</div>	
+				<div class="col-md-9 d-flex align-items-center justify-content-end">
+					<ul class="header-menu">
+						<li><a href="index.html">Главная</a></li>
+						<li><a href="case.html">Чехлы</a></li>
+						<li><a href="tshirt.html">Одежда</a></li>
+						<li><a href="cup.html">Чашки</a></li>
+						<li><a href="#">Остальное</a></li>
+					</ul>
+					<div class="basket">
+						<i class="fa fa-shopping-basket" aria-hidden="true" title='Корзина'></i>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</header>
+
+		<section class="burger__panel">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="burger">
+						<i class="fa fa-bars"></i>
+					</div>
+					<div class="newbasket">
+						<i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<div class="sidebar">
+		<ul class="aside__menu">
+			<li><a href="index.html" class='active'>Главная</a>
+		<div class="sidebar__close">
+			<i class="fa fa-times" aria-hidden="true"></i>
+		</div></li>
+			<li><a href="case.html">Чехлы</a></li>
+			<li><a href="tshirt.html">Одежда</a></li>
+			<li><a href="cup.html">Чашки</a></li>
+			<li><a href="#">Остальное</a></li>
+		</ul>
+	</div>
+	
+	<section class="design" id="design">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 d-flex justify-content-center">
+					<h1 class="design__title">Свой дизайн</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-sm-6">
+					<div class="main-wrapper-content">	
+						<h3 class="application">Заявка</h3>
+						<form  name="form" class='form' id="form" >
+							<input type="text" name='name' id='name' class="design__input" placeholder='Укажите ваше имя' required>
+							<input type="email" name='email' id='email' class="design__input" placeholder='Укажите ваш email'>
+							<input type="text" name='phone' class="design__input" id='phone' placeholder='Укажите ваш номер телефона' required>
+							<div class="design__what main"><span>Что хотите заказать?</span> <img src="img/design/arrow.png" alt="Стрелка"><ul class='sublist__what'>
+								<li>Чехол</li>
+								<li>Футболка</li>
+								<li>Свитшот</li>
+								<li>Чашка</li>
+							</ul></div>
+							
+							<div class="design__block case">
+								<div class="design__what"><span>Укажите Марку</span> <img src="img/design/arrow.png" alt="Стрелка"><ul class='sublist__what'>
+									<li>iPhone</li>
+									<li>Samsung</li>
+									<li>Meizu</li>
+									<li>Xiaomi</li>
+								</ul></div>
+
+								<div class="design__what"><span>Укажите Модель</span> <img src="img/design/arrow.png" alt="Стрелка"><ul class='sublist__what'>
+										<li>iphone 4</li>
+										<li>iphone 4s</li>
+										<li>iphone 6</li>
+										<li>iphone 6s</li>
+									</ul>
+								</div>	
+								<div class="design__what"><span>Укажите тип чехла</span> <img src="img/design/arrow.png" alt="Стрелка"><ul class='sublist__what'>
+										<li>Пластик глянецевый ( 3D )</li>
+										<li>пластик матовый ( 3D )</li>
+										<li>Силикон ( 2D )</li>
+										<li>Пластик ( 2D )</li>
+									</ul>
+								</div>																											
+								<div class="material">
+								<i class="fa fa-question-circle" aria-hidden="true"></i> <a href="#">Материал чехла</a>
+								</div>
+							</div>
+
+							<div class="design__block tshirt">
+								<div class="design__what"><span>Укажите цвет</span> <img src="img/design/arrow.png" alt="Стрелка"><ul class='sublist__what'>
+									<li>Черный</li>
+									<li>Белый</li>
+								</ul></div>
+								<div class="design__what"><span>Укажите размер</span> <img src="img/design/arrow.png" alt="Стрелка"><ul class='sublist__what'>
+									<li>S</li>
+									<li>M</li>
+									<li>L</li>
+									<li>XL</li>
+									<li>2XL</li>
+									<li>3XL</li>
+								</ul></div>						
+								<div class="material">
+									<i class="fa fa-question-circle" aria-hidden="true"></i> <a href="#">Какой размер мне нужен?</a>
+								</div>
+							</div>	
+
+							<div class="design__block switshot">
+								<div class="design__what"><span>Укажите цвет</span> <img src="img/design/arrow.png" alt="Стрелка"><ul class='sublist__what'>
+									<li>Черный</li>
+									<li>Белый</li>
+								</ul></div>
+								<div class="design__what"><span>Укажите размер</span> <img src="img/design/arrow.png" alt="Стрелка"><ul class='sublist__what'>
+									<li>S</li>
+									<li>M</li>
+									<li>L</li>
+									<li>XL</li>
+									<li>2XL</li>
+									<li>3XL</li>
+								</ul></div>						
+								<div class="material">
+									<i class="fa fa-question-circle" aria-hidden="true"></i> <a href="#">Какой размер мне нужен?</a>
+								</div>
+							</div>	
+							
+							<div class="design__block cup">
+								<div class="design__what"><span>Укажите тип чашки</span> <img src="img/design/arrow.png" alt="Стрелка"><ul class='sublist__what'>
+									<li>Белая</li>
+									<li>Хамелеон</li>
+								</ul></div>
+							</div>										
+							<div class="comment">
+								<div class="where">
+									<h2>Куда отправить макет?</h2>
+									<div class="main__wrapper__where">
+										<div class="two">
+											<div class="word__wrapper">
+												<div class="div-checkbox"></div>
+												<span>Telegram</span>
+											</div>
+											<div class="word__wrapper">
+												<div class="div-checkbox"></div>
+												<span>Viber</span>
+											</div>
+										</div>
+										<div class="two">
+											<div class="word__wrapper">
+												<div class="div-checkbox"></div>
+												<span>Whatsapp</span>
+											</div>
+											<div class="word__wrapper">
+												<div class="div-checkbox"></div>
+												<span>E-mail</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<textarea placeholder='Комментарий' id='message'></textarea>
+								<p>* Если вы хотите создать <span>именной чехол</span> - напишите желаемую
+								надпись в ячейку «комментарий», а затем нажмите кнопку «Отправить»</p>
+								<input type="file" name="file-1[]" id="file-1" class="inputfile inputfile-1" data-multiple-caption="{count} files selected">
+								<label for="file-1" class="custom-file-upload">
+								    <i class="fa fa-download" aria-hidden="true"></i><span>Загрузить Фото</span>
+								</label>
+								
+								<button class='design__send' id='design__send'>Отправить</button>
+
+
+							</div>
+						</form>
+					</div>
+
+				</div>
+				<div class="col-lg-8 col-sm-6 ">
+					<div class="design__img case">
+							<div><img src="../img/design/case1.png" alt="чехол"></div>
+							<div><img src="../img/design/case2.png" alt="чехол"></div>
+					</div>
+
+					<div class="design__img tshirt ">
+						<div><img src="../img/design/tshirt1.png" alt="Футболка"></div>
+						<div><img src="../img/design/tshirt2.png" alt="Футболка"></div>						
+					</div>
+					<div class="design__img switshot">
+						<div><img src="../img/design/switshot1.png" alt="Свитшот"></div>
+						<div><img src="../img/design/switshot2.png" alt="Свитшот"></div>					
+					</div>
+					<div class="design__img cup">
+						<div><img src="../img/design/cup1.png" alt="Чашка"></div>
+						<div><img src="../img/design/cup2.png" alt="Чашка"></div>							
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</section>
+
+	<footer class="footer" id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-lg-5 col-sm-4">
+					<div class="support-service">
+						<h4>Служба поддержки</h4>
+						<p class="mail">Почта: gonor.store@gmail.com</p>
+						<p class="telegram">telegram: @gonor.support</p>
+						<p class="phone">Тел. : +380777777777</p>
+						<p class="support-service__about">служба поддержи работает ежедневно с 9:00 до 21:00. <br>
+						В выходные и праздничные дни служба поддержи не работает</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-lg-2 col-sm-4 col-6">
+					<div class="information">
+						<h4>Информация</h4>
+						<ul>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Как заказать?</a></li>
+							<li><a href="#">Доставка и оплата</a></li>
+							<li><a href="#">Вопрос ответ</a></li>
+							<li><a href="#">сотрудничество</a></li>
+						</ul>
+					</div>	
+				</div>
+				<div class="col-md-3 col-lg-1 col-sm-4 col-6" >
+					<div class="pay">
+						<h4>Оплата</h4>
+						<img src="img/visa.png" alt="visa">
+						<img src="img/master.png" alt="MasterCard">
+					</div>	
+				</div>
+				<div class="col-md-3 col-lg-2 col-sm-6 col-12" >
+					<div class="delivery">
+						<h4>доставка</h4>
+						<div class="delivery__content">
+							<img src="img/nova.png" alt="Nova Poshta">
+						</div>
+					</div>	
+				</div>
+				<div class="col-lg-2 col-md-12 col-sm-6 ">
+					<div class="social">
+						<h4>мы в соц. сетях</h4>
+						<div class="social__content">
+							<i class="fa fa-instagram" aria-hidden="true"></i>
+							<i class="fa fa-facebook-official" aria-hidden="true"></i>
+							<i class="fa fa-vk" aria-hidden="true"></i>
+
+						</div>
+					</div>	
+
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<section class="sub-footer">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-4">
+					<p class='sub-footer__root'>2018 gonor.com.ua</p>
+				</div>
+				<div class="col-8 d-flex justify-content-end">
+					<div class="sub-footer__right">
+						<a href='#'>публичная оферта</a>
+						<a href='#'>Пользовательское соглашение</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>	
+
+
+	
+
+	<script src="libs/jquery/jquery-3.3.1.min.js"></script>
+	<!-- Inputmask -->
+	<script src="libs/inputmask/jquery.inputmask.bundle.js"></script>
+	<script src="libs/inputmask/phone.js"></script>
+	<script src="libs/inputmask/phone-be.js"></script>
+	<script src="libs/inputmask/phone-ru.js"></script>
+	<script src="js/common-design.js"></script>
+	<script src="js/common-header.js"></script>
+	<script src="js/form.js"></script>
+
+	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>	

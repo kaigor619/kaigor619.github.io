@@ -1,0 +1,120 @@
+@media screen and (max-width:1024px){
+	.design__img.cup{
+	flex-direction: column;
+	text-align: center;
+}
+	.design__img.cup div{
+margin-bottom: 40px;
+}
+}
+@media screen and (max-width:768px){
+	.design__img.case{
+	flex-direction: column;
+	text-align: center;
+}
+.design__img.case img{
+	width:50%;
+}
+.design__img.case div{
+	margin-bottom: 40px;
+}
+
+.design{
+	font-size:90%;
+}
+.design .design__title{
+	font-size: 2.5em;
+	padding: 0.1em 0.3em;
+}
+.comment .design__send{
+	font-size: 1.8em;	
+	letter-spacing: 0.06em;
+	padding: 0.15em 0.5em;
+}
+
+}
+@media screen and (max-width:575px){
+	.design__img {
+    padding-top: 40px;
+}
+.main-wrapper-content{
+	width:80%;
+	margin: 0 auto;
+}
+.design__img.case img{
+	width:40%;
+}
+.design__img.switshot img{
+	width:70%;
+}
+.design__img.tshirt img{
+	width:70%;
+}
+.design__img.cup img{
+	width:70%;
+}
+.design{
+margin-bottom:150px;
+
+}
+
+}
+@media screen and (max-width:414px){
+.main-wrapper-content{
+	width:90%;
+}
+.design__img.cup img{
+	width:80%;
+}
+.design__img.switshot img{
+	width:80%;
+}
+.design__img.tshirt img{
+	width:80%;
+}
+}
+@media screen and (max-width:360px){
+
+.design__img.cup img{
+	width:90%;
+}
+.design__img.switshot img{
+	width:80%;
+}
+.design__img.tshirt img{
+	width:80%;
+}
+.design__img.case img{
+	width:45%;
+}
+}
+@media screen and (max-width:320px){
+.where .div-checkbox{
+	width:20px;
+	height: 20px;
+}
+.design__img.cup img{
+	width:90%;
+}
+.design__img.switshot img{
+	width:90%;
+}
+.design__img.tshirt img{
+	width:90%;
+}
+.design__img.case img{
+	width:45%;
+}
+.design .design__title{
+	font-size: 2.5em;
+}
+.design .application{
+	margin-bottom: 0.6em;
+	font-size: 2em;
+}
+}
+@media screen and (max-width:320px){
+.main-wrapper-content{
+	width:100%;
+}
+}

@@ -6,31 +6,62 @@
 </head>
 <body>
 	<style>
-		.box{
-			width:500px;
-			height:500px;
-			background: #202020;
-		}
-	.box-2{
-		width:200px;
-		height:200px;
-		background: red;
-	}	
+
+input.error {
+ border: 1px solid #ff0000;
+}
+label.error {
+ color: #ff0000;
+ font-weight: normal;
+}
 	</style>
-	<div class="box">
-		<div class="box-2"></div>
-	</div>
-		<script src="libs/jquery/jquery-3.3.1.min.js"></script>
-	<script>
-		$(document).ready(function(){
-			var box=document.getElementsByClassName('box')[0];
-			box.addEventListener("mouseout",function(e){
-				if(e.target)
-				e.stopPropagation();
-				alert("yes");
-			});
-			
-		});
-	</script>
+	<form class="cmxform" id="commentForm" >
+    <p>
+      <label for="cname">Name</label>
+      <input id="cname" name="name" minlength="2" type="text" required>
+    </p>
+    <p>
+      <label for="cemail">E-Mail</label>
+      <input id="cemail" type="email" name="email" required>
+    </p>
+    <p>
+      <label for="curl">URL (optional)</label>
+      <input id="curl" type="url" name="url">
+    </p>
+    <p>
+      <label for="ccomment">Your comment (required)</label>
+      <textarea id="ccomment" name="comment" required></textarea>
+    </p>
+    <p>
+      <input class="submit" type="submit" value="Submit">
+    </p>
+</form>
+	<script src="libs/jquery/jquery-3.3.1.min.js"></script>
+<script src="libs/validation/jquery.validate.js"></script>
+<script>
+
+$(function(){
+
+$('#commentForm').validate({
+ rules: {
+ name: {
+ required: true,
+ minlength: 2
+ }
+ },
+ messages: {
+ name: {
+ required: "Поле 'Имя' обязательно к заполнению",
+ minlength: "Введите не менее 2-х символов в поле 'Имя'"
+ },
+ email: {
+ required: "Поле 'Email' обязательно к заполнению",
+ email: "Необходим формат адреса email" 
+ },
+ url: "Поле 'Сайт' обязательно к заполнению"
+ }
+ });
+});
+</script>
 </body>
 </html>

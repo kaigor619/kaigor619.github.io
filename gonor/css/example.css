@@ -1,0 +1,74 @@
+*{ margin:0; padding: 0;} //убираем все отступы по умолчанию
+
+body{ font: 13px Arial, sans-serif; }
+
+#feedback-box{
+     background: url(http://subtlepatterns.com/patterns/paper_fibers.png);
+     width: 400px;
+     margin: 20px auto;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+}​
+
+#feedback-box h2{
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ddd;
+    font-size: 23px;
+    color: #414141;
+    margin: 0;
+}
+
+#feedback-form{
+    padding: 20px 25px;
+    border-top: 1px solid #fff;
+}
+
+#feedback-form input[type="text"], #feedback-form textarea{
+    padding: 7px 10px;
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+
+#feedback-form textarea{
+    resize: none;
+    overflow-y: auto;
+    width: 330px;
+}
+
+#feedback-form input[type="text"]{
+    margin-left: 10px;
+}
+
+#feedback-form input[type="text"]:focus, #feedback-form textarea:focus{
+    border: 1px solid #ccc;
+}
+
+#feedback-form #send{
+    padding: 5px 20px;
+}
+
+#feedback-form .input-bloc{
+   margin-bottom: 12px;
+}
+
+#feedback-form .w1 label{
+    display: inline-block;
+    width: 40px;
+}
+
+#feedback-form .msg label{
+   display: inline-block;
+   margin-bottom: 6px;
+}
+
+.error-box{
+    color: red;
+    font-size: 12px;
+}
