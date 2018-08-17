@@ -1,0 +1,130 @@
+@media screen and (max-width:992px){
+	.basket-main{
+	font-size: 90%;
+}
+.close-main{
+	width: 20px;
+	height: 20px;
+}
+.close-main img{
+	width:50%;
+}
+.basket__bottom .left .close__delete .close-main{
+	width: 20px;
+	height: 20px;
+}
+.basket__bottom .left .close__delete .close-main img{
+	width:50%;
+}
+.basket-main__product .product__ceil img{
+width:70%;
+}
+.basket-main__product .product__ceil{
+	padding: 8px 25px;
+
+}
+}
+@media screen and (max-width:800px){
+	.basket-main{
+	font-size: 80%;
+}
+.close-main{
+	width: 17px;
+	height: 17px;
+}
+.close-main img{
+	width:40%;
+}
+.basket__bottom .left .close__delete .close-main{
+	width: 17px;
+	height: 17px;
+}
+.basket__bottom .left .close__delete .close-main img{
+	width:40%;
+}
+.basket-main__product .product__ceil img{
+width:60%;
+}
+.basket-main__product .product__ceil{
+	padding: 8px 18px;
+}
+.basket__bottom .left .close__delete{
+	margin-left: 15px;
+}
+.basket__bottom .left .close__delete span{
+margin-left: 0.8em;
+}
+.basket__bottom .left{
+	margin-top:5em;
+
+}
+}
+@media screen and (max-width:768px){
+	.basket__bottom .left{
+	display:block;
+	margin-top: 2.5em;
+}
+.basket__bottom .left .close__delete{
+	margin-left:0px;
+	margin-top: 1.4em;
+}
+.basket__bottom .left .close__delete span{
+margin-left: 0.6em;
+}
+}
+@media screen and (max-width:576px){
+	.basket-main{
+		display: none;
+	}
+	.basket__mobile{
+		display: block;
+	}
+	.basket__title{
+	font-size: 3em;
+}
+}
+@media screen and (max-width:414px){
+	.basket__mobile{
+		font-size: 90%;
+	}
+	.basket__mobile  .close__product{
+		width: 20px;
+		height: 20px;
+	}
+	.basket__mobile  .close__product img{
+	width: 60%;
+}
+	.basket__title{
+	font-size: 2.5em;
+	margin-top:0;
+}
+}
+@media screen and (max-width:360px){
+	.basket__mobile{
+		font-size: 80%;
+	}
+		.basket__title{
+	font-size: 2em;
+		margin-bottom: 30px;
+}
+}
+@media screen and (max-width:300px){
+		.basket__mobile{
+		font-size: 70%;
+	}
+	.basket__mobile .product__basket  img{
+	width:80%;
+}
+.basket__mobile .product__ceil{
+	border:1px solid #000;
+	padding: 0.31em 1.2em;
+}
+	.basket__mobile  .close__product{
+		width: 16px;
+		height: 16px;
+	}
+	.basket__mobile  .close__product img{
+	width: 50%;
+}
+
+}

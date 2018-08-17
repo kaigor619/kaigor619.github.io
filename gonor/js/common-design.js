@@ -66,7 +66,7 @@ for(let i=0;i<$('.where .word__wrapper').length;i++){
 }( document, window, 0 ));
 
 // Маска для номера телефона
-$("#phone").inputmask("+999(99) 999-9999", { greedy: false,
+$("#phone").inputmask("+380(99) 999-9999", { greedy: false,
 "onincomplete": function(){ $(this).addClass("input-unvalid");},
 "oncleared": function(){ $(this).removeClass("input-unvalid");},
 "oncomplete": function(){ $(this).removeClass("input-unvalid");}

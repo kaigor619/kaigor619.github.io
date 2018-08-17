@@ -26,6 +26,7 @@
 	<link rel="stylesheet" href="libs/articmodal/jquery.arcticmodal-0.3.css">
 	<!-- Стили -->
 	<link rel="stylesheet" href="css/normalize.css" />
+
 	<link rel="stylesheet" href="css/fonts.css" />
 	<link rel="stylesheet" href="css/header.css" />
 	<link rel="stylesheet" href="css/case.css" />
@@ -52,9 +53,11 @@
 						<li><a href="cup.html">Чашки</a></li>
 						<li><a href="#">Остальное</a></li>
 					</ul>
-					<div class="basket">
-						<i class="fa fa-shopping-basket" aria-hidden="true" title='Корзина'></i>
-					</div>
+					<a href="basket.html">
+						<div class="basket">
+							<i class="fa fa-shopping-basket" aria-hidden="true" title='Корзина'></i>
+						</div>
+					</a>	
 
 				</div>
 			</div>
@@ -68,9 +71,11 @@
 					<div class="burger">
 						<i class="fa fa-bars"></i>
 					</div>
-					<div class="newbasket">
-						<i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
-					</div>
+					<a href="basket.html">
+						<div class="newbasket">
+							<i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+						</div>
+					</a>	
 				</div>
 			</div>
 		</div>
@@ -90,6 +95,61 @@
 		</ul>
 	</div>
 	
+	<div class="background__cover">
+		<div class="basket__aside">
+			<div class="word__wrapper">
+				<div class="word__basket">
+					<h2>Корзина</h2> 
+						<div class="close">
+							<div><img src="img/basket/close.png" alt="Крестик"></div>
+					</div>
+				</div>
+			</div>
+			<div class="product__list">
+				<div class="product__basket">
+					<div class="product__ceil">
+						<img src="img/case/case-1.png" alt="">
+					</div>
+					<div class="product__about">
+						<h3 class='name'>stickerbombing</h3>
+						<p class='model-name'>Чехол iphone 5/5s</p>
+						<div class="number__block">
+							<p class='number'>количество: 1x</p>
+							<h4 class='price'>цена: 160 грн</h4>
+						</div>
+					</div>
+					<div class="close__product">
+						<img src="img/basket/close.png" alt="Крестик">
+					</div>
+				</div>
+				<div class="product__basket">
+					<div class="product__ceil">
+						<img src="img/case/case-1.png" alt="">
+					</div>
+					<div class="product__about">
+						<h3 class='name'>stickerbombing</h3>
+						<p class='model-name'>Чехол iphone 5/5s</p>
+						<div class="number__block">
+							<p class='number'>количество: 1x</p>
+							<h4 class='price'>цена: 160 грн</h4>
+						</div>
+					</div>
+					<div class="close__product">
+						<img src="img/basket/close.png" alt="Крестик">
+					</div>
+				</div>
+
+			</div>
+			<div class="product__pay">
+				<div class="product__pay__all">
+					<h3>Всего:</h3> <span>160 грн</span>
+				</div>
+				<p class='red-text'>(без учета стоимости доставки)</p>
+				<button class='btn-issue'>Оформить заказ</button>
+			</div>	
+		</div>
+	</div>	
+
 	<section class="model case" id="model">
 		<div class="container">
 			<ul class="model-menu case">
@@ -686,8 +746,9 @@
 								<div class="product__cover"></div>
 								<p href="#" class='price'>200 <span>грн</span></p>
 							</div>
+							</a>
 							<div class="add__wrapper"><span  class='add'>В корзину</span> <i class="fa fa-cart-arrow-down" aria-hidden="true"></i></div>
-						</a>
+						
 					</div>
 
 				</div>
@@ -700,9 +761,10 @@
 								<p class="product__block__title"> smoke mid everyday</p>
 								<div class="product__cover"></div>
 								<p class='price'>200 <span>грн</span></p>
-							</div>	
+							</div>
+							</a>	
 							<div class="add__wrapper"><span  class='add'>В корзину</span> <i class="fa fa-cart-arrow-down" aria-hidden="true"></i></div>
-						<a href="product(case).html">
+						
 						
 					</div>
 
@@ -716,9 +778,11 @@
 								<p class="product__block__title"> white & black</p>
 								<div class="product__cover"></div>
 								<p class='price'>200 <span>грн</span></p>
-							</div>	
+							</div>
+							</a>	
+
 							<div class="add__wrapper"><span class='add'>В корзину</span> <i class="fa fa-cart-arrow-down" aria-hidden="true"></i></div>
-						</a>
+						
 					</div>
 
 				</div>
@@ -785,7 +849,6 @@
 						<h4>мы в соц. сетях</h4>
 						<div class="social__content">
 							<i class="fa fa-instagram" aria-hidden="true"></i>
-							<i class="fa fa-facebook-official" aria-hidden="true"></i>
 							<i class="fa fa-vk" aria-hidden="true"></i>
 
 						</div>

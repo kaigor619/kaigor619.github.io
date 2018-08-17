@@ -118,3 +118,39 @@ margin-bottom:150px;
 	width:100%;
 }
 }
+
+@media screen and (max-width:992px){
+	.basket__aside{
+		font-size: 90%;
+		width:350px;
+	}
+.basket__aside  .close__product img{
+	max-width:10px;
+}
+.basket__aside .product__basket  img{
+	width:80%;
+}
+.product__pay .btn-issue{
+	font-size: 1.8em;
+	padding: 0.166em 0.333em;
+	letter-spacing: 0.1em;
+}
+
+}
+@media screen and (max-width:768px){
+	.basket__aside{
+		font-size: 80%;
+		width:300px;
+	}
+.basket__aside  .close__product img{
+	max-width:10px;
+}
+.basket__aside .product__basket  img{
+	width:70%;
+}
+}
+@media screen and (max-width:576px){
+	.background__cover{
+		display:none;
+	}
+}
