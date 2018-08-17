@@ -3,7 +3,6 @@
 	font-family: "Bebas Neue Bold";
 	font-size: 100%;
 	margin-bottom: 100px;
-
 }
 .basket__title{
 	margin-top: 1em;
@@ -22,12 +21,16 @@
 }
 .basket-main__product{
 	opacity:1;
+	-webkit-transition:all 0.8s;
 	transition:all 0.8s;
+	-webkit-transform: translateX(0);
 	transform: translateX(0);
 }
  .basket-main__product.delete{
+	-webkit-transform: translateX(100%);
 	transform: translateX(100%);
 	opacity:0;
+	-webkit-transition:all 0.8s;
 	transition:all 0.8s;
 }
 .basket-main__product{
@@ -36,7 +39,11 @@
 	border-bottom:1px solid #434343;
 }
 .product__basket__wrap{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 }
 .basket-main__product .product__ceil{
@@ -69,8 +76,14 @@
 	background: #000;
 	width:25px;
 	height: 25px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	cursor:pointer;
 }
@@ -81,21 +94,36 @@
 }
 /*низ корзины*/
 .basket__bottom .left{
+	display:-webkit-box;
+	display:-ms-flexbox;
 	display:flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	margin-top: 6.25em;
 }
 .basket__bottom .left .close__delete{
+	display:-webkit-box;
+	display:-ms-flexbox;
 	display:flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	margin-left: 30px;
 }
 .basket__bottom .left .close__delete .close-main{
 	width:25px;
 	height:25px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
+	-ms-flex-negative: 0;
 	flex-shrink: 0;
 }
 .basket__bottom .left .close__delete .close-main img{
@@ -117,12 +145,14 @@ letter-spacing: 0.043em;
 	padding: 0.41em;
 	letter-spacing: 0.04em;
 	cursor: pointer;
+	-webkit-transition:.4s;
 	transition:.4s;
 
 }
 .basket__bottom .left button:hover{
 	background: #000;
 	color: #fff;
+	-webkit-transition:.4s;
 	transition:.4s;
 }
 
@@ -154,6 +184,7 @@ letter-spacing: 0.043em;
 .basket__bottom .right .btn-issue.disabled{
 	background: #474747;
 	 cursor:no-drop;
+	-webkit-transition:.3s;
 	transition:.3s;
 }
 
@@ -175,6 +206,7 @@ letter-spacing: 0.043em;
 	border-bottom: 1px solid #000;
 	padding:0.875em 0;
 	position: relative;
+	-webkit-transition:all .6s;
 	transition:all .6s;
 	opacity:1;
 }
@@ -182,8 +214,10 @@ letter-spacing: 0.043em;
 	border-top: 1px solid #000;
 }
 .basket__mobile .product__basket.delete{
+	-webkit-transform: translateX(100%);
 	transform: translateX(100%);
 	opacity:0;
+	-webkit-transition:all .6s;
 	transition:all .6s;
 }
 .basket__mobile .product__ceil{
@@ -198,9 +232,16 @@ letter-spacing: 0.043em;
 }
 /*Описание*/
 .basket__mobile .product__about{
-	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
 	height: 100%;
 	padding-left: 15px;
+	position: relative;
 }
 .basket__mobile .product__about .name{
 	font-size: 1.875em;
@@ -231,8 +272,14 @@ letter-spacing: 0.043em;
 }
 /*Close*/
 .basket__mobile  .close__product{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	background: #000;
 	color: #fff;
@@ -242,6 +289,7 @@ letter-spacing: 0.043em;
 	position: absolute;
 	top:50%;
 	right:15px;
+	-webkit-transform:translateY(-50%);
 	transform:translateY(-50%);
 	
 }
@@ -259,7 +307,11 @@ margin-top: 30px;
  .basket__mobile .product__pay-main .product__pay__all{
 	position: relative;
 	width:100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;	
 }
  .basket__mobile .product__pay-main .product__pay__all h3{
@@ -275,6 +327,7 @@ margin-top: 30px;
 	position: absolute;
 	right: 0;
 	top:50%;
+	-webkit-transform:translateY(-50%);
 	transform:translateY(-50%);
 }
  .basket__mobile .product__pay-main .red-text{
@@ -290,6 +343,7 @@ margin-top: 30px;
 	color: #fff;
 	margin: 0 auto;
 	cursor:pointer;
+	-webkit-transition:.3s;
 	transition:.3s;
 }
  .basket__mobile .product__pay-main .btn-issue{
@@ -301,6 +355,7 @@ margin-top: 30px;
 }
  .basket__mobile .product__pay-main .btn-issue.disabled{
 	background: #474747;
+	-webkit-transition:.3s;
 	transition:.3s;
 }
 
@@ -314,8 +369,14 @@ margin-top: 30px;
 	height:292px;
 	border-bottom:1px solid #434343;
 	border-top:1px solid #434343;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 
 
@@ -333,8 +394,14 @@ margin-top: 30px;
 	height: 200px;
 	border-bottom:1px solid #434343;
 	border-top:1px solid #434343;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 
 }

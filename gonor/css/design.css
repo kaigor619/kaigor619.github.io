@@ -150,7 +150,7 @@ margin-bottom: 10px;
 }
 .comment .label__wrapper{
 	text-align: center;
-		margin-top: 15px;
+	margin-top: 1.6em;
 	
 }
 .comment .custom-file-upload{
@@ -184,6 +184,7 @@ margin-bottom: 10px;
 .where{
 	font-family: "Bebas Neue Bold";
 	width:100%;
+	margin-top: 1.7em;
 }
 .where h2{
 	text-align: center;
