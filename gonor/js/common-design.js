@@ -14,28 +14,31 @@ $(".design .design__what.main ul li").click(function() {
 });	
 
 	// Открывающие списки
-	for(let i=0;i<$('.design .design__what ul').length;i++){
-		$('.design .design__what').eq(i).click(function(){
-	$(this).find('ul').slideToggle();
-	for(let a=0;a<$(this).find('ul li').length;a++){
-	$(this).find('ul li').click(function(){
-		$('.design .design__what').eq(i).find('ul li').removeClass('active');
-		$(this).addClass('active');
-		$('.design .design__what').eq(i).find('span').text($(this).text()).css('color','#000');
+	$('.design .design__what').each(function(a){
+		$(this).click(function(){
+			$(this).find('ul').slideToggle();
+			$(this).find('ul li').each(function(i){
+				$(this).click(function(){
+				$('.design .design__what').eq(a).find('ul li').removeClass('active');
+				$(this).addClass('active');
+				$('.design .design__what').eq(a).find('span').text($(this).text()).css('color','#000');
+			});
+			});	
+
+			
+		});
 	});
 
-}
-});
-}
 
 
 // Куда отправить
-for(let i=0;i<$('.where .word__wrapper').length;i++){
-	$('.where .word__wrapper').eq(i).click(function(){
+$('.where .word__wrapper').each(function(){
+		$(this).click(function(){
 		$('.div-checkbox').removeClass('active');
 		$(this).find('.div-checkbox').addClass('active');
 	});
-}
+});
+
 // Загрузка файлов
 ;( function ( document, window, index )
 {

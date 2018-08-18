@@ -1,67 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+  <meta charset="UTF-8">
+  <title>Document</title>
 </head>
 <body>
-	<style>
+  <style>
+    .box{
+      width:100px;
+      height: 100px;
+      background: #6A6DEF;
+      border:3px solid #fff;
+      display: inline-block;
+    }
+  </style>
+<div class="wrapper">
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+</div>
+<p>1</p>
+<p>2</p>
+<p>3</p>
+<p>4</p>
+<p>5</p>
+<p>6</p>
+<p>7</p>
+<p>8</p>
+  <script src="libs/jquery/jquery-3.3.1.min.js"></script>
+  <script>
+    $('.box').each(function(e){
+      $(this).click(function(){
+        $('p').eq(e).css('color','red');
+        // alert($(this).index());
 
-input.error {
- border: 1px solid #ff0000;
-}
-label.error {
- color: #ff0000;
- font-weight: normal;
-}
-	</style>
-	<form class="cmxform" id="commentForm" >
-    <p>
-      <label for="cname">Name</label>
-      <input id="cname" name="name" minlength="2" type="text" required>
-    </p>
-    <p>
-      <label for="cemail">E-Mail</label>
-      <input id="cemail" type="email" name="email" required>
-    </p>
-    <p>
-      <label for="curl">URL (optional)</label>
-      <input id="curl" type="url" name="url">
-    </p>
-    <p>
-      <label for="ccomment">Your comment (required)</label>
-      <textarea id="ccomment" name="comment" required></textarea>
-    </p>
-    <p>
-      <input class="submit" type="submit" value="Submit">
-    </p>
-</form>
-	<script src="libs/jquery/jquery-3.3.1.min.js"></script>
-<script src="libs/validation/jquery.validate.js"></script>
-<script>
-
-$(function(){
-
-$('#commentForm').validate({
- rules: {
- name: {
- required: true,
- minlength: 2
- }
- },
- messages: {
- name: {
- required: "Поле 'Имя' обязательно к заполнению",
- minlength: "Введите не менее 2-х символов в поле 'Имя'"
- },
- email: {
- required: "Поле 'Email' обязательно к заполнению",
- email: "Необходим формат адреса email" 
- },
- url: "Поле 'Сайт' обязательно к заполнению"
- }
- });
-});
-</script>
+      });
+    })
+  </script>
 </body>
 </html>
