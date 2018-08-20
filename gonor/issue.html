@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Оформление заказа</title>
+	<meta name="description" content="Чехлы,Чашки, Футболки, Свитшоты" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="img/icon/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.min.css" />
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
+	<!-- Стили -->
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/header.css" />
+	<link rel="stylesheet" href="css/issue.css" />
+	<link rel="stylesheet" href="css/footer.css" />
+	<link rel="stylesheet" href="css/issue-media.css" />
+
+
+</head>
+<body>
+
+
+	<header class="header" id="header">
+		<div class="container ">
+			<div class="row justify-content-between align-items-center">
+				<div class="col-md-3 col-12 d-flex justify-content-center">
+					<div class="logo">
+					<a href="index.html"><img src="img/logo2.png" alt="GONOR" class='logo'></a>
+					</div>
+				</div>	
+				<div class="col-md-9 d-flex align-items-center justify-content-end">
+					<ul class="header-menu">
+						<li><a href="index.html">Главная</a></li>
+						<li><a href="case.html">Чехлы</a></li>
+						<li><a href="tshirt.html">Одежда</a></li>
+						<li><a href="cup.html">Чашки</a></li>
+						<li><a href="#">Остальное</a></li>
+					</ul>
+					<a href="basket.html">
+						<div class="basket">
+							<i class="fa fa-shopping-basket" aria-hidden="true" title='Корзина'></i>
+						</div>
+					</a>	
+
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="burger__panel">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="burger">
+						<i class="fa fa-bars"></i>
+					</div>
+						<a href="basket.html">
+							<div class="newbasket">
+								<i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+							</div>
+						</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<div class="sidebar">
+		<ul class="aside__menu">
+			<li><a href="index.html" class='active'>Главная</a>
+		<div class="sidebar__close">
+			<i class="fa fa-times" aria-hidden="true"></i>
+		</div></li>
+			<li><a href="case.html">Чехлы</a></li>
+			<li><a href="tshirt.html">Одежда</a></li>
+			<li><a href="cup.html">Чашки</a></li>
+			<li><a href="#">Остальное</a></li>
+		</ul>
+	</div>
+	
+	<section class="issue" id="issue">
+		<div class="container">
+			<div class="row flex-md-row flex-column-reverse">
+				<div class="col-md-6">
+					<div class="issue-text">
+						<form  name="form" class='form' id="form" >
+							<div class="person__block issue__block">
+								<h3 class='title-block'>1. Личная информация</h3>
+								<input type="text" placeholder="*Ваше имя" id='name' class='name' minlength="2" required>
+								<input type="text" placeholder="*Ваше Фамилия" id='surname' class='surname' minlength="2" required>
+								<input type="text" placeholder="*Ваш номер телефона" id='phone' class='phone' required>
+								<input type="email" placeholder="* Ваш Е-mail ( не обязательно )" id='email' class='email'>
+							</div>
+
+							<div class="delivery__block issue__block">
+								<h3 class='title-block'>2. доставка <span>+45 гривен</span></h3>
+								<div class="checkbox__block issue__delivery">
+									<div class="delivery__block"><div class="div-checkbox active"></div> <span>доставка в отделение</span></div>
+									<div class="delivery__block"><div class="div-checkbox"></div> <span>адресная доставка</span></div>
+								</div>
+								<div class="open-list"><span>*укажите ваш город</span> <img src="img/design/arrow.png" alt="Стрелка"><ul class='sublist__what'>
+									<li>Одесса</li>
+									<li>Киев</li>
+									<li>Львов</li>
+									<li>Харьков</li>
+								</ul></div>
+								
+								<div class="issue-tabs">
+									<div class="open-list"><span>*Укажите Номер отделение</span> <img src="img/design/arrow.png" alt="Стрелка"><ul class='sublist__what'>
+										<li>1</li>
+										<li>2</li>
+										<li>3</li>
+										<li>4</li>
+									</ul></div>
+								</div>
+								<div class="issue-tabs">
+									<div class="open-list"><span>*Укажите вашу улицу</span> <img src="img/design/arrow.png" alt="Стрелка"><ul class='sublist__what'>
+										<li>ул. Приморская</li>
+										<li>ул. Шевченка</li>
+										<li>ул. Измаильская</li>
+										<li>ул. Михайловская</li>
+									</ul></div>
+
+									<input type="text" placeholder="Дом" id='home' class='home'>
+									<input type="text" placeholder="Квартира" id='apartment' class='apartment'>
+								</div>	
+							</div>
+
+							<div class="pay__block issue__block">
+								<h3 class='title-block'>3. оплата <span>+25 гривен</span></h3>
+								<div class="checkbox__block issue__pay">
+									<div class="delivery__block"><div class="div-checkbox"></div> <span>Приват24</span></div>
+									<div class="delivery__block"><div class="div-checkbox"></div> <span>банковская карта</span></div>
+									<div class="delivery__block"><div class="div-checkbox"></div> <span>оплата при получении</span></div>
+								</div>
+							</div>
+							<div class="confirmation__block issue__block">
+								<h3 class='title-block'>4. подтверждения заказа</h3>
+								<p>выберите удобный для вас метод подтверждения заказа
+								( наш менеджер свяжется с вами по данным, которые вы указали в разделе «Личные Данные» )</p>
+								<div class="checkbox__block issue__confirmation">
+									<div class="delivery__block"><div class="div-checkbox"></div> <span>telegram</span></div>
+									<div class="delivery__block"><div class="div-checkbox"></div> <span>whatsapp</span></div>
+									<div class="delivery__block"><div class="div-checkbox"></div> <span>viber</span></div>
+									<div class="delivery__block"><div class="div-checkbox"></div> <span>email</span></div>
+									<div class="delivery__block"><div class="div-checkbox"></div> <span>Телефонный звонок</span></div>
+
+
+
+								</div>
+							</div>
+
+							<button class='btn-issue' id='btn-issue'>Оформить заказ</button>	
+
+							<div class="return-basket">
+								<span class='par'><img src="img/arrow-left.png" alt="Вернутся"> <span>Вернуться в корзину</span></span>
+							</div>	
+						</form>												
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="issue-product">
+						<div class="issue__product-list">
+							<div class="product__basket">
+								<div class='between'>
+									<div class="product__ceil"><img src="img/case/case-1.png" alt=""></div>
+									<div class="product__about"><h3 class='product__name'>stickerbombing</h3>
+									<p class='model-name'>чехол iphone 5/5s</p>
+									</div>
+								</div>
+								<div class="between-two">
+								<span class="price">160 грн</span>
+								</div>
+									<div class="close__product">
+										<img src="img/basket/close.png" alt="Крестик">
+									</div>
+			
+							</div>
+						</div>
+							<div class="basket-empty-wrapp">
+								<div class="basket-empty">
+									<h1>Корзина пуста</h1>
+								</div>
+							</div>
+						<div class="total">
+							<div class="total__block">
+								<h2>Итого:</h2>
+								<span id='total-price'>160 грн</span>
+							</div>
+							<div class="total__block delivery">
+								<h2>Доставка:</h2>
+								<span id='total-delivery'>70 грн</span>
+							</div>
+							<div class="warning">
+								<p class="red-text-one">
+									при безналичном расчёте вы оплачиваете только сумму заказа (без доставки).
+								</p>
+								<p class="red-text-two">
+									сумму доставки вы оплачиваете на отделении почты или курьеру при получении
+								</p>
+							</div>
+						</div>
+
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<footer class="footer" id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-lg-5 col-sm-4">
+					<div class="support-service">
+						<h4>Служба поддержки</h4>
+						<p class="mail">Почта: gonor.store@gmail.com</p>
+						<p class="telegram">telegram: @gonor.support</p>
+						<p class="phone">Тел. : +380777777777</p>
+						<p class="support-service__about">служба поддержи работает ежедневно с 9:00 до 21:00. <br>
+						В выходные и праздничные дни служба поддержи не работает</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-lg-2 col-sm-4 col-6">
+					<div class="information">
+						<h4>Информация</h4>
+						<ul>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Как заказать?</a></li>
+							<li><a href="#">Доставка и оплата</a></li>
+							<li><a href="#">Вопрос ответ</a></li>
+							<li><a href="#">сотрудничество</a></li>
+						</ul>
+					</div>	
+				</div>
+				<div class="col-md-3 col-lg-1 col-sm-4 col-6" >
+					<div class="pay">
+						<h4>Оплата</h4>
+						<img src="img/visa.png" alt="visa">
+						<img src="img/master.png" alt="MasterCard">
+					</div>	
+				</div>
+				<div class="col-md-3 col-lg-2 col-sm-6 col-12" >
+					<div class="delivery">
+						<h4>доставка</h4>
+						<div class="delivery__content">
+							<img src="img/nova.png" alt="Nova Poshta">
+						
+						</div>
+					</div>	
+				</div>
+				<div class="col-lg-2 col-md-12 col-sm-6 ">
+					<div class="social">
+						<h4>мы в соц. сетях</h4>
+						<div class="social__content">
+							<i class="fa fa-instagram" aria-hidden="true"></i>
+							<i class="fa fa-vk" aria-hidden="true"></i>
+
+						</div>
+					</div>	
+
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<section class="sub-footer">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-4">
+					<p class='sub-footer__root'>2018 gonor.com.ua</p>
+				</div>
+				<div class="col-8 d-flex justify-content-end">
+					<div class="sub-footer__right">
+						<a href='#'>публичная оферта</a>
+						<a href='#'>Пользовательское соглашение</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	
+	<script src="libs/jquery/jquery-3.3.1.min.js"></script>
+	<!-- Inputmask -->
+	<script src="libs/inputmask/jquery.inputmask.bundle.js"></script>
+	<script src="libs/inputmask/phone.js"></script>
+	<script src="libs/inputmask/phone-be.js"></script>
+	<script src="libs/inputmask/phone-ru.js"></script>
+
+	<script src="js/common-header.js"></script>	
+	<script src="js/common-issue.js"></script>	
+	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+	</body>
+</html>

@@ -1,0 +1,131 @@
+@media screen and (max-width:992px){
+	.issue{
+		font-size: 80%;
+	}
+	.product__basket .close__product img{
+	width:60%;
+	text-align: center;	
+}
+.issue .product__basket  img{
+	width:80%;
+}
+}
+@media screen and (max-width:800px){
+	.issue{
+		font-size: 70%;
+	}
+	.product__basket .close__product img{
+	width:50%;
+	text-align: center;
+	
+}
+.issue .product__basket  img{
+	width:70%;
+}
+}
+@media screen and (max-width:767px){
+.issue .product__basket  img{
+	width:80%;
+}
+.product__basket .close__product img{
+	width:50%;	
+}
+.issue{
+	font-size: 90%;
+	width:90%;
+	margin: 0 auto;
+}
+.issue .issue-product{
+	width:100%;
+	border-left:0;
+	padding-left: 0;
+	margin-bottom: 2em;
+}
+.issue .warning{
+	margin-top: 1em;
+}
+.issue .warning p{
+	font-size: 1.2em;
+}
+.return-basket img {
+    max-width: 7px;
+}
+}
+@media screen and (max-width:576px){
+.issue{
+	font-size: 80%;
+}
+.confirmation__block p{
+	line-height: 1.4em;
+}
+.issue{
+	padding-top: 0;
+	padding-bottom: 70px;
+}
+}
+@media screen and (max-width:500px){
+.issue .warning p{
+	font-size: 1.1em;
+}
+}
+@media screen and (max-width:460px){
+.issue .product__basket  img{
+	width:60%;
+}
+.issue .product__ceil{
+	border:1px solid #000;
+	padding: 0.31em 1.2em;
+	text-align: center;	
+}
+}
+@media screen and (max-width:414px){
+.issue .total__block h2{
+	font-size: 2em;
+}
+.issue .total__block span{
+		font-size: 2em;
+}
+.issue .warning p{
+	font-size: 1em;
+}
+.issue{
+	width:100%;
+}
+}
+@media screen and (max-width:360px){
+.issue{
+	font-size: 70%;
+}
+	.product__basket .close__product img{
+	width:50%;
+	
+}
+
+}
+@media screen and (max-width:320px){
+	.product__basket .close__product img{
+	width:50%;	
+}
+.issue .product__basket  img{
+	width:50%;
+}
+.issue .product__ceil{
+	border:1px solid #000;
+	padding: 0.31em 0em;
+	text-align: center;	
+}
+}
+@media screen and (max-width:300px){
+.between-two{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+/*	border:1px solid red;*/
+	text-align: center;
+}
+.product__basket .close__product{
+	margin: 0 auto;
+	transform: translateY(7px);
+
+}
+}

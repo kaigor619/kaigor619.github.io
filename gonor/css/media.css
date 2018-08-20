@@ -897,10 +897,7 @@ margin-top: -5px;
 	padding: 0;
 	display: flex;
 	flex-wrap:wrap;
-}
-.slick-list.draggable{
-	width:15%;
-/*	width:auto;*/
+
 }
 	.top__wrapper .carousel-top.case img{
 	width:100%;

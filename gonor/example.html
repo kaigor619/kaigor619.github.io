@@ -1,46 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="app.js"></script>
   <meta charset="UTF-8">
   <title>Document</title>
 </head>
 <body>
-  <style>
-    .box{
-      width:100px;
-      height: 100px;
-      background: #6A6DEF;
-      border:3px solid #fff;
-      display: inline-block;
-    }
-  </style>
-<div class="wrapper">
-  <div class="box"></div>
-  <div class="box"></div>
-  <div class="box"></div>
-  <div class="box"></div>
-  <div class="box"></div>
-  <div class="box"></div>
-  <div class="box"></div>
-  <div class="box"></div>
-</div>
-<p>1</p>
-<p>2</p>
-<p>3</p>
-<p>4</p>
-<p>5</p>
-<p>6</p>
-<p>7</p>
-<p>8</p>
-  <script src="libs/jquery/jquery-3.3.1.min.js"></script>
-  <script>
-    $('.box').each(function(e){
-      $(this).click(function(){
-        $('p').eq(e).css('color','red');
-        // alert($(this).index());
-
-      });
-    })
-  </script>
+ <h1>Первое приложение на Android</h1>
+ <input type="button" value='Отправить' id='button'>
 </body>
 </html>

@@ -1,0 +1,288 @@
+.issue{
+	width:100%;
+	padding-top: 50px;
+	font-family: "Bebas Neue Bold";
+	padding-bottom: 100px;
+	font-size: 100%;
+}
+.issue__block{
+	width:100%;
+	margin-bottom: 2.18em;
+}
+.issue__block h3{
+	font-size: 1.875em;
+	color: #000;
+	word-spacing: 0.16em;
+	letter-spacing: 0.06em;
+}
+.issue__block h3 span{
+	color: #434343;
+	word-spacing: normal;
+}
+.issue__block input{
+	display: block;
+	width:100%;
+	margin-top: 1.5em;
+	font-size: 1.125em;
+	color: #434343;
+	letter-spacing:0.06em;
+	padding: 0.555em;
+	border:1px solid #434343;
+	outline:none;
+}
+.issue__block input:focus{
+	border:1px solid #000;
+/*	 box-shadow:1px 1px 5px rgba(0,0,0,.5);*/
+}
+
+/*Доставка*/
+.checkbox__block{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 0.9em;
+}
+.checkbox__block .delivery__block{
+	display: flex;
+	align-items: center;
+	margin-right: 1.875em;
+	cursor:pointer;
+	margin-bottom: 1.25em;
+}
+.checkbox__block .delivery__block .div-checkbox{
+	width:1.56em;
+	height: 1.56em;
+	border:2px solid #000;
+	background: #fff;
+	transition: .3s;
+}
+.checkbox__block .delivery__block .div-checkbox.active{
+	background: #000;
+	transition: .3s;
+}
+.checkbox__block .delivery__block span{
+	margin-left: 0.777em;
+	font-size: 1.125em;
+
+}
+
+.open-list{
+	width:100%;
+	margin-top: 1.5em;
+	font-size: 1.125em;
+	color: #656565;
+	letter-spacing: 0.066em;
+	padding: 0.5555em;
+	border:1px solid #434343;
+	outline:none;
+	position: relative;
+	cursor: pointer;
+	
+}
+.open-list img{
+	position: absolute;
+	top:50%;
+	right:0.9em;
+	transform: translateY(-50%);
+}
+.open-list ul{
+	display: none;
+	width:100%;
+	position:absolute;
+	top:100%;
+	left:0;
+	background: #D5D5D5;
+	z-index: 2;
+}
+.open-list ul li{
+	padding: 0.5em;
+	font-size: 1.25em;
+	color: #000;
+	transition:.3s;
+}
+.open-list ul li:hover{
+	background: #fff;
+	transition:.3s;
+}
+/*Подтверждение*/
+.confirmation__block p{
+	margin-top: 0.833em;
+	color: #000;
+	letter-spacing: 0.038em;
+	color: #656565;
+	font-size: 1.125em;
+	line-height: 1.111em;
+}
+
+/*Кнопка оформить*/
+.issue .btn-issue{
+	display:block;
+	border:none;
+	outline:none;
+	background: #000;
+	color: #fff;
+	cursor:pointer;
+	transition:.3s;
+	font-size: 1.875em;
+	padding: 0.33em 1em;
+	letter-spacing: 0.08em;
+}
+.issue .btn-issue.disabled{
+	background: #474747;
+	transition:.3s;
+}
+
+/*Вернуться в корзину*/
+.return-basket{
+	margin-top: 1.875em;
+	cursor:pointer;
+}
+.return-basket .par{
+	display: flex;
+	align-items: center;
+}
+.return-basket img{
+	max-width:11px;
+	width:100%;
+	height: auto;
+}
+.return-basket .par span{
+	margin-left: 0.433em;
+	letter-spacing: 0.0333em;
+	font-size: 1.9em;
+}
+.pay__block{
+	margin-bottom: 1.25em;
+}
+.confirmation__block{
+	margin-bottom: 0.9em;
+}
+
+
+
+/*Справа список товара*/
+.issue .issue-product{
+	width:100%;
+	border-left:2px solid black;
+	padding-left: 1.875em;
+}
+
+.issue  .product__basket{
+	padding: 0.875em 0;
+	width:100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom:1px solid #b7b7b7;
+
+}
+.issue .product__basket .between{
+	display: flex;
+	align-items:center;
+}
+
+.issue .product__ceil{
+	border:2px solid #000;
+	padding: 0.31em 1.87em;
+	text-align: center;	
+}
+.issue .product__basket  img{
+	width:100%;
+	max-width: 70px;
+	height: auto;
+	text-align: center;
+}
+.product__basket .product__about{
+	margin-left: 0.625em;
+}
+.product__basket .product__name{
+	font-size: 1.25em;
+	letter-spacing: 0.05em;
+	font-family: "Bebas Neue Bold";
+}
+.product__basket .model-name{
+	font-size: 0.875em;
+	letter-spacing: 0.071em;
+	font-family: "Bebas Neue Bold";
+		margin-top: 0.35em;
+}
+.product__basket .price{
+	font-size: 1.5em;
+	letter-spacing: 0.04em;
+}
+
+
+.product__basket  .close__product{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	background: #000;
+	color: #fff;
+	width:1.20em;
+	height:1.20em;
+	cursor:pointer;
+	
+}
+.product__basket .close__product img{
+	width:100%;
+	max-width:12px;
+	height: auto;
+}
+
+/*Корзина пуста*/
+.issue .basket-empty-wrapp{
+	width:100%;
+	height:9.375em;
+	display: none;
+	border-bottom:1px solid #b7b7b7; 
+}
+.issue .basket-empty-wrapp.active{
+	display:block;
+}
+.issue .basket-empty-wrapp div{
+	width:100%;
+	height:100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.issue .basket-empty-wrapp h1{
+	font-size: 2em;
+	letter-spacing: 0.046em;
+}
+
+
+/*Итого*/
+.issue .total{
+	margin-top: 1.875em;
+}
+.issue .total__block{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.issue .total__block.delivery{
+	margin-top: 4px;
+}
+.issue .total__block h2{
+	font-size: 2.25em;
+	letter-spacing:0.055em;
+}
+.issue .total__block span{
+		font-size: 2.25em;
+	letter-spacing: 0.055em;
+}
+.issue .warning{
+	margin-top: 1.5em;
+}
+.issue .warning p{
+	font-family: "Bebas Neue Bold";
+	color: #C73D3D;
+	font-size: 1.125em;
+	margin-bottom: 0.27em;
+}

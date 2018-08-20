@@ -16,6 +16,7 @@ $(".design .design__what.main ul li").click(function() {
 	// Открывающие списки
 	$('.design .design__what').each(function(a){
 		$(this).click(function(){
+			$('.design .design__what').not($('.design .design__what').eq(a)).find('ul').fadeOut();
 			$(this).find('ul').slideToggle();
 			$(this).find('ul li').each(function(i){
 				$(this).click(function(){
