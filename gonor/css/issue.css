@@ -79,6 +79,10 @@
 	
 }
 .open-list img{
+	width:100%;
+	max-width:18px;
+	height: auto;
+
 	position: absolute;
 	top:50%;
 	right:0.9em;

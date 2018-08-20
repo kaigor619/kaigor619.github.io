@@ -82,6 +82,14 @@
 .issue .total__block h2{
 	font-size: 2em;
 }
+.issue__block input, .open-list{
+	padding: 0.7em;
+}
+
+.open-list img{
+	text-align: center;
+	max-width: 14px;
+}
 .issue .total__block span{
 		font-size: 2em;
 }
