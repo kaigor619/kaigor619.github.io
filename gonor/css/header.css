@@ -429,7 +429,7 @@ width:80%;
 	color: #c33131;
 	letter-spacing: 0.04em;
 }
-.product__pay button{
+.product__pay .btn-issue{
 	display: block;
 	border:none;
 	outline:none;
@@ -438,24 +438,16 @@ width:80%;
 	margin: 0 auto;
 	cursor:pointer;
 	transition:.3s;
-}
-.product__pay .btn-issue{
 	margin-top: 0.66em;
 	font-size: 1.875em;
 	padding: 0.166em 0.333em;
 	width:100%;
 	letter-spacing: 0.08em;
+	text-align: center;
 }
 .product__pay .btn-issue.disabled{
 	background: #474747;
 	transition:.3s;
-}
-.product__pay .btn-continue{
-	margin-top: 0.53em;
-	font-size: 1.75em;
-	padding: 0.17em 0.35em;
-	letter-spacing: 0.05em;
-	width:100%;
 }
 
 

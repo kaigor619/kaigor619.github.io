@@ -181,6 +181,8 @@ letter-spacing: 0.043em;
 	margin: 0 auto;
 	margin-top: 0.56em;
 	cursor:pointer;
+	text-align: center;
+	
 }
 .basket__bottom .right .btn-issue.disabled{
 	background: #474747;
@@ -335,7 +337,7 @@ margin-top: 30px;
 	color: #c33131;
 	letter-spacing: 0.04em;
 }
- .basket__mobile .product__pay-main button{
+ .basket__mobile .product__pay-main .btn-issue{
 	display: block;
 	border:none;
 	outline:none;
@@ -352,6 +354,7 @@ margin-top: 30px;
 	padding: 0.166em 0.333em;
 	width:100%;
 	letter-spacing: 0.08em;
+	text-align: center;
 }
  .basket__mobile .product__pay-main .btn-issue.disabled{
 	background: #474747;

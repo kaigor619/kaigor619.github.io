@@ -133,6 +133,7 @@
 .issue .btn-issue.disabled{
 	background: #474747;
 	transition:.3s;
+	cursor:no-drop;
 }
 
 /*Вернуться в корзину*/
