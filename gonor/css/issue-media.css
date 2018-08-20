@@ -82,8 +82,18 @@
 .issue .total__block h2{
 	font-size: 2em;
 }
+.checkbox__block .delivery__block .div-checkbox{
+	width:1.8em;
+	height: 1.8em;
+}
+.return-basket img {
+    max-width: 6px;
+}
+.open-list ul li {
+    padding: 0.8em;
+}
 .issue__block input, .open-list{
-	padding: 0.7em;
+	padding: 0.8em;
 }
 
 .open-list img{
