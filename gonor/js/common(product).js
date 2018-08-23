@@ -77,13 +77,24 @@ $('.product__number .number__block').eq(2).click(function(){
 
 
 // Материал
-$('.product__material .product__material__block .material__block').each(function(){
+
+$('.product__material .main__material__block').each(function(i){
+$(this).find('.material__block').each(function(a){
   $(this).click(function(){
-    $('.product__material .product__material__block .material__block').removeClass('active');
+    $('.product__material .main__material__block').eq(i).find('.material__block').not($(this)).removeClass('active');
     $(this).addClass('active');
   });
-}); 
+});
 
+});
+
+$(".hide-block").not(":first").hide();
+$(".product__material__block .material__block").click(function() {
+  $(".hide-block").hide().eq($(this).index()).fadeIn();
+});
+
+
+// Размер
 $('.product__size .product__size__cell').each(function(i){
   $(this).click(function(){
     $('.product__size .product__size__cell').removeClass('active');

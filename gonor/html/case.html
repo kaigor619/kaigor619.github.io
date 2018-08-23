@@ -11,29 +11,23 @@
 	<meta name="description" content="Чехлы,Чашки, Футболки, Свитшоты" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="shortcut icon" href="img/icon/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="/favicon.ico" type="image/x-icon">
-		<!-- Bootstrap -->
-	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.min.css" />
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
 	<!-- Owl Carousel -->
 	<link rel="stylesheet" href="libs/owl-carousel-2/owl.carousel.css" />
 	<link rel="stylesheet" href="libs/owl-carousel-2/owl.theme.css">
 	<link rel="stylesheet" href="libs/owl-carousel-2/owl.transitions.css">
-	<!--Normalize  -->
-	<link rel="stylesheet" href="css/normalize.css" />
-	<!-- Font -->
-	<link rel="stylesheet" href="css/fonts.css" />
-	<!-- Шапка -->
-	<link rel="stylesheet" href="css/header.css" />
-	<!-- Футер -->
-	<link rel="stylesheet" href="css/footer.css" />
+	<!-- Модальное окно ArticModal -->
+	<link rel="stylesheet" href="libs/articmodal/simple.css">
+	<link rel="stylesheet" href="libs/articmodal/jquery.arcticmodal-0.3.css">
 	<!-- Стили -->
-	<link rel="stylesheet" href="css/shares.css" />	
-	<link rel="stylesheet" href="css/model(product).css" />	
-	<link rel="stylesheet" href="css/product.css">
-	<link rel="stylesheet" href="css/product-media.css">	
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/header.css" />
+	<link rel="stylesheet" href="css/case.css" />
+	<link rel="stylesheet" href="css/footer.css" />
+	<link rel="stylesheet" href="css/case-media.css" />
 
 </head>
 <body>
@@ -51,15 +45,13 @@
 					<ul class="header-menu">
 						<li><a href="index.html">Главная</a></li>
 						<li><a href="case.html" class='active'>Чехлы</a></li>
-						<li><a href="tshirt.html">Одежда</a></li>
+						<li><a href="#">Одежда</a></li>
 						<li><a href="cup.html">Чашки</a></li>
 						<li><a href="#">Остальное</a></li>
 					</ul>
-					<a href="basket.html">
-						<div class="basket">
-							<i class="fa fa-shopping-basket" aria-hidden="true" title='Корзина'></i>
-						</div>
-					</a>
+					<div class="basket">
+						<i class="fa fa-shopping-basket" aria-hidden="true" title='Корзина'></i>
+					</div>
 
 				</div>
 			</div>
@@ -72,11 +64,9 @@
 					<div class="burger">
 						<i class="fa fa-bars"></i>
 					</div>
-					<a href="basket.html">
-						<div class="newbasket">
-							<i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
-						</div>
-					</a>
+					<div class="newbasket">
+						<i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -90,16 +80,16 @@
 			<i class="fa fa-times" aria-hidden="true"></i>
 		</div></li>
 			<li><a href="case.html">Чехлы</a></li>
-			<li><a href="tshirt.html">Одежда</a></li>
+			<li><a href="#">Одежда</a></li>
 			<li><a href="cup.html">Чашки</a></li>
 			<li><a href="#">Остальное</a></li>
 		</ul>
 	</div>
-
-	<section class="model case" id="model">
+	
+	<section class="model" id="model">
 		<div class="container">
 			<ul class="model-menu case">
-				<li class='model-link'><a class='model-link-a' href="design.html" style='color:green'>Свой дизайн</a></li>
+				<li class='model-link'><a class='model-link-a' href="#" style='color:green'>Свой дизайн</a></li>
 				<li class='model-link'><a class='model-link-a' href="#">Apple</a>
 					<div class="sub__content">
 						<div class='sub__list'>
@@ -494,7 +484,7 @@
 
 						</div></div>
 				</li>
-				<li class='model-link'><a class='model-link-a' href="#">Другие...</a>
+				<li class='model-link'><a class='model-link-a' href="#">Остальные</a>
 					<div class="sub__content">
 						<div class='sub__list'>
 							<ul class="sub__list__content">
@@ -593,104 +583,151 @@
 		</div>
 
 	</section>
-
-
-
-	
-	<section class="product case" id="product">
+	<section class="select-model">
 		<div class="container">
-			<div class="row">
-				<div class="col-sm-5">
-					<div class="product__cell">
-						<div><img src="img/case/big-case.png" alt="Чехол"></div>
-					</div>
-				</div>
-				<div class="col-sm-6">
-					<div class="product__text">
-						<p class="product__view">чехол iphone6\6s</p>
-						<h2 class="product__title">stickerbombing</h2>
-						<h3 class="product__price product__price__case">160 <span>грн</span></h3>
-						<p class="product__about product__about__case">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora praesentium veniam fugiat officiis nesciunt debitis vitae error, atque dolores eos laborum tempore, labore sit id nobis quam! Ducimus, a ab.</p>
-
-						<div class="product__material">
-							<p class="word-material">Материал: <span>Пластик</span></p>
-							<div class="product__material__block">
-								<div class="main__material__block">
-									<div class="material__block active">Пластик</div>
-									<div class="material__block">Силикон</div>
-								</div>
-								<i class="fa fa-question-circle" aria-hidden="true"></i>
-								<a href="#">Материал чехла</a>
-							</div>
-							<div class="main__material__block hide-block">
-									<div class="material__block active">глянец</div>
-									<div class="material__block">матовый</div>
-							</div>
-						</div>
-						<div class="product__number">
-							<p class="word__number">Количество:</p>
-							<div class="main__number">
-								<div class="number__block"><i class="fa fa-minus" aria-hidden="true"></i></div>
-								<div class="number__block">1</div>
-								<div class="number__block"><i class="fa fa-plus" aria-hidden="true"></i></div>
-							</div>
-						</div>
-						<div class="product__button">
-							<a href="#" class='product__buy__btn'>Купить</a>
-							<a href="#" class='product__add__btn'>В корзину <i class="fa fa-cart-arrow-down" aria-hidden="true"></i></a>
-
-						</div>
+			<div class="row align-items-center">
+				<div class="col-sm-4" >
+					<div class="select-model-wrapper">
+						<div class="select-model-main">
+							<a href="#" class='slct'>Марка Телефона</a>
+						<i class="fa fa-caret-down"></i>
+						<ul class='drop-model model-content'>
 						
-
+						</ul>
+						</div>
 					</div>
-
-
 				</div>
+				<div class="col-sm-4"  >
+					<div class="select-model-wrapper">
+						<div class="select-model-main">
+							<a href="#" class='slct'>Модель Телефона</a>
+						<i class="fa fa-caret-down"></i>
+						<ul class='drop-model submodel-content'>
+
+						</ul>
+						</div>
+					</div>
+				</div>
+				<div class=" col-sm-4 " style='position:static'>
+					<div class="dont__like">
+						<h2>Ничего не понравилось из каталога? </h2>
+						<h3>Не расстраивайся!</h3>
+						<a href="#" class="btn__design">Создай свой дизайн</a>
+					</div>
+				</div>													
 			</div>
-			<div class="reviews__main__container">
-			<div class="row">
-				<div class="col-sm-5">
-					<div class="reviews">
-						<div class="reviews__block">
-							<div class="reviews__line"><h3 class="reviews__name">Сергей</h3><i class="fa fa-facebook-square facebook" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i> </div>
-							<div class="reviews__about">
-								<p>я благодарен этому интернет-магазину за его быструю доставку и очень качественный продукт.Не один раз заказываю и каждый раз доволен.</p>
-							</div>
-						</div>
-						<div class="reviews__block">
-							<div class="reviews__line"><h3 class="reviews__name">Сергей</h3><i class="fa fa-facebook-square facebook" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i> </div>
-							<div class="reviews__about">
-								<p>я благодарен этому интернет-магазину за его быструю доставку и очень качественный продукт.Не один раз заказываю и каждый раз доволен.</p>
-							</div>
-						</div>
-						<div class="reviews__block">
-							<div class="reviews__line"><h3 class="reviews__name">Сергей</h3><i class="fa fa-facebook-square facebook" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i> </div>
-							<div class="reviews__about">
-								<p>я благодарен этому интернет-магазину за его быструю доставку и очень качественный продукт.Не один раз заказываю и каждый раз доволен.</p>
-							</div>
-						</div>
-
-					<div class="see__more__wrapper"><a href='#' class="see__more">Показать еще <img src="img/case/arrow-arrow.png" alt=""></a></div>
-											
-					</div>
-				</div>
-				<div class="col-sm-6 ">
-					<div class="product__reviews">
-						<h3 class="reviews__title">отзывы:</h3>
-						<p class="reviews__comein">войдите с помощью <i class="fa fa-vk" aria-hidden="true"></i>  <i class="fa fa-facebook-official" aria-hidden="true"></i>  <i class="fa fa-google-plus-square" aria-hidden="true"></i>  и оставьте свой отзыв:</p>
-
-						<p class="reviews__evaluation">оценка:  <span><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span></p>
-						<input type="text" class='reviews__input' placeholder='Ваше Имя' >
-						<textarea  placeholder='* Ваш комментарий'></textarea>
-						<button class="reviews__send">Отправить</button>
-					</div>
-				</div>
-			</div>
-		</div>
 		</div>
 	</section>
 
-	
+	<section class="sorting" id="sorting">
+		<div class="container">
+			<div class="row  d-flex justify-content-center align-items-center" >
+			<div class="col-auto d-flex justify-content-center" >
+				<div class='sub__list__sort'><a href='#' class='main-word'>Сортировать:
+				<div class="sort__wrapper"><span>По Популярности</span>
+				<ul class='sub__sort'>
+						<li><a href="#">Обычная</a></li>
+						<li><a href="#">По Популярности</a></li>
+						<li><a href="#">По Новизне</a></li>
+					</ul> 
+				</div><i class="fa fa-caret-down sort__i"></i></a>
+				</div>
+			</div>
+			<div class="col-auto d-flex justify-content-center" >
+				<div class='sub__list__sort'><a href='#' class='main-word'>Тип Чехла:
+				<div class="sort__wrapper"><span>По Популярности</span>
+				<ul class='sub__sort'>
+						<li><a href="#">Обычная</a></li>
+						<li><a href="#">По Популярности</a></li>
+						<li><a href="#">По Новизне</a></li>
+					</ul> 
+				</div><i class="fa fa-caret-down sort__i"></i></a>
+				</div>
+			</div>
+			<div class="col-auto d-flex justify-content-center" >
+				<div class='sub__list__sort'><a href='#' class='main-word'>Категории:
+				<div class="sort__wrapper"><span>По Популярности</span>
+				<ul class='sub__sort'>
+						<li><a href="#">Обычная</a></li>
+						<li><a href="#">По Популярности</a></li>
+						<li><a href="#">По Новизне</a></li>
+					</ul> 
+				</div><i class="fa fa-caret-down sort__i"></i></a>
+				</div>
+			</div>			
+
+			</div>
+		</div>
+	</section>
+
+
+<div style="display: none;">
+    <div class="box-modal" id="exampleModal">
+        <div class="box-modal_close arcticmodal-close">&times;</div>
+		<i class='fa fa-check ok'></i>
+    </div>
+</div>
+
+
+	<section id="product__case" class="product__case case">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+					<div class="product__main">
+						<div class="product__case__block">
+							<img src="img/case/case-1.png" alt="" class='case'>
+							<p class="product__block__title"> stickerbombing</p>
+							<div class="product__cover"></div>
+							<a href="#" class='price'>200 <span>грн</span></a>
+						</div>
+						<div class="add__wrapper"><a href="#" class='add'>В корзину</a> <i class="fa fa-cart-arrow-down" aria-hidden="true"></i></div>
+					</div>
+				</div>
+
+				<div class="col-12 col-sm-6 col-md-4 d-flex  justify-content-center">
+					<div class="product__main">
+						<div class="product__case__block">
+							<img src="img/case/case-2.png" alt="" class='case'>
+							<p class="product__block__title"> smoke mid everyday</p>
+							<div class="product__cover"></div>
+							<a href="#" class='price'>200 <span>грн</span></a>
+						</div>
+						<div class="add__wrapper"><a href="#" class='add'>В корзину</a> <i class="fa fa-cart-arrow-down" aria-hidden="true"></i></div>
+						
+					</div>
+
+				</div>
+
+				<div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+					<div class="product__main">
+						<div class="product__case__block">
+							<img src="img/case/case-3.png" alt="" class='case'> 
+							<p class="product__block__title"> white & black</p>
+							<div class="product__cover"></div>
+							<a href="#" class='price'>200 <span>грн</span></a>
+						</div>
+						<div class="add__wrapper"><a href="#" class='add'>В корзину</a> <i class="fa fa-cart-arrow-down" aria-hidden="true"></i></div>
+					</div>
+
+				</div>
+
+
+
+
+
+
+			</div>
+			<div class="row">
+				<div class="col-12 d-flex justify-content-center">
+					<a href='#' class="see__more">Посмотреть еще <img src="img/case/arrow-arrow.png" alt=""></a>
+				</div>
+			</div>
+
+
+		
+		</div>
+	</section>
 	<footer class="footer" id="footer">
 		<div class="container">
 			<div class="row">
@@ -728,7 +765,7 @@
 						<h4>доставка</h4>
 						<div class="delivery__content">
 							<img src="img/nova.png" alt="Nova Poshta">
-						
+							<!-- <img src="img/ukr.png" alt="Ukr Poshta"> -->
 						</div>
 					</div>	
 				</div>
@@ -737,6 +774,7 @@
 						<h4>мы в соц. сетях</h4>
 						<div class="social__content">
 							<i class="fa fa-instagram" aria-hidden="true"></i>
+							<i class="fa fa-facebook-official" aria-hidden="true"></i>
 							<i class="fa fa-vk" aria-hidden="true"></i>
 
 						</div>
@@ -764,6 +802,10 @@
 		</div>
 	</section>
 
+		
+
+
+
 
 
 
@@ -774,13 +816,18 @@
 
 
 	<!--[if lt IE 9]>
-
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
 	<script src="libs/jquery/jquery-3.3.1.min.js"></script>
 	<script src="libs/owl-carousel-2/owl.carousel.min.js"></script>
+	<script src="libs/articmodal/jquery.arcticmodal-0.3.min.js"></script>
 
 	<script src="js/common-header.js"></script>
-	<script src="js/common(product).js"></script>
+	<script src="js/case.js"></script>
+
 	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
 	</body>

@@ -104,7 +104,7 @@
  	font-size: 1.125em;
  	letter-spacing: 1px;
  }
- .product__material .product__material__block{
+ .product__material  .product__material__block{
  	margin-top: 18px;
  	display: -webkit-box;
  	display: -ms-flexbox;
@@ -114,7 +114,7 @@
  	align-items: center;
 
  }
-  .product__material .product__material__block .main__material__block{
+  .product__material   .main__material__block{
   	display: -webkit-box;
   	display: -ms-flexbox;
   	display: flex;
@@ -123,7 +123,13 @@
   	align-items: center;
 
   }
-  .product__material .product__material__block .material__block{
+   .product__material  .main__material__block:last-child{
+   	margin-top: 1.875em;
+   }
+     .product__material.cup  .main__material__block{
+   	margin-top: 1.6em;
+   } 
+  .product__material  .material__block{
   	font-family: "Bebas Neue Bold";
   	color:#000;
   	background: #fff;
@@ -135,18 +141,18 @@
   	cursor:pointer;
   	letter-spacing: 2px;
   }
-   .product__material .product__material__block .material__block.active{
+   .product__material  .material__block.active{
    	background:#000;
   	color: #fff;
    } 
-  .product__material .product__material__block .material__block:first-child{
+  .product__material  .material__block:first-child{
   	border-right:1px solid #000;
   }  
-    .product__material .product__material__block .material__block:last-child{
+    .product__material  .material__block:last-child{
   	border-left:1px solid #000;
   } 
 
-  .product__material .product__material__block .material__block:hover{
+  .product__material  .material__block:hover{
   	background:#000;
   	color: #fff;
   	-webkit-transition:.3s;
