@@ -1,5 +1,8 @@
 @media screen and (max-width:1024px){
 	.design__img.cup{
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
 	text-align: center;
 }
@@ -9,6 +12,9 @@ margin-bottom: 40px;
 }
 @media screen and (max-width:768px){
 	.design__img.case{
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
 	text-align: center;
 }

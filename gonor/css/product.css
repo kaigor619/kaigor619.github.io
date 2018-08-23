@@ -16,7 +16,11 @@
 }
 .product .product__cell{
 	text-align: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	padding: 30px 15px;
 	border:1px solid black;
@@ -102,12 +106,20 @@
  }
  .product__material .product__material__block{
  	margin-top: 18px;
+ 	display: -webkit-box;
+ 	display: -ms-flexbox;
  	display: flex;
+ 	-webkit-box-align: center;
+ 	-ms-flex-align: center;
  	align-items: center;
 
  }
   .product__material .product__material__block .main__material__block{
+  	display: -webkit-box;
+  	display: -ms-flexbox;
   	display: flex;
+  	-webkit-box-align: center;
+  	-ms-flex-align: center;
   	align-items: center;
 
   }
@@ -118,6 +130,7 @@
   	border:2px solid #000;
   	padding: 0.45em 1em;  	
   	font-size: 1.5em;
+  	-webkit-transition:.3s;
   	transition:.3s;
   	cursor:pointer;
   	letter-spacing: 2px;
@@ -136,6 +149,7 @@
   .product__material .product__material__block .material__block:hover{
   	background:#000;
   	color: #fff;
+  	-webkit-transition:.3s;
   	transition:.3s;
   }
 
@@ -158,7 +172,11 @@
  .product__size{
  	font-family: "Bebas Neue Bold";
  	margin-top: 15px;
+ 	display: -webkit-box;
+ 	display: -ms-flexbox;
  	display: flex;
+ 	-webkit-box-align: center;
+ 	-ms-flex-align: center;
  	align-items: center;
  }
  .product__size .word__size{
@@ -174,6 +192,7 @@ padding: 0.11em 0.30em;
   	color:#000;
   	font-size: 1.62em;
 	letter-spacing: 1.69px;
+	-webkit-transition:.3s;
 	transition:.3s;
 	cursor:pointer;
   }
@@ -181,16 +200,19 @@ padding: 0.11em 0.30em;
  .product__size .product__size__cell:hover{
  	background:#000;
  	color:#fff;
+ 	-webkit-transition:.3s;
  	transition:.3s;
  }
   .product__size .product__size__cell:active{
  	background:#000;
  	color:#fff;
+ 	-webkit-transition:.3s;
  	transition:.3s;
  }
    .product__size .product__size__cell.active{
  	background:#000;
  	color:#fff;
+ 	-webkit-transition:.3s;
  	transition:.3s;
  }
 /* .what__size__wrapper{
@@ -198,12 +220,17 @@ padding: 0.11em 0.30em;
  }*/
   .what__size{
   	margin-top: 15px;
+  	display: -webkit-box;
+  	display: -ms-flexbox;
   	display: flex;
+  	-webkit-box-align: center;
+  	-ms-flex-align: center;
   	align-items: center;
   	margin-bottom: -10px;
   }
   .what__size i{
   	font-size: 1.56em;
+  	-webkit-transition:.3s;
   	transition:.3s;
   }  
     .what__size a{
@@ -218,7 +245,11 @@ padding: 0.11em 0.30em;
     /*Количество*/
 .product__number{
 	 font-family: "Bebas Neue Bold";
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	margin-top: 34px;
 }   
@@ -228,6 +259,8 @@ padding: 0.11em 0.30em;
 	letter-spacing: 1.69px;
 }
 .product__number .main__number{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	margin-left: 15px;
 
@@ -240,8 +273,14 @@ padding: 0.11em 0.30em;
 	border:1px solid #000;
 	color:#fff;
 	font-size: 1.125em;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	cursor:pointer;
 
@@ -282,6 +321,8 @@ padding: 0.11em 0.30em;
 .product__button{
 	font-family: "Bebas Neue Bold";
 	margin-top: 34px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 
 }
@@ -292,7 +333,11 @@ padding: 0.11em 0.30em;
 	background: #000;
 /*	padding: 14px 60px;*/
 padding: 0.35em 1em;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 }
 .product__button .product__add__btn{
@@ -302,7 +347,11 @@ padding: 0.35em 1em;
 	padding: 0.46em 1.1em;
 	background: #000;
 	margin-left: 35px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 }
 .product__button .product__add__btn i{
@@ -349,10 +398,12 @@ margin-left: 10px;
 	cursor:pointer;
 	color:#CBCBCB;
 	margin-right: 3px;
+	-webkit-transition:all .3s;
 	transition:all .3s;
 }
 .product__reviews .reviews__evaluation span i.active{
 	color:red;
+	-webkit-transition:all .3s;
 	transition:all .3s;
 }
 .product__reviews .reviews__evaluation span{
@@ -440,7 +491,11 @@ margin-bottom: 25px;
 	background: #000;
 	font-size: 1.1em;
 	letter-spacing: 1.4px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 }
 .see__more img{

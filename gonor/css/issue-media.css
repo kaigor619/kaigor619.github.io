@@ -141,14 +141,22 @@
 }
 @media screen and (max-width:300px){
 .between-two{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 /*	border:1px solid red;*/
 	text-align: center;
 }
 .product__basket .close__product{
 	margin: 0 auto;
+	-webkit-transform: translateY(7px);
 	transform: translateY(7px);
 
 }

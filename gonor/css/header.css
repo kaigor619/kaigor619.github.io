@@ -1,13 +1,13 @@
 
-*{
-	margin: 0;
-	padding: 0;
-}
-
 ul{
 	list-style: none;
 	margin: 0;
 	padding: 0;
+}
+p,h1,h2,h3,h4,h5{
+	margin: 0;
+	padding: 0;
+
 }
 a{
 	text-decoration: none;
@@ -44,6 +44,8 @@ margin:0 auto;
 }
 .header-menu{
 	margin-left: 56px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 .header-menu li{
@@ -55,9 +57,11 @@ margin:0 auto;
 .header-menu li a{
 	color: #000000;
 letter-spacing: 2.34px;
+-webkit-transition: border-bottom .3s;
 transition: border-bottom .3s;
 position: relative;
 font-size: 1.05em;
+-webkit-transition: .3s;
 transition: .3s;
 
 
@@ -71,7 +75,9 @@ transition: .3s;
 	width:0;
 	height:3px;
 	background:#000;
+	-webkit-transition:width .3s;
 	transition:width .3s;
+	-webkit-transition: .3s;
 	transition: .3s;
 	position: absolute;
 	left:0;
@@ -82,6 +88,7 @@ transition: .3s;
 }
 .header-menu li a:hover::after{
 	width:100%;
+	-webkit-transition: width .3s;
 	transition: width .3s;
 }
 .header-menu li a.active::after{
@@ -90,6 +97,7 @@ transition: .3s;
 }
 .header-menu li a:hover .header-menu li a:after{
 	width:100%;
+	-webkit-transition: border-bottom .3s;
 	transition: border-bottom .3s;
 }
 .header .basket{
@@ -165,6 +173,7 @@ color: #000;
 	position: fixed;
 	top:0;
 	background: #000;
+	-webkit-transition:left 0.4s;
 	transition:left 0.4s;
 	left:-250px;
 	z-index:999;
@@ -189,8 +198,14 @@ color: #000;
 	height:65px;
 	width:25%;
 	color:#fff;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
 	align-items:center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	font-size: 23px;
 	cursor:pointer;
@@ -203,12 +218,15 @@ color: #000;
 	font-size:27px;
 	display:block;
 	letter-spacing: 2px;
+	-webkit-transition:  0.3s ;
 	transition:  0.3s ;
+	-webkit-transition: .4s;
 	transition: .4s;
 }
 
 .sidebar ul li a:hover{
 	padding-left: 40px;
+	-webkit-transition: .4s ;
 	transition: .4s ;
 }
 .burger i{
@@ -232,11 +250,13 @@ color: #000;
 	color:#000;
 	padding: 7px 9px 7px 7px;
 	cursor:pointer;
+	-webkit-transition: 0.3s ;
 	transition: 0.3s ;
 }
 .newbasket:hover{
 	background: #000;
 	color:#fff;
+	-webkit-transition: 0.3s ;
 	transition: 0.3s ;
 }
 /*Burger panel*/
@@ -256,6 +276,7 @@ color: #000;
 	width:100%;
 	height: 100%;
 	background: rgba(0, 0, 0, 0.4);
+	-webkit-transition:.5s;
 	transition:.5s;
 	z-index:-1;
 	opacity: 0;
@@ -263,6 +284,7 @@ color: #000;
 .background__cover.active{
 	opacity: 1;
 	z-index:100;
+	-webkit-transition:.5s;
 	transition:.5s;
 }
 .basket__aside{
@@ -274,15 +296,19 @@ color: #000;
 	position: absolute;
 	top:0;
 	right:0px;
+	-webkit-transform:translateX(100%);
 	transform:translateX(100%);
 	padding:0;
+	-webkit-transition:.6s;
 	transition:.6s;
 	opacity:0;
 	font-size: 100%;
 }
 .basket__aside.active{
+	-webkit-transform:translateX(0%);
 	transform:translateX(0%);
 	opacity:1;
+	-webkit-transition:.6s;
 	transition:.6s;
 }
 .basket__aside .word__wrapper{
@@ -291,7 +317,11 @@ color: #000;
 	border-bottom:1px solid #000;
 }
 .basket__aside .word__basket{
+	display:-webkit-box;
+	display:-ms-flexbox;
 	display:flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	padding-left: 15px;
 }
@@ -317,15 +347,20 @@ color: #000;
 .basket__aside .product__basket{
 	border-bottom: 1px solid #000;
 	padding:0.875em 0.56em;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	position: relative;
+	-webkit-transition:all .6s;
 	transition:all .6s;
 	opacity:1;
 /*	animation-duration: 0.6s;*/
 }
 .basket__aside .product__basket.delete{
+	-webkit-transform: translateX(100%);
 	transform: translateX(100%);
 	opacity:0;
+	-webkit-transition:all .6s;
 	transition:all .6s;
 }
 .basket__aside .product__ceil{
@@ -349,6 +384,7 @@ color: #000;
 	font-size: 1.68em;
 	color: #000;
 	letter-spacing: 0.05em;
+	margin: 0;
 }
 .basket__aside .product__about .model-name{
 	font-size: 0.93em;
@@ -365,17 +401,26 @@ color: #000;
 	font-size: 0.93em;
 	color: #000;
 	letter-spacing: 0.046em;
+	margin: 0;
 }
 .basket__aside .product__about .price{
 	font-size: 1.375em;
 	color: #000;
 	margin-top: 0.318em;
 	letter-spacing: 0.045em;
+	margin-bottom: 0;
+/*	margin-top: 0;*/
 }
 /*Close*/
 .basket__aside  .close__product{
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
 		justify-content: center;
 	background: #000;
 	color: #fff;
@@ -385,6 +430,7 @@ color: #000;
 	position: absolute;
 	top:50%;
 	right:15px;
+	-webkit-transform:translateY(-50%);
 	transform:translateY(-50%);
 	
 }
@@ -399,6 +445,7 @@ color: #000;
 position: absolute;
 bottom:0;
 left:50%;
+-webkit-transform:translateX(-50%);
 transform:translateX(-50%);
 padding-bottom: 20px;
 width:80%;
@@ -406,7 +453,11 @@ width:80%;
 .product__pay .product__pay__all{
 	position: relative;
 	width:100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;	
 }
 .product__pay .product__pay__all h3{
@@ -414,6 +465,7 @@ width:80%;
 	font-size: 1.875em;
 	color: #000;
 	letter-spacing: 0.033em;
+	margin: 0;
 }
 .product__pay .product__pay__all span{
 	font-size: 1.875em;
@@ -422,12 +474,14 @@ width:80%;
 	position: absolute;
 	right: 0;
 	top:50%;
+	-webkit-transform:translateY(-50%);
 	transform:translateY(-50%);
 }
 .product__pay .red-text{
 	font-size: 0.875em;
 	color: #c33131;
 	letter-spacing: 0.04em;
+	margin-top: 0;
 }
 .product__pay .btn-issue{
 	display: block;
@@ -437,6 +491,7 @@ width:80%;
 	color: #fff;
 	margin: 0 auto;
 	cursor:pointer;
+	-webkit-transition:.3s;
 	transition:.3s;
 	margin-top: 0.66em;
 	font-size: 1.875em;
@@ -447,6 +502,7 @@ width:80%;
 }
 .product__pay .btn-issue.disabled{
 	background: #474747;
+	-webkit-transition:.3s;
 	transition:.3s;
 }
 

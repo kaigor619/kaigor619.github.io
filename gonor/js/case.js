@@ -115,6 +115,26 @@ $('.model .model-menu .model-link-a').each(function(i){
 // Сортировка
 $('.box-modal .ok').css('display','none');
 
+
+// Копирование сортировки в модальные окна
+
+	$('.box-modal').each(function(i){
+	// $('.sub__sort').eq(i).clone().removeClass('sub__sort').addClass('sort__modal').appendTo(this);
+	$(this).find('li').each(function(a){
+	$(this).click(function(v){
+					v.preventDefault();
+					$('.box-modal .sort__modal li .ok').not($(this)).remove();
+					$('.box-modal .ok').clone().css('display','inline').appendTo(this);
+					$('.sorting .main-word span').eq(i).html($(this).find('a').text());
+					$(this).addClass('active');
+					$('.box-modal').find('li').not($(this)).removeClass('active');
+
+	});
+	});
+
+	});
+
+
 // // Открывающийся Список
 	if($(window).width() > 768){
 		$('.sub__list__sort').each(function(i){
@@ -136,23 +156,12 @@ else{
 		$('.sub__list__sort').each(function(i){
 			$(this).click(function(e){
 			e.preventDefault();
-			$('.box-modal .sort__modal').remove();
-			$(this).find('.sub__sort').clone().removeClass('sub__sort').addClass('sort__modal')
-			.appendTo('.box-modal');
-			$('#exampleModal').arcticmodal();
-			$('.box-modal .sort__modal li').each(function(a){
-				$(this).click(function(v){
-				v.preventDefault();
-				$('.box-modal .sort__modal li .ok').remove();
-				$('.box-modal .ok').clone().css('display','inline').appendTo(this);
-				$('.sorting .main-word span').eq(a).html($(this).find('a').text());
-				$('#exampleModal').arcticmodal('close');
-				});
-			});
-			
+			$('.box-modal').eq(i).arcticmodal();
 			});
 		});	
 }
+
+
 
 
 });

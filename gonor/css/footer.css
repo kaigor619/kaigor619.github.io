@@ -6,8 +6,11 @@
 	padding-top: 40px;
 	padding-bottom: 35px;
 }
+
+
 .footer h4{
 		font-size: 20px;
+		margin-top: 0;
 }
 .footer .support-service{
 	font-size: 16px;
@@ -49,6 +52,11 @@
 .pay img{
 margin-top: 17px;
 }
+.footer .pay h4{
+	margin-bottom: 0;
+}
+
+
 .pay{
 	text-align: center;
 }
@@ -62,7 +70,11 @@ margin-top: 17px;
 
 }
 .footer .social__content{
+	display:-webkit-box;
+	display:-ms-flexbox;
 	display:flex;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
 	justify-content:center;
 }
 .footer .social__content i{
@@ -117,7 +129,11 @@ margin-top: 17px;
 		text-align: center;
 	}
 	.footer .social__content{
+	display:-webkit-box;
+	display:-ms-flexbox;
 	display:flex;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
 	justify-content:center;
 }
 .social__content i:nth-child(1){
@@ -131,9 +147,18 @@ margin-top: 17px;
 }
 .footer .social{
 
+	display: -webkit-box;
+
+	display: -ms-flexbox;
+
 	display: flex;
+	-webkit-box-pack:end;
+	-ms-flex-pack:end;
 	justify-content:flex-end;
 /*	align-items:center;*/
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
 	flex-direction: row;
 /*	margin-right: 20px;*/
 }
@@ -153,8 +178,14 @@ margin-top: 17px;
 }
 @media screen and (max-width:767px){
 .footer .delivery{
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
+-webkit-box-pack: start;
+-ms-flex-pack: start;
 justify-content: flex-start;
+-webkit-box-align: center;
+-ms-flex-align: center;
 align-items: center;
 }
 .footer .delivery h4{
@@ -196,13 +227,25 @@ margin-bottom: 4px;
 font-size: 12px;
 }
 .footer .social{
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
+-webkit-box-pack:center;
+-ms-flex-pack:center;
 justify-content:center;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+-ms-flex-direction: row;
 flex-direction: row;
 margin-right: 20px;
 }
 .footer .delivery{
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-ms-flex-direction: column;
 flex-direction: column;
+-webkit-box-pack: end;
+-ms-flex-pack: end;
 justify-content: flex-end;
 position: absolute;
 right:19%;
@@ -223,6 +266,7 @@ font-size: 15px;
 }
 .pay img{
 margin-top: 10px;
+-webkit-transform:scale(0.8);
 transform:scale(0.8);
 }
 .footer .delivery h4,.footer .social h4{
@@ -238,6 +282,7 @@ margin-right: 10px;
 }
 .footer .delivery__content img{
 margin-top: -5px;
+-webkit-transform:scale(0.8);
 transform:scale(0.8);
 }
 .footer .social{
@@ -266,11 +311,12 @@ right:16%;
 
 }
 }
+
 @media screen and (max-width:424px){
 	.footer .delivery{
 right:14%;
 
-
+}
 }
 @media screen and (max-width:372px){
 	.footer .delivery{

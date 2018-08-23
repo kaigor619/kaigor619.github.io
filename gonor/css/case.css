@@ -10,13 +10,23 @@
 	display: block;
 }
 .model .container{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	height:100%;
 }
 .model-menu{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	height:100%;	
 }
@@ -36,11 +46,18 @@
 	font-size: 30px;
 	display: block;
 	height:100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	padding-left: 14px;
 	padding-right: 14px;
+	-webkit-transition:.3s;
 	transition:.3s;
 }
 .model-menu.case li.model-link:hover a.model-link-a.white{
@@ -48,15 +65,19 @@
 }
 .model-menu.case li.model-link:hover{
 	background: #fff;
+	-webkit-transition:.3s;
 	transition:.3s;	
 }
 .model-menu.case li.model-link:hover a.model-link-a{
 	color:#000;
+	-webkit-transition:.3s;
 	transition:.3s;	
 }
 
 /*Sub List*/
 .model-menu li.model-link .sub__list{
+	display:-webkit-box;
+	display:-ms-flexbox;
 	display:flex;
 	background:#e6e5e5;
 
@@ -93,12 +114,6 @@
 	padding: 0;
 	background:transparent;
 }
-/*.model-menu li:hover .sub__list{
-	display:block ;
-}*/
-
-
-/*Select Model Планшеты и Телефоны*/
 .select-model{
 	width:100%;
 	padding-top: 20px;
@@ -110,8 +125,14 @@
 	position: relative;
 }
 .select-model .select-model-wrapper{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 }
 .select-model .select-model-main{
@@ -199,7 +220,7 @@
 
 
 
-/*Carousel*/
+
 .carousel-shares-case{
 	width: 100%;
 
@@ -214,8 +235,14 @@
 }
 .carousel-block-share .carousel-case-content{
 	width:100%;
+	display:-webkit-box;
+	display:-ms-flexbox;
 	display:flex;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
 	align-items:center;
+	-webkit-box-pack:end;
+	-ms-flex-pack:end;
 	justify-content:flex-end;
 }
 /*.carousel-block-share.tshirt .carousel-case-content{
@@ -262,7 +289,11 @@ margin:5px;
 	text-align: center;
 }
 .carousel-block-share .share-block-title{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 }
 .carousel-block-tshirt h1{
@@ -368,10 +399,12 @@ width:300px;
 	font-size: 40px;
 	color:#AFAFAF;
 	right:-5px;
+	-webkit-transition:.3s;
 	transition:.3s;
 }
 .box-modal .box-modal_close:hover{
 color:#000;
+-webkit-transition:.3s;
 transition:.3s;
 }
 .box-modal .sort__modal li{
@@ -383,10 +416,12 @@ transition:.3s;
 	position: relative;
 	border-bottom:1px solid #999999;
 	cursor:pointer;
+	-webkit-transition: .3s;
 	transition: .3s;
 }
 .box-modal .sort__modal li:hover{
 	padding-left: 15px;
+	-webkit-transition: .3s;
 	transition: .3s;
 }
 .box-modal .sort__modal li a{
@@ -437,14 +472,21 @@ transition:.3s;
 }
 
 .product__main .add__wrapper{
+	display:-webkit-box;
+	display:-ms-flexbox;
 	display:flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
 	justify-content:center;
 	background: #232323;
 	margin-top: 29px;
 	color:#fff;
 	height: 60px;
 	border:1px solid black;
+	-webkit-transition:.3s;
 	transition:.3s;
 	width:100%;
 	font-size: 1.6em;
@@ -472,7 +514,7 @@ color: #fff;
 font-size: 1.5em;
 
 
-
+margin-top: 0;
 letter-spacing: 2px;
 display: block;
 
@@ -489,15 +531,18 @@ font-weight: bold;
 	height: 100%;
 	background: rgba(0,0,0,0.2);
 	opacity:0;
+	-webkit-transition: .3s;
 	transition: .3s;
 }
 .product__main:hover .product__cover{
 	opacity:1;
+	-webkit-transition:.3s;
 	transition:.3s;
 }
 
 .product__main:hover .add__wrapper{
 	background: #000;
+	-webkit-transition:.3s;
 	transition:.3s;
 	color:#fff;
 
@@ -513,10 +558,15 @@ font-weight: bold;
 	padding: 7px 10px;
 	letter-spacing: 1.4px;
 	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	margin-bottom: 40px;
 }
 .see__more img{
+	-webkit-transform: scale(0.5);
 	transform: scale(0.5);
 }

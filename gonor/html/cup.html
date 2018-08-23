@@ -11,11 +11,8 @@
 	<meta name="description" content="Чехлы,Чашки, Футболки, Свитшоты" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="shortcut icon" href="img/icon/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="/favicon.ico" type="image/x-icon">
-
 	<!-- Bootstrap -->
-	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.min.css" />
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
 	<!-- Owl Carousel -->
@@ -26,13 +23,12 @@
 	<link rel="stylesheet" href="libs/articmodal/simple.css">
 	<link rel="stylesheet" href="libs/articmodal/jquery.arcticmodal-0.3.css">
 	<!-- Стили -->
-	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/fonts.css" />
 	<link rel="stylesheet" href="css/header.css" />
 	<link rel="stylesheet" href="css/case.css" />
+	<link rel="stylesheet" href="css/cup.css" />
 	<link rel="stylesheet" href="css/footer.css" />
 	<link rel="stylesheet" href="css/case-media.css" />
-	<link rel="stylesheet" href="css/cup.css" />
-	<link rel="stylesheet" href="css/fonts.css" />
 </head>
 <body>
 <header class="header" id="header">
@@ -47,15 +43,13 @@
 					<ul class="header-menu">
 						<li><a href="index.html">Главная</a></li>
 						<li><a href="case.html">Чехлы</a></li>
-						<li><a href="tshirt.html">Одежда</a></li>
-						<li><a href="cup.html" class='active'>Чашки</a></li>
+						<li><a href="#" class='active'>Одежда</a></li>
+						<li><a href="cup.html">Чашки</a></li>
 						<li><a href="#">Остальное</a></li>
 					</ul>
-					<a href="basket.html">
-						<div class="basket">
-							<i class="fa fa-shopping-basket" aria-hidden="true" title='Корзина'></i>
-						</div>
-					</a>	
+					<div class="basket">
+						<i class="fa fa-shopping-basket" aria-hidden="true" title='Корзина'></i>
+					</div>
 
 				</div>
 			</div>
@@ -69,11 +63,9 @@
 					<div class="burger">
 						<i class="fa fa-bars"></i>
 					</div>
-					<a href="basket.html">
-						<div class="newbasket">
-							<i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
-						</div>
-					</a>
+					<div class="newbasket">
+						<i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -87,77 +79,38 @@
 			<i class="fa fa-times" aria-hidden="true"></i>
 		</div></li>
 			<li><a href="case.html">Чехлы</a></li>
-			<li><a href="tshirt.html">Одежда</a></li>
+			<li><a href="#">Одежда</a></li>
 			<li><a href="cup.html">Чашки</a></li>
 			<li><a href="#">Остальное</a></li>
 		</ul>
 	</div>
 	
-	<div class="background__cover">
-		<div class="basket__aside">
-			<div class="word__wrapper">
-				<div class="word__basket">
-					<h2>Корзина</h2> 
-						<div class="close">
-							<div><img src="img/basket/close.png" alt="Крестик"></div>
-					</div>
-				</div>
-			</div>
-			<div class="product__list">
-				<div class="product__basket">
-					<div class="product__ceil">
-						<img src="img/case/case-1.png" alt="">
-					</div>
-					<div class="product__about">
-						<h3 class='name'>stickerbombing</h3>
-						<p class='model-name'>Чехол iphone 5/5s</p>
-						<div class="number__block">
-							<p class='number'>количество: 1x</p>
-							<h4 class='price'>цена: 160 грн</h4>
-						</div>
-					</div>
-					<div class="close__product">
-						<img src="img/basket/close.png" alt="Крестик">
-					</div>
-				</div>
-
-
-			</div>
-			<div class="product__pay">
-				<div class="product__pay__all">
-					<h3>Всего:</h3> <span>160 грн</span>
-				</div>
-				<p class='red-text'>(без учета стоимости доставки)</p>
-				<a href='issue.html' class='btn-issue'>Оформить заказ</a>
-			</div>	
-		</div>
-	</div>	
-	
 	<section class="model" id="model">
 		<div class="container">
 			<ul class="model-menu">
-				<li class='model-link'><a class='model-link-a' href="design.html" style='color:green'>Свой дизайн</a></li>
-				<li class='model-link'><a class='model-link-a white' href="/">Чашки</a></li>
-				<li class='model-link'><a class='model-link-a' href="#" style='color:#383838'>Термокружки</a></li>
+				<li class='model-link'><a class='model-link-a' href="#" style='color:green'>Свой дизайн</a></li>
+				<li class='model-link'><a class='model-link-a' href="#">Футболки</a></li>
+				<li class='model-link'><a class='model-link-a white' href="#">Свитшоты</a></li>
 			</ul>
 		</div>
 	</section>
 
 	<section class="carousel-shares-case owl-carousel" id="carousel-shares-case">
 		
-	<div class="carousel-block-share cup">
+	<div class="carousel-block-share switshot">
 			<div class="container">
-				<div class="row justify-content-center align-items-center">
+				<div class="row justify-content-center">
 					<div class="col-md-8">
 						<div class="carousel-case-content">
-							<div><img src="img/cup/cup-sharets-1.png" alt=""></div>
+							<div><img src="img/switshot/switshot-shares-1.png" alt=""></div>
 							<i class="fa fa-plus" aria-hidden="true"></i>
-							<div><img src="img/cup/cup-sharets-2.png" alt=""></div>
+							<div><img src="img/switshot/switshot-shares-2.png" alt=""></div>
 							<i class="fa fa-plus" aria-hidden="true"></i>
-							<div><img src="img/cup/cup-sharets-3.png" alt=""></div>
+							<div><img src="img/switshot/switshot-shares-3.png" alt=""></div>
 							<span>=</span>
 						</div>
 						
+
 					</div>
 					<div class="col-md-4 share-block-title" >
 						<h1 class="share-title">Бесплатная<br> Доставка</h1>
@@ -165,27 +118,6 @@
 				</div>
 			</div>
 		</div>
-
-		<div class="carousel-block-share cup">
-			<div class="container">
-				<div class="row justify-content-center align-items-center">
-					<div class="col-md-8">
-						<div class="carousel-case-content">
-							<div><img src="img/cup/cup-sharets-1.png" alt=""></div>
-							<i class="fa fa-plus" aria-hidden="true"></i>
-							<div><img src="img/cup/cup-sharets-2.png" alt=""></div>
-							<i class="fa fa-plus" aria-hidden="true"></i>
-							<div><img src="img/cup/cup-sharets-3.png" alt=""></div>
-							<span>=</span>
-						</div>
-						
-					</div>
-					<div class="col-md-4 share-block-title" >
-						<h1 class="share-title">Бесплатная<br> Доставка</h1>
-					</div>
-				</div>
-			</div>
-		</div>	
 
 
 	</section>
@@ -208,8 +140,8 @@
 				</div>
 			</div>
 			<div class="col-auto d-flex justify-content-center" >
-				<div class='sub__list__sort'><a href='#' class='main-word'>Тип:
-				<div class="sort__wrapper"><span>Обычная&nbsp; Белая</span>
+				<div class='sub__list__sort'><a href='#' class='main-word'>Цвет:
+				<div class="sort__wrapper"><span>Белый</span>
 				<ul class='sub__sort'>
 						<li><a href="#">Обычная</a></li>
 						<li><a href="#">По Популярности</a></li>
@@ -235,72 +167,39 @@
 	</section>
 
 
-<div style="display: none;">
-    <div class="box-modal">
+	<div style="display: none;">
+    <div class="box-modal" id="exampleModal">
         <div class="box-modal_close arcticmodal-close">&times;</div>
 		<i class='fa fa-check ok'></i>
-		<ul class='sort__modal'>
-			<li><a href="#">Обычная </a></li>
-			<li><a href="#">По Популярности</a></li>
-			<li><a href="#">По Новизне</a></li>
-		</ul> 
-    </div>
-</div>
-<div style="display: none;">
-    <div class="box-modal">
-        <div class="box-modal_close arcticmodal-close">&times;</div>
-		<i class='fa fa-check ok'></i>
-		<ul class='sort__modal'>
-			<li><a href="#">Обычная </a></li>
-			<li><a href="#">По Популярности</a></li>
-			<li><a href="#">По Новизне</a></li>
-		</ul> 
-    </div>
-</div>
-<div style="display: none;">
-    <div class="box-modal">
-        <div class="box-modal_close arcticmodal-close">&times;</div>
-		<i class='fa fa-check ok'></i>
-		<ul class='sort__modal'>
-			<li><a href="#">Обычная </a></li>
-			<li><a href="#">По Популярности</a></li>
-			<li><a href="#">По Новизне</a></li>
-		</ul> 
     </div>
 </div>
 
 
-	<section id="product__case" class="product__case cup">
+	<section id="product__case" class="product__case switshot">
 		<div class="container">
 			<div class="row">
 
 				<div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
 					<div class="product__main">
-						<a href="product(cup).html">
-							<div class="product__case__block">
-								<img src="img/cup/cup-1.png" alt="">
-								<p class="product__block__title">FTP</p>
-								<div class="product__cover"></div>
-								<p class='price'>200 <span>грн</span></p>
-							</div>
-							</a>
-							<div class="add__wrapper"><span class='add'>В корзину</span> <i class="fa fa-cart-arrow-down" aria-hidden="true"></i></div>
-						
+						<div class="product__case__block">
+							<img src="img/switshot/switshot-1.png" alt="">
+							<p class="product__block__title">Winner Winner</p>
+							<div class="product__cover"></div>
+							<a href="#" class='price'>200 <span>грн</span></a>
+						</div>
+						<div class="add__wrapper"><a href="#" class='add'>В корзину</a> <img src="img/case/basket.png" alt=""></div>
 					</div>
 				</div>
 
 				<div class="col-12 col-sm-6 col-md-4 d-flex  justify-content-center">
 					<div class="product__main">
-						<a href="product(cup).html">
-							<div class="product__case__block">
-								<img src="img/cup/cup-2.png" alt="">
-								<p class="product__block__title">Rick & morty Vegas</p>
-								<div class="product__cover"></div>
-								<p class='price'>200 <span>грн</span></p>
-							</div>
-							</a>
-							<div class="add__wrapper"><span class='add'>В корзину</span> <i class="fa fa-cart-arrow-down" aria-hidden="true"></i></div>
-						
+						<div class="product__case__block">
+							<img src="img/switshot/switshot-2.png" alt="">
+							<p class="product__block__title">The Creation of Adam</p>
+							<div class="product__cover"></div>
+							<a href="#" class='price'>200 <span>грн</span></a>
+						</div>
+						<div class="add__wrapper"><a href="#" class='add'>В корзину</a> <img src="img/case/basket.png" alt=""></div>
 						
 					</div>
 
@@ -308,16 +207,13 @@
 
 				<div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
 					<div class="product__main">
-						<a href="product(cup).html">
-							<div class="product__case__block">
-								<img src="img/cup/cup-3.png" alt=""> 
-								<p class="product__block__title">Brazzers</p>
-								<div class="product__cover"></div>
-								<p class='price'>200 <span>грн</span></p>
-							</div>
-							</a>
-							<div class="add__wrapper"><span class='add'>В корзину</span> <i class="fa fa-cart-arrow-down" aria-hidden="true"></i></div>
-						
+						<div class="product__case__block">
+							<img src="img/switshot/switshot-3.png" alt=""> 
+							<p class="product__block__title">Smile</p>
+							<div class="product__cover"></div>
+							<a href="#" class='price'>200 <span>грн</span></a>
+						</div>
+						<div class="add__wrapper"><a href="#" class='add'>В корзину</a> <img src="img/case/basket.png" alt=""></div>
 					</div>
 
 				</div>
@@ -339,7 +235,7 @@
 		</div>
 	</section>
 
-	<footer class="footer" id="footer">
+<!-- 	<footer class="footer" id="footer">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3 col-lg-5 col-sm-4">
@@ -384,6 +280,7 @@
 						<h4>мы в соц. сетях</h4>
 						<div class="social__content">
 							<i class="fa fa-instagram" aria-hidden="true"></i>
+							<i class="fa fa-facebook-official" aria-hidden="true"></i>
 							<i class="fa fa-vk" aria-hidden="true"></i>
 
 						</div>
@@ -392,10 +289,10 @@
 				</div>
 			</div>
 		</div>
-	</footer>
+	</footer> -->
 
 
-	<section class="sub-footer">
+<!-- 	<section class="sub-footer">
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col-4">
@@ -409,7 +306,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 
 
@@ -436,7 +333,6 @@
 	<script src="libs/articmodal/jquery.arcticmodal-0.3.min.js"></script>
 
 	<script src="js/common-header.js"></script>
-	<script src="js/basket.js"></script>
 	<script src="js/case.js"></script>
 	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 	<!-- Google Analytics counter --><!-- /Google Analytics counter -->

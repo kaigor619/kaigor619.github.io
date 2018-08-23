@@ -2,7 +2,6 @@
 	width: 100%;
 
 }
-
 .carousel-block-share{
 	width:100%;
 	padding-top: 36px;
@@ -12,8 +11,14 @@
 }
 .carousel-block-share .carousel-case-content{
 	width:100%;
+	display:-webkit-box;
+	display:-ms-flexbox;
 	display:flex;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
 	align-items:center;
+	-webkit-box-pack:end;
+	-ms-flex-pack:end;
 	justify-content:flex-end;
 }
 /*.carousel-block-share.tshirt .carousel-case-content{
@@ -60,7 +65,11 @@ margin:5px;
 	text-align: center;
 }
 .carousel-block-share .share-block-title{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 }
 .carousel-block-tshirt h1{
@@ -123,9 +132,13 @@ margin:5px;
 	max-width:90px;
 }
 .carousel-block-share .share-block-title{
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 }
 .carousel-block-share .carousel-case-content{
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 }
 .carousel-block-share h1{
@@ -141,6 +154,15 @@ margin:5px;
 	padding: 3px 5px;
 	letter-spacing: 2px;
 }
+.carousel-block-share{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.carousel-block-share h1{
+margin-top: 15px;
+margin-bottom: 0;
+}
+
 }
 @media screen and (max-width:464px){
 .carousel-block-share.case img{
@@ -164,7 +186,7 @@ margin: 12px;
 font-size: 17px;
 }
 .carousel-block-share h1{
-	font-size: 25px;
+	font-size: 22px;
 	letter-spacing: 1px;
 }
 }
@@ -193,7 +215,7 @@ font-size: 15px;
 .carousel-block-share h1{
 	font-size: 17px;
 	letter-spacing: 1px;
-	padding: 2px 5px;
+	padding: 2px 3px;
 	margin-top: 10px;
 }
 }

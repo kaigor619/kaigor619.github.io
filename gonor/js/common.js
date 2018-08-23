@@ -13,7 +13,7 @@ $("#carousel").owlCarousel({
     mouseDrag:true,
     touchDrag:true,
     dots:true,
-    autoplay:true,
+    autoplay:false,
     smartSpeed:700,
 
 });
@@ -176,6 +176,17 @@ $('.top-link').click(function(e){
             ]
             }); 
 
+// Для слайдера(верхнее меню Топ)
+
+// if($(window).width() <= 822) {
+//     $('.top__menu').addClass('slider');
+//     $('.top__menu').slick();
+// }
+
+
+
+
+
             $('.top__menu').on('afterChange', function(event, slick, currentSlide){
 
   if ($('.top-link').eq(currentSlide)) { 
@@ -183,7 +194,8 @@ $('.top-link').click(function(e){
     $(".carousel-top").hide();
     $(".carousel-top").eq($('.top-link').eq(currentSlide).index()).fadeIn('fast');
 }
-}); 
+});
+
 
 
 

@@ -1,19 +1,32 @@
-/*Отдельно для панели Свитшоты, Футболки,Чашки....*/
+
 .model-menu li.model-link a.model-link-a{
 	color:#fff;
 	font-size: 30px;
 	height:70%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	padding-left: 14px;
 	padding-right: 14px;
+	-webkit-transition:.3s;
 	transition:.3s;
 }
 .model-menu li.model-link{
 	margin-right: 16px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	height:100%;
 	position: relative;
@@ -27,6 +40,7 @@
 .model-menu li.model-link:hover a.model-link-a{
 	color:#000;
 	background: #fff;
+	-webkit-transition:.3s;
 	transition:.3s;
 }
 .product__case.cup .product__main{

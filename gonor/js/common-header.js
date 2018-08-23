@@ -8,6 +8,7 @@ $('.burger').on('click', function(){
 });
 
 
+
 	jQuery('.add__wrapper').click(function(){
 
 	if(jQuery(window).width() > 576){

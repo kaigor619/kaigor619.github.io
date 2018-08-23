@@ -6,13 +6,23 @@
 	background: #1f1f1f;
 }
 .model .container{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	height:100%;
 }
 .model-menu{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	height:100%;	
 }
@@ -32,11 +42,18 @@
 	font-size: 30px;
 	display: block;
 	height:100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	padding-left: 14px;
 	padding-right: 14px;
+	-webkit-transition:.3s;
 	transition:.3s;
 }
 .model-menu.case li.model-link:hover a.model-link-a.white{
@@ -44,15 +61,19 @@
 }
 .model-menu.case li.model-link:hover{
 	background: #fff;
+	-webkit-transition:.3s;
 	transition:.3s;	
 }
 .model-menu.case li.model-link:hover a.model-link-a{
 	color:#000;
+	-webkit-transition:.3s;
 	transition:.3s;	
 }
 
 /*Sub List*/
 .model-menu li.model-link .sub__list{
+	display:-webkit-box;
+	display:-ms-flexbox;
 	display:flex;
 	background:#e6e5e5;
 
