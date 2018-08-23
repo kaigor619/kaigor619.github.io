@@ -41,6 +41,11 @@ max-width:150px;
  }
 
 }
+@media screen and (max-width:682px){
+ .carousel-block__text h1{
+	font-size: 3em;
+}
+}
 @media screen and (max-width:606px){
 .carousel-block{
 height: 390px;
@@ -52,6 +57,7 @@ height: 390px;
 .phone-carousel{
 max-width:130px;
 }
+
 
 }
 @media screen and (max-width:576px){
