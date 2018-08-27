@@ -319,6 +319,12 @@ margin: 0 auto;
   	font-size: 1.3em;
   	letter-spacing: 1px;
   }
+    .product__material  .main__material__block.hide-block .material__block{
+	padding: 0.35em 1.05em;
+  }
+    .product__material  .main__material__block.hide-block .material__block:last-child{
+	padding: 0.35em 0.7em;
+  }
  .product__text .product__view{
 	font-size: 1.1em;
 	letter-spacing: 1px;
@@ -473,6 +479,12 @@ margin-left: 5px;
   	padding: 0.35em 0.6em;  	
   	font-size: 1.2em;
   	letter-spacing: 1px;
+  }
+    .product__material  .main__material__block.hide-block .material__block{
+	padding: 0.35em 0.85em;
+  }
+    .product__material  .main__material__block.hide-block .material__block:last-child{
+	padding: 0.35em 0.5em;
   }
   .product.case .product__cell{
 	width:80%;

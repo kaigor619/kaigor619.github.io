@@ -9,8 +9,8 @@ $('.burger').on('click', function(){
 
 
 
-	jQuery('.add__wrapper').click(function(){
-
+	jQuery('.product__add__btn').click(function(e){
+	e.preventDefault();
 	if(jQuery(window).width() > 576){
 		jQuery('.basket__aside').addClass('active');
 		jQuery('.background__cover').addClass('active');
