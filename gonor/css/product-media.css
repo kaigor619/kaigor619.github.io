@@ -441,13 +441,20 @@ padding: 0.05em 0.30em;
 	
 }
 }
+@media screen and (max-width:414px){
+.product.case .product__cell img{
+	width:80%;
+}
+.product.case .product__cell {
+	width:70%;
+}
+}
+
+
 @media screen and (max-width:400px){
 .product .product__cell{
 width:70%;
 margin: 0 auto;
-}
-.product.case .product__cell img{
-	width:70%;
 }
 .product.tshirt .product__cell, .product.switshot .product__cell{
 width:90%;

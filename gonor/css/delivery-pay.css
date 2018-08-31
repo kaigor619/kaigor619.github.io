@@ -1,0 +1,81 @@
+.delivery-pay{
+	width:100%;
+	font-style: 100%;
+	padding-bottom: 6em;
+	font-size: 100%;
+}
+.delivery-pay .delivery-pay__title{
+	color: #000;
+	font-size: 3em;
+	text-align: center;
+	font-family: "Bebas Neue Bold";
+	margin-top: 0.41em;
+}
+
+.delivery-pay .delivery-pay__text{
+	margin-top: 2em;
+}
+.delivery-pay .delivery-pay__text p{
+	font-size: 1.56em;
+	font-family: "Bebas Neue Bold";
+	margin-bottom: 0.5em;
+	line-height: 1.4em;
+	letter-spacing: 0.01em;
+}
+.delivery-pay  .delivery-logo-poshta {
+text-align: center;
+}
+.delivery-pay  .delivery-logo-poshta img{
+width:100%;
+max-width:398px;
+height: auto;
+}
+.delivery-pay .delivery-block{
+	margin-top: 2.5em;
+}
+
+
+@media screen and (max-width:992px)
+{
+	.delivery-pay{
+		font-size: 90%;
+	}
+	.delivery-pay  .delivery-logo-poshta img{
+width:40%;
+}
+}
+
+@media screen and (max-width:768px)
+{
+	.delivery-pay{
+		font-size: 80%;
+	}
+	.delivery-pay  .delivery-logo-poshta img{
+width:35%;
+}
+}
+
+@media screen and (max-width:576px)
+{
+	.delivery-pay{
+		font-size: 70%;
+	}
+	.delivery-pay  .delivery-logo-poshta img{
+width:50%;
+}
+.delivery-pay .delivery-pay__title{
+	font-size: 3.7em;
+	letter-spacing: 0.04em;
+	margin-top: 0.41em;
+}
+}
+@media screen and (max-width:414px)
+{
+	.delivery-pay{
+		font-size: 70%;
+	}
+	.delivery-pay  .delivery-logo-poshta img{
+width:70%;
+text-align: center;
+}
+}

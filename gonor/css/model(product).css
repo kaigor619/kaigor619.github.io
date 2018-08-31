@@ -37,7 +37,8 @@
 .model-menu li.model-link:last-child{
 	margin-right: 0px;
 }
-.model-menu li.model-link a.model-link-a{
+
+.model-menu.case li.model-link a.model-link-a{
 	color:#fff;
 	font-size: 30px;
 	display: block;
