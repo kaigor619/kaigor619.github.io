@@ -1,0 +1,133 @@
+.how-order .container{
+	border:1px solid red;
+}
+.how-order__title{
+	text-align: center;
+	margin-bottom: 30px;
+}
+.how-order__title h1{
+	margin-top: 0.41em;
+	font-size: 48px;
+}
+.how-order__title p{
+	margin-top: 10px;
+	font-family: "Bebas Neue Bold";
+	font-size: 25px;
+}
+.section {
+	margin-bottom: 20px;
+	font-family: "Bebas Neue Bold";
+	position: relative;
+	
+}
+.section h2{
+	font-size: 30px;
+	margin-bottom: 15px;
+	position: relative;
+	
+
+}
+.section .wrap-img{
+text-align: center;
+}
+.section .flex-container{
+	display: flex;
+	justify-content: center;
+	flex-wrap:nowrap;
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+.section ul.list{
+	list-style-type: disc;
+}
+.section li{
+	font-size: 25px;
+	margin-left: 100px;
+	line-height: 30px;
+	position: relative;
+}
+.section li p{
+	font-size: 25px;
+	margin-top:5px;
+}
+
+/*Стилизация стрелок*/
+.arrow-first{
+	position: absolute;
+	bottom:0;
+	right:0;
+	transform: translate(120%,70%);
+}
+.arrow-two{
+	position: absolute;
+	top:0;
+	left:0;
+	transform: translate(-100%,-50%);
+}
+.arrow-three{
+	position: absolute;
+	top:0;
+	right:0;
+	transform: translate(120%,-60%);
+}
+.arrow-four{
+	position: absolute;
+	top:0;
+	left:0;
+	transform: translate(-120%,-80%);
+}
+.arrow-five{
+	position: absolute;
+	top:0;
+	right:0;
+	transform: translate(100%,-60%);
+}
+
+.arrow-seexth{
+	position: absolute;
+	top:0;
+	left:0;
+	transform: translate(-120%,-80%);
+}
+
+/*Картинки*/
+.section .section-logo{
+	max-width: 885px;
+	width: 100%;
+	height: auto;
+}
+.section .section-catalog{
+	max-width: 918px;
+	width: 100%;
+	height: auto;
+}
+.section .section-case{
+	max-width: 497px;
+	width: 100%;
+	height: auto;
+}
+.section .section-cup{
+	max-width: 521px;
+	width: 100%;
+	height: auto;
+}
+.section .section-switshot{
+	max-width: 581px;
+	width: 100%;
+	height: auto;
+}
+.section .section-issue{
+	max-width: 907px;
+	width: 100%;
+	height: auto;
+}
+.section .section-design{
+	max-width: 1050px;
+	width: 100%;
+	height: auto;
+}
+.section .section-message{
+	max-width: 563px;
+	width: 100%;
+	height: auto;
+}
