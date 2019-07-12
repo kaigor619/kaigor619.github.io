@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>NavBar</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+
+
+</head>
+<body>
+	<header>
+		<nav>
+		<div class="menu-icon">
+			<i class="fa fa-bars fa-2x"></i>
+		</div>
+		<div class="logo">LOGO</div>
+			<div class="menu">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+			</nav>
+	</header>
+	<div class="content">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi sapiente earum asperiores, commodi numquam quam atque illo architecto, beatae expedita nobis, dolore. Voluptates, sequi placeat libero ducimus, ab ut culpa.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga laboriosam illo suscipit cumque veniam, quaerat nostrum incidunt nisi quam necessitatibus magni eius quas tenetur voluptatibus officia. Alias expedita, dignissimos explicabo!</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat perspiciatis explicabo quia tenetur, laudantium debitis totam quo accusantium minus ad, quis consequatur saepe similique, beatae quisquam nulla impedit consectetur inventore.</p>		
+	</div>
+
+
+
+	<script src="jquery-3.3.1.min.js"></script>
+	<script>
+		
+		$(document).ready(function(){
+			$('.menu-icon').on("click", function(){
+				$("nav ul").toggleClass('showing');
+				// alert("efefe");
+			});
+			$(window).on('scroll',function(){
+				if($(window).scrollTop())
+					$('nav').addClass('black');
+				else{
+					$('nav').removeClass('black');
+				}
+			})
+		})
+	</script>
+
+</body>
+</html>
