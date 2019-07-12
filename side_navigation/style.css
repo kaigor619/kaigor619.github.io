@@ -1,0 +1,152 @@
+html,body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+body{
+	font-family: 'Comfortaa', cursive;
+	
+}
+.wrapper{
+	
+	margin: 0;
+	padding: 0;
+	position: relative;
+	/* height:100vh; */
+	height: 100vh;
+
+	width:100%;
+	overflow:hidden;
+
+}
+.page{
+	position:absolute;
+	top:0;
+	left:0;
+	background: #DCCACA;
+	width:100%;
+	height: 200vh;
+	min-height: 100vh;
+	transform-origin:top left;
+	transition: .4s;
+	display: flex;
+	/* align-items: center; */
+	justify-content: center;
+	position: relative;
+
+
+}
+.page.rot{
+	transform:rotate(-20deg);
+}
+.menu{
+	position:absolute;
+	top:0;
+	left:0;
+	width:12.5rem;
+	height: 12.5rem;
+	background:#4450E7;
+	margin-top: calc(12.5rem/-2);
+	margin-left:  calc(12.5rem/-2);
+	border-radius:50%;
+	transition:.4s;
+	transform-origin:center center;
+
+}
+.menu.rot-menu{
+	transform:rotate(-90deg);
+
+}
+.bars,.close{
+	position:absolute;
+	top:70%;
+	left:70%;
+	transform:translate(-50%,-50%);
+	color:#fff;
+	font-size:1.56rem;
+}
+.bars:hover,.close:hover{
+	cursor:pointer;
+}
+.close{
+
+	left:27%;
+}
+.content{
+	
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	width: 70%;
+	transform:translate(-50% , -50%);
+}
+.content h1{
+	text-align: center;
+	font-weight: 300;
+	font-size:1.875rem;
+}
+.content hr{
+	border:1px solid #776D6D;
+}
+.content p{
+	color:#494343;
+	font-size: 1rem;
+	line-height:1.56rem;
+}
+
+
+
+
+.list{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100vh;
+	background:#686565;
+}
+.list ul{
+
+	padding: 0;
+	margin: 0;
+	position:absolute;
+	bottom:10px;
+	list-style:none;
+}
+.list ul li {
+	line-height: 4.37rem
+}
+.list ul li a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color:#fff;
+}
+.list li:nth-child(1){
+	margin-left:1.875rem;
+}
+.list li:nth-child(2){
+	margin-left:3.12rem;
+}
+.list li:nth-child(3){
+	margin-left:4.375rem;
+}
+
+
+.parag{
+	font-size: 1rem;
+	color:#6E6565;
+	line-height:1.875rem;
+	width:90%;
+	margin:3rem auto;
+}
+
+@media screen and (max-width: 576px) {
+	html{
+		font-size: 90%;
+	}
+}
+@media screen and (max-width: 414px) {
+	html{
+		font-size: 80%;
+	}
+}

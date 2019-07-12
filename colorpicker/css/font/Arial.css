@@ -1,0 +1,57 @@
+/* Код для подключения шрифта в /css/stylename.css */
+
+/* font-family: "ArialRegular"; */
+@font-face {
+    font-family: "ArialRegular";
+    src: url("../../fonts/Arial/ArialRegular/ArialRegular.eot");
+    src: url("../../fonts/Arial/ArialRegular/ArialRegular.eot?#iefix")format("embedded-opentype"),
+    url("../../fonts/Arial/ArialRegular/ArialRegular.woff") format("woff"),
+    url("../../fonts/Arial/ArialRegular/ArialRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "ArialBold"; */
+@font-face {
+    font-family: "ArialBold";
+    src: url("../../fonts/Arial/ArialBold/ArialBold.eot");
+    src: url("../../fonts/Arial/ArialBold/ArialBold.eot?#iefix")format("embedded-opentype"),
+    url("../../fonts/Arial/ArialBold/ArialBold.woff") format("woff"),
+    url("../../fonts/Arial/ArialBold/ArialBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "ArialItalic"; */
+@font-face {
+    font-family: "ArialItalic";
+    src: url("../../fonts/Arial/ArialItalic/ArialItalic.eot");
+    src: url("../../fonts/Arial/ArialItalic/ArialItalic.eot?#iefix")format("embedded-opentype"),
+    url("../../fonts/Arial/ArialItalic/ArialItalic.woff") format("woff"),
+    url("../../fonts/Arial/ArialItalic/ArialItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "ArialBlack"; */
+@font-face {
+    font-family: "ArialBlack";
+    src: url("../../fonts/Arial/ArialBlack/ArialBlack.eot");
+    src: url("../../fonts/Arial/ArialBlack/ArialBlack.eot?#iefix")format("embedded-opentype"),
+    url("../../fonts/Arial/ArialBlack/ArialBlack.woff") format("woff"),
+    url("../../fonts/Arial/ArialBlack/ArialBlack.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "ArialBoldItalic"; */
+@font-face {
+    font-family: "ArialBoldItalic";
+    src: url("../../fonts/Arial/ArialBoldItalic/ArialBoldItalic.eot");
+    src: url("../../fonts/Arial/ArialBoldItalic/ArialBoldItalic.eot?#iefix")format("embedded-opentype"),
+    url("../../fonts/Arial/ArialBoldItalic/ArialBoldItalic.woff") format("woff"),
+    url("../../fonts/Arial/ArialBoldItalic/ArialBoldItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+

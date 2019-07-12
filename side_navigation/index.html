@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>NavBar</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+<div class="list">
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+</div>	
+<div class="page">
+
+	<div class="content">
+	<h1>Responsive Animated Off Canvas Menu</h1>
+	<hr>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, iusto, commodi. Corporis distinctio, aspernatur praesentium nostrum, nulla facere quia dicta dolorem amet asperiores labore nobis quis cum ducimus? Natus atque, quia nam? Dolor optio vel illo accusantium non a quod, doloribus ullam officiis nobis tempore, ab facilis dolorum, corporis, eum?</p>
+	
+	</div>
+</div>
+	<div class="menu">
+		<div class="bars"><i class="fa fa-bars" aria-hidden="true"></i></div>
+
+		<div class="close"><i class="fa fa-times" aria-hidden="true"></i></div>
+		
+	</div>
+	</div>
+	<div class="parag">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, iusto, commodi. Corporis distinctio, aspernatur praesentium nostrum, nulla facere quia dicta dolorem amet asperiores labore nobis quis cum ducimus? Natus atque, quia nam? Dolor optio vel illo accusantium non a quod, doloribus ullam officiis nobis tempore, ab facilis dolorum, corporis, eum?</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, iusto, commodi. Corporis distinctio, aspernatur praesentium nostrum, nulla facere quia dicta dolorem amet asperiores labore nobis quis cum ducimus? Natus atque, quia nam? Dolor optio vel illo accusantium non a quod, doloribus ullam officiis nobis tempore, ab facilis dolorum, corporis, eum?</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, iusto, commodi. Corporis distinctio, aspernatur praesentium nostrum, nulla facere quia dicta dolorem amet asperiores labore nobis quis cum ducimus? Natus atque, quia nam? Dolor optio vel illo accusantium non a quod, doloribus ullam officiis nobis tempore, ab facilis dolorum, corporis, eum?</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, iusto, commodi. Corporis distinctio, aspernatur praesentium nostrum, nulla facere quia dicta dolorem amet asperiores labore nobis quis cum ducimus? Natus atque, quia nam? Dolor optio vel illo accusantium non a quod, doloribus ullam officiis nobis tempore, ab facilis dolorum, corporis, eum?</p>
+	</div>
+
+	
+	
+<script src="jquery-3.3.1.min.js"></script>
+<script>
+$(document).ready(function(){
+	$('.bars').on('click',function(){
+		$('.page').addClass('rot');
+		$('.menu').addClass('rot-menu');
+	$('.close').on('click',function(){
+		$('.page').removeClass('rot');
+		$('.menu').removeClass('rot-menu');
+	})
+
+	});
+})
+
+</script>
+</body>
+</html>

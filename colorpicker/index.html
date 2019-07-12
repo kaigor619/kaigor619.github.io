@@ -1,0 +1,250 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="custom.css">
+	<link rel="stylesheet" href="css/font/Arial.css">
+	<link rel="stylesheet" href="css/font/PTSans.css">
+	<link rel="stylesheet" href="css/font/OpenSans.css">
+
+	<title>Документ без названия</title>
+</head>
+
+<body>
+
+	<div class="picker_demonstration">
+		<div class="wrap_my_swatch">
+			<div class="my_swatch_opacity"></div>
+			<div class="my_swatch"></div>
+		</div>
+		<input type="text" class="my_color_value">
+	</div>
+	<div class="palette_options">
+		<p>Quick open colorPicker: <span>Ctrl+Alt+C</span></p>
+		<p>Quickly hide the colorPicker without saving settings: <span>Esc</span> </p>
+		<p>Quickly save options and hide the colorPicker: <span>Enter</span> </p>
+	</div>
+	
+	
+	<!-- <div class="wrap_example">
+		<div class="block-example" style="background-color:#3EF16C;">#3EF16C</div>
+		<div class="block-example" style="background-color:rgb(25, 14, 236);">rgb(25, 14, 236)</div>
+		<div class="block-example" style="background-color:hsl(135, 86%, 59%);">hsl(135, 86%, 59%)</div>
+		<div class="block-example" style="background-color:#ef26cf63;">#ef26cf63</div>
+		<div class="block-example" style="background-color:rgba(215, 236, 14, 0.37);">rgba(215, 236, 14, 0.37)</div>
+		<div class="block-example" style="background-color:hsla(174, 86%, 59%, 0.62);">hsla(174, 86%, 59%, 0.62)</div>
+	</div>
+	<p class="color_inspected"></p> -->
+	<div class="picker" id="picker">
+
+		<!-- Основной блок -->
+		<div id="block_picker" class="block_picker">
+			<div class="picker_circle" id="picker_circle"></div>
+
+		</div>
+
+		<div class="picker_container">
+
+			<div class="wrap_output_regulate">
+
+				<!-- Текущий и прошлый цвет -->
+				<div class="wrap_output_color">
+					<div id="cover_last_color" class="cover_last_color color_cell">
+						<div id="last_color" class="last_color"></div>
+					</div>
+
+					<div id="cover_out_color" class="cover_out_color color_cell">
+						<div id="out_color" class="out_color"></div>
+					</div>
+				</div>
+
+				<!-- Регулировка цветов -->
+				<div class="wrap_regulate_color">
+
+					<div class="wrap_line_color line">
+
+						<div id="ss_line" class="hue_color line_color">
+
+						</div>
+						<div class="picker_slider" id="line_circle"></div>
+					</div>
+
+					<!-- Прозрачность -->
+					<div class="wrap_line_color opacity">
+						<div class="opacity_color line_color" id="opacity_color">
+							<div class="linear_cover">
+
+							</div>
+						</div>
+						<div class="picker_slider" id="opacity_circle"></div>
+					</div>
+
+				</div>
+
+
+			</div>
+			<div class="wrap_val_all_color">
+				<div class="w_copy_input">
+					<ul class="list_type_val_color">
+						<li class="type_val_color active" type-color="hex">
+							<input type="text" name="hex" maxlength="9" value="#ffffff" class="hex_text_value">
+						</li>
+						<li class="type_val_color rgba" type-color="rgba">
+							<div class="wrap_color_input">
+								<input type="text" maxlength="3" name="r" value="255" class="rgba_text_value rgba_r">
+
+								<input type="text" maxlength="3" name="g" value="255" class="rgba_text_value rgba_g">
+								<input type="text" maxlength="3" name="b" value="255" class="rgba_text_value rgba_b">
+								<input type="text" maxlength="4" name="a" id="rgba_text_opacity" value="1" class="rgba_text_opacity rgba_a">
+							</div>
+							<!-- <img src="copy.svg" class="copy_color" alt=""> -->
+						</li>
+
+						<li class="type_val_color hsla" type-color="hsla">
+							<div class="wrap_color_input">
+								<input type="text" maxlength="3" name="h" value="128" class="hsla_text_value hsla_h">
+
+								<input type="text" maxlength="3" name="s" value="29" class="hsla_text_value hsla_s">
+								<input type="text" maxlength="3" name="l" value="178" class="hsla_text_value hsla_l">
+								<input type="text" maxlength="4" name="a" value="1" id="hsla_text_opacity" class="hsla_text_opacity hsla_a">
+							</div>
+							<!-- <img src="copy.svg" class="copy_color" alt=""> -->
+						</li>
+
+					</ul>
+					<div class="w_copy_color hint--top" name-custom="Copied">
+						<img src="copy.svg" class="copy_color" id="copy_color" alt="">
+					</div>
+				</div>
+				<ul class="list_select_type_color">
+					<li class="type_color"><button class="btn_select_color active" type-color="hex">Hex</button></li>
+					<li class="type_color"><button class="btn_select_color " type-color="rgba">Rgba</button></li>
+					<li class="type_color"><button class="btn_select_color" type-color="hsla">Hsla</button></li>
+				</ul>
+				<div class="custom_colors">
+					<div class="opacity_client_color example">
+						<div class="client_color hint--top"></div>
+					</div>
+
+					<div class="opacity_client_color">
+						<div class="client_color hint--top" index="0" val="#ff0000ff" name-custom="Color 1" style="background-color:#ff0000ff;"></div>
+					</div>
+
+					<div class="opacity_client_color">
+						<div class="client_color hint--top" index="1" val="#e91e63" name-custom="Color 2" style="background-color:#e91e63"></div>
+					</div>
+					<div class="opacity_client_color">
+						<div class="client_color hint--top" index="2" val="#1769CF" name-custom="Color 3" style="background-color:#1769CF"></div>
+					</div>
+					<div class="opacity_client_color">
+						<div class="client_color hint--top" index="3" val="#3ED725" name-custom="Color 4" style="background-color:#3ED725"></div>
+					</div>
+
+					<div class="opacity_client_color">
+						<div class="client_color hint--top" index="4" val="#E72E81" name-custom="Color 5" style="background-color:#E72E81"></div>
+					</div>
+					<div class="opacity_client_color">
+						<div class="client_color hint--top" index="5" val="#EEF118" name-custom="Color 6" style="background-color:#EEF118"></div>
+					</div>
+					<div class="opacity_client_color">
+						<div class="client_color hint--top" index="6" val="#14E5C0" name-custom="Color 7" style="background-color:#14E5C0"></div>
+					</div>
+					<div class="opacity_client_color">
+						<div class="client_color hint--top" index="7" val="#EE4416" name-custom="Color 8" style="background-color:#EE4416"></div>
+					</div>
+
+					<div class="opacity_client_color">
+						<div class="client_color hint--top" index="8" val="#12E963" name-custom="Color 9" style="background-color:#12E963"></div>
+					</div>
+					<div class="opacity_client_color">
+						<div class="client_color hint--top" index="9" val="#8CF313" name-custom="Color 10" style="background-color:#8CF313"></div>
+					</div>
+					<div class="opacity_client_color">
+						<div class="client_color hint--top" index="10" val="#FB0909" name-custom="Color 11" style="background-color:#FB0909"></div>
+					</div>
+					<div class="opacity_client_color">
+						<div class="client_color hint--top" index="11" val="#F2701A" name-custom="Color 12" style="background-color:#F2701A"></div>
+					</div>
+					<div class="opacity_client_color">
+						<div class="client_color hint--top" index="12" val="rgb(132, 80, 80)" name-custom="Color 13" style="background-color: rgb(132, 80, 80);"></div>
+					</div>
+					<div class="add_new_color" id="add_new_color">
+						<img src="plus-symbol.svg" alt="">
+					</div>
+
+				</div>
+				<div class="w_descr_custom_color" id="w_descr_custom_color">
+					<div class="descr_custom_color" id="descr_custom_color">
+						<div class="wrap_descr_parts">
+							<div class="opacity_descr_color">
+								<div class="client_c_color_descr" id="client_c_color_descr" style="background-color:#F2701A"></div>
+							</div>
+							<input class="label_descr_color" id="label_descr_color" value="Bg Main Menu" readonly>
+						</div>
+						<div class="wrap_descr_parts">
+							<img class="descr_c_pencil" id="descr_c_pencil" src="pencil.svg" alt="">
+							<img class="descr_c_delete" id="descr_c_delete" src="delete.svg" alt="">
+						</div>
+						<div class="w_descr_btns_save" id="w_descr_btns_save">
+							<div class="descr_btns_save">
+								<p class="warning_lab_c_color">Save changes?</p>
+								<div>
+									<button class="descr_save_c_color descr_c_color" id="descr_save_c_color">Save</button>
+									<button class="descr_cancel_c_color descr_c_color" id="descr_cancel_c_color">Cancel</button>
+								</div>
+							</div>
+						</div>
+						<div class="w_warning_delete" id="w_warning_delete">
+							<div class="warning_delete">
+								<p class="warning_lab_c_color">Delete this swatch?</p>
+								<div>
+									<button class="descr_c_color descr_del_color" id="descr_del_color">Yes</button>
+									<button class="descr_c_color descr_del_c_color" id="descr_del_c_color">No</button>
+								</div>
+							</div>
+						</div>
+						<div class="w_save_c_color" id="w_save_c_color">
+							<div class="save_c_color">
+								<p class="warning_lab_c_color">Save color ?</p>
+								<div>
+									<button class="descr_c_color btn_save_c_color" id="btn_save_c_color">Save</button>
+									<button class="descr_c_color btn_del_c_color" id="btn_del_c_color">Cancel</button>
+								</div>
+							</div>
+						</div>						
+					</div>
+				</div>
+
+			</div>
+			<div class="wrap_btn_save_cancel">
+				<button class="btn_color_ok" id="btn_color_ok">Ok</button>
+				<button class="btn_color_cancel" id="btn_color_cancel">Cancel</button>
+			</div>
+		</div>
+
+	</div>
+
+
+
+
+
+
+
+
+	<script src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="common.js"></script>
+	<script type="text/javascript" src="custom.js"></script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
