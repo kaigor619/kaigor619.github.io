@@ -23,4 +23,5 @@ function show(color){
 		picker.filling_color(obj);
 		picker.on();
 	});
+	$('.my_swatch').click();
 });
