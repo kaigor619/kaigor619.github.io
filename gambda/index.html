@@ -7,9 +7,7 @@
   <link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700|Lato|Open+Sans:400,700|Yeseva+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="libs/mmenu/mmenu.css">
-    <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/all.min.css">
   <title>Gambda</title>
 </head>
 <body>
@@ -17,17 +15,17 @@
 <div class="page">
 	<nav class="m_nav_menu" id="m_nav_menu">
 		<ul>
-			<li class="nav_menu_item"><a href="#">Home</a></li>
-			<li class="nav_menu_item"><a href="#">About</a></li>
-			<li class="nav_menu_item"><a href="#">Ingredients</a></li>
-			<li class="nav_menu_item"><a href="#">Menu</a></li>
-			<li class="nav_menu_item"><a href="#">Reviews</a></li>
-			<li class="nav_menu_item"><a href="#">Reservations</a></li>
+			<li class="nav_menu_item"><a href="#" to="home">Home</a></li>
+			<li class="nav_menu_item"><a href="#" to="about">About</a></li>
+			<li class="nav_menu_item"><a href="#" to="ingredients">Ingredients</a></li>
+			<li class="nav_menu_item"><a href="#" to="menu">Menu</a></li>
+			<li class="nav_menu_item"><a href="#" to="reviews">Reviews</a></li>
+			<li class="nav_menu_item"><a href="#" to="reservations">Reservations</a></li>
 		</ul>
 	</nav>
 
 <div class="home" id="home">
-	<div class="container">
+	<div class="container d-flex" style="flex-direction:column">
 		<header class="header" id="header">
 			<div class="row d-flex justify-content-between">
 				<div class="col-lg-3 col-sm-12 col-4 ">
@@ -48,12 +46,12 @@
 
 						<nav class="nav_menu" id="nav_menu">
 							<ul>
-								<li class="nav_menu_item"><a href="#"><span>Home</span></a></li>
-								<li class="nav_menu_item"><a href="#"><span>About</span></a></li>
-								<li class="nav_menu_item"><a href="#"><span>Ingredients</span></a></li>
-								<li class="nav_menu_item"><a href="#"><span>Menu</span></a></li>
-								<li class="nav_menu_item"><a href="#"><span>Reviews</span></a></li>
-								<li class="nav_menu_item"><a href="#"><span>Reservations</span></a></li>
+								<li class="nav_menu_item"><a href="#" to="home"><span>Home</span></a></li>
+								<li class="nav_menu_item"><a href="#" to="about"><span>About</span></a></li>
+								<li class="nav_menu_item"><a href="#" to="ingredients"><span>Ingredients</span></a></li>
+								<li class="nav_menu_item"><a href="#" to="menu"><span>Menu</span></a></li>
+								<li class="nav_menu_item"><a href="#" to="reviews"><span>Reviews</span></a></li>
+								<li class="nav_menu_item"><a href="#" to="reservations"><span>Reservations</span></a></li>
 							</ul>
 						</nav>
 
@@ -69,20 +67,22 @@
 			</div>
 		</header>
 		<div class="home_content" id="home_content">
-			<h1 class="home_title">
-				The right ingredients for the right food
-			</h1>
-			<img src="img/header-decor.png" alt="" class="header_decor">
-			<div class="group_btns">
-				<button id="book_a_table" class="book_a_table">Book A Table</button>
-				<button id="btn_see_menu" class="btn_see_menu">See the menu</button>
+			<div>
+				<h1 class="home_title">
+					The right ingredients for the right food
+				</h1>
+				<img src="img/header-decor.png" alt="" class="header_decor">
+				<div class="group_btns">
+					<button id="book_a_table" class="book_a_table btn_link" to="reservations">Book A Table</button>
+					<button id="btn_see_menu" class="btn_see_menu btn_link" to="menu">See the menu</button>
+				</div>
 			</div>
 		</div>
 		
 	</div>
 </div>
 
-<!-- <section class="about" id="about">
+<section class="about" id="about">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 d-flex align-items-center">
@@ -104,7 +104,7 @@
 			</div>
 		</div>
 	</div>
-</section> -->
+</section>
 
 <section id="ingredients" class="ingredients">
 	<div class="container">
@@ -341,25 +341,27 @@
 							<div class="col-sm-6">
 								<div class="field">
 									<label for="name">Name</label>
-									<input type="text" placeholder="your name*">
+									<input type="text" id="name" placeholder="your name*" required>
 								</div>
 								<div class="field">
 									<label for="date">Date</label>
-									<input type="text" placeholder="date*">
+									<input type="date" id="date" placeholder="date*" required>
 								</div>
 							</div>
 							<div class="col-sm-6">
 								<div class="field">
 									<label for="name">Email</label>
-									<input type="text" placeholder="your email*">
+									<input type="text" id="email" placeholder="your email*" required>
 								</div>
 								<div class="field">
-									<label for="date">Party number</label>
-									<input type="text" placeholder="date*">
+									<label for="number">Party number</label>
+									<input type="number" id="number" required>
 								</div>
 							</div>
 						</div>
-						<button class="btn_book_now" id="btn_book_now">
+						<p class="error" id="error"></p>
+						<p class="okey" id="okey"></p>
+						<button type="submit" class="btn_book_now" id="btn_book_now">
 							Book Now!
 						</button>
 					</form>
@@ -409,9 +411,9 @@
 						128 Meserole Avenue
 					</p>
 					<div class="footer_icons">
-						<i class="fa fa-twitter"></i>
-						<i class="fa fa-youtube"></i>
-						<i class="fa fa-facebook"></i>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-youtube"></i></a>
+						<a href="#"><i class="fa fa-facebook"></i></a>
 					</div>
 				</div>
 			</div>
@@ -420,9 +422,6 @@
 </footer>
 </div>
 
-<!-- <script src="libs/jquery/dist/jquery.min.js"></script> -->
-<script src="libs/mmenu/mmenu.js"></script>
-<!-- <script src="libs/mmenu/mmenu.debugger.js"></script> -->
-<script src="js/command.js" charset="utf-8"></script>
+<script src="js/libs.min.js" charset="utf-8"></script>
 </body>
 </html>
