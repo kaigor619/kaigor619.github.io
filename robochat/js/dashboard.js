@@ -19,6 +19,26 @@ document.body.addEventListener("click", function(t) {
     }
 });
 
+let tabs_item=document.getElementsByClassName('tabs_item');
+let tab_block=document.getElementsByClassName('tab_block');
+
+for(let i=0;i<tabs_item.length;i++){
+	tabs_item[i].onclick=function(){
+		for(let i=0;i<tabs_item.length;i++){
+			tabs_item[i].classList.remove('active');
+		}
+		for(let i=0;i<tab_block.length;i++){
+			tab_block[i].classList.remove('active');
+		}
+		this.classList.add('active');
+		tab_block[i].classList.add('active');
+	}
+}
+
+
+
+
+
 document.body.addEventListener("mousedown", function(t) {
     for (var e = t.target; null !== e && !e.hasAttribute("data-tooltip-ignore") && !e.hasAttribute("data-tooltip"); )
         e = e.parentElement;
