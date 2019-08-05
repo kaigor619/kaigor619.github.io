@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang=ru>
+<head>
+    <meta charset=utf-8>
+    <title>Chatlead.io</title>
+    <meta name=description content>
+    <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+    
+    <meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel=stylesheet href="../css/main.css?v=1.0.0">
+    
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:image" content="../img/logo_icon.png"/>
+
+    <meta name=theme-color content=#ffffff>
+    <meta name=msapplication-navbutton-color content=#ffffff>
+    <meta name=apple-mobile-web-app-status-bar-style content=#ffffff>      
+</head>
+
+<body id=page-body>
+    <div class="layout" id=page-layout>
+        <div class=main_layout>
+            <main id="main" class="login-page">
+                <div class="flex-view">
+                    <div class="container-modal">
+                        <div class="auth-box">
+                            <div class="auth-box__tab-container">
+                                <div class="auth-box__tab btn-group">
+                                    <button class="auth-box__tab-item" onclick="document.location.href='login.html'">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="15" viewBox="0 0 12 15">
+                                            <path d="M0 6a2 2 0 0 1 2-2 4 4 0 1 1 8 0 2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm6-4a2 2 0 0 0-2 2h4a2 2 0 0 0-2-2zm-1 8a1 1 0 0 0 2 0V8a1 1 0 0 0-2 0z"></path>
+                                        </svg>
+                                        Войти
+                                    </button>
+                                    <button class="auth-box__tab-item active" onclick="document.location.href='register.html'">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="15" viewBox="0 0 22 15">
+                                            <path d="M16.77 7.86l-.02-1.24s.52-.37.69-1.53c.32.08.67-.46.69-.74.01-.27-.05-1.03-.45-.95.08-.57.14-1.09.11-1.36C17.69 1.05 16.63 0 15 0c-1.63 0-2.69 1.05-2.79 2.04-.03.27.03.79.11 1.36-.4-.08-.47.68-.45.95.02.28.37.82.69.74.16 1.16.69 1.53.69 1.53l-.01 1.24s-.34.18-1.73.72c-1.4.54-2.81.92-3.23 1.52-.38.54-.26 3.9-.26 3.9h13.96s.12-3.36-.26-3.9c-.42-.6-1.83-.98-3.23-1.52-1.39-.54-1.72-.72-1.72-.72zM5 0H3v3H0v2h3v3h2V5h3V3H5z"></path>
+                                        </svg>
+                                        Создать аккаунт
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="auth-box__content">
+                
+                                <div class="auth-box__form-row form-field">
+                                    <div class="label">
+                                        <label for="email" title="Email:" class="">Email:</label>
+                                    </div>
+                                    <div class="form-wrap">
+                                        <input id="email" tabindex="1" class="form-control" type="email" placeholder="mail@example.com"
+                                               spellcheck="false" autofocus>
+                                    </div>
+                                </div>
+
+                                <div class="auth-box__form-row is-flex">
+                                    <div class="auth-box__form-field">
+                                        <div class="label">
+                                            <label for="password" title="Пароль:" class="auth-box__label">
+                                                Пароль:
+                                            </label>
+                                        </div>
+                                        <input class="form-control" tabindex="2" type="password" placeholder="" autocomplete="off" id="password">
+                                    </div>
+                                    <div class="auth-box__form-field">
+                                        <div class="label">
+                                            <label for="password-2" title="Пароль:" class="auth-box__label">
+                                                Повторите пароль:
+                                            </label>
+                                        </div>
+                                        <input class="form-control" tabindex="3" type="password" id="password-2">
+                                    </div>
+                                </div>
+
+                                <button class="default-btn default-btn--primary auth-box__submit-btn" tabindex="3" id="register-btn">
+                                    Создать аккаунт
+                                </button>
+                                <p class="auth-box__policy-agreement">
+                                    Продолжая, вы соглашаетесь с нашей <br><a href="#" target="_blank">политикой конфиденциальности</a> и
+                                    <a href="#" target="_blank">правилами
+                                        пользования</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+</body>
+
+</html>
