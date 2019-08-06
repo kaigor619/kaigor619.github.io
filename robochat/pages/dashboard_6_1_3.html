@@ -8,9 +8,8 @@
     <link rel="shortcut icon" href="../img/logo_icon.ico" type="image/x-icon">
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<link rel="stylesheet" href="../css/dashboard.css?v=1.0.0">
-		<link rel="stylesheet" href="../css/temp.css">
-		<link rel=stylesheet href="../css/fixes.css">		
+    <link rel="stylesheet" href="../css/dashboard.css?v=1.0.0">
+		<link rel=stylesheet href="../css/fixes.css">
 
     <meta property="og:url" content="">
     <meta property="og:type" content="website">
@@ -210,7 +209,7 @@
                 <nav class="main__pages-nav">
                     <div class="container">
                         <ul id="main-nav-list" class="">
-                            <li class="js-nav-link active">
+                            <li class="js-nav-link">
                                 <a href="dashboard_1.html">
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512px" height="512px">
                                         <g>
@@ -322,7 +321,7 @@
                                     </svg>диалог
                                 </a>
                             </li>
-                            <li class="js-nav-link">
+                            <li class="js-nav-link active">
                                 <a href="dashboard_6.html">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="938pt" version="1.1" viewBox="0 -39 938.75168 938" width="938pt">
                                         <g id="surface1">
@@ -340,136 +339,89 @@
                         </ul>
                     </div>
                 </nav>
-
+                <!-- Tools page  -->
                 <section class="main-page-content tools-page">
                     <div class="container">
                         <div class="menu-trigger-btn" id="faq-menu-trigger"> </div>
-                        <div class="tools">
-                            <h2>Инструменты для роста клиентской базы</h2>
-                            <ul class="tools__list">
-                                <li class="tools__item tools__item_narrow">
-                                    <h3>MLP</h3>
-                                    <div class="tools__img"><img src="../img/tools/MLP.png" alt="MLP"></div>
-                                    <a href="dashboard_6_1.html" class="btn blue-btn">Добавить</a>
-                                </li>
-                                <li class="tools__item tools__item_wide">
-                                    <h3>LP поделиться</h3>
-                                    <div class="tools__img"><img src="../img/tools/LP_share.png" alt="MLP"></div>
-                                    <a href="dashboard_6_2.html" class="btn blue-btn">Добавить</a>
-                                </li>
-                                <li class="tools__item tools__item_narrow">
-                                    <h3>Виджет</h3>
-                                    <div class="tools__img"><img src="../img/tools/Vidget.png" alt="Vidget"></div>
-                                    <a href="dashboard_6_3.html" class="btn blue-btn">Добавить</a>
-                                </li>
-                            </ul>
+                        <div class="tools-settings">
+                            <div class="tools-settings__controls">
+                                <a href="dashboard_6.html">
+                                    <button class="default-btn default-btn--outline default-btn--rounded back-btn js-link mobile-fixed-btn mobile-fixed-btn--hw-left js-esc-key">
+                                        <img src="../svg/db/left-arrow.svg" alt="" class="btn-icon">
+                                        <span class="btn-inner">Назад к лидгентулам</span>
+                                    </button>
+                                </a>
+                                <a href="#" class="btn blue-btn">Сохранить</a>
+                            </div>
+                            <!-- settings menu will be here -->
                         </div>
-                        <!-- Tools table -->
-                        <div class="responsivetable responsivetable--bordered responsivetable--action" id="advanced-reply-nested-messages-table">
-                            <div>
-                                <div>Название лидгентула</div>
-                                <div>Тип</div>
-                                <div></div>
-                            </div>
-
-                            <div class="js-link " data-action="keywords" data-type="2" data-id="2552146">
-                                <div data-label="Правило">
-                                    <div>Название 1</div>
-                                </div>
-                                <div data-label="Содержимое" style="white-space: nowrap">
-                                    <div style="display: inline;">LMP</div>
-                                </div>
-                                <div data-label="Действие">
-                                    <div style="white-space: nowrap">
-                                        <button class="default-btn default-btn--icon-style default-btn--outline">
-                                            <img src="../svg/db/elements/edit_gray.svg" alt="" class="btn-icon">
-                                            <span class="text-tooltip text-tooltip--top">
-                                                Редактировать
-                                            </span>
-                                        </button>
-                                        <button class="default-btn default-btn--icon-style default-btn--outline">
-                                            <img src="../svg/db/elements/copy_gray.svg" alt="" class="btn-icon">
-                                            <span class="text-tooltip text-tooltip--top">
-                                                Копировать
-                                            </span>
-                                        </button>
-                                        <button class="default-btn default-btn--icon-style default-btn--outline">
-                                            <img src="../svg/db/elements/trash_gray.svg" alt="" class="btn-icon">
-                                            <span class="text-tooltip text-tooltip--top">
-                                                Удалить
-                                            </span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="js-link " data-action="keywords" data-type="2" data-id="25521462">
-                                <div data-label="Правило">
-                                    <div>Название 2</div>
-                                </div>
-                                <div data-label="Содержимое" style="white-space: nowrap">
-                                    <div style="display: inline;">LP поделиться</div>
-                                </div>
-                                <div data-label="Действие">
-                                    <div style="white-space: nowrap">
-                                        <button class="default-btn default-btn--icon-style default-btn--outline">
-                                            <img src="../svg/db/elements/edit_gray.svg" alt="" class="btn-icon">
-                                            <span class="text-tooltip text-tooltip--top">
-                                                Редактировать
-                                            </span>
-                                        </button>
-                                        <button class="default-btn default-btn--icon-style default-btn--outline">
-                                            <img src="../svg/db/elements/copy_gray.svg" alt="" class="btn-icon">
-                                            <span class="text-tooltip text-tooltip--top">
-                                                Копировать
-                                            </span>
-                                        </button>
-                                        <button class="default-btn default-btn--icon-style default-btn--outline">
-                                            <img src="../svg/db/elements/trash_gray.svg" alt="" class="btn-icon">
-                                            <span class="text-tooltip text-tooltip--top">
-                                                Удалить
-                                            </span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="js-link " data-action="keywords" data-type="2" data-id="255214623">
-                                <div data-label="Правило">
-                                    <div>Название 3</div>
-                                </div>
-                                <div data-label="Содержимое" style="white-space: nowrap">
-                                    <div style="display: inline;">Виджет</div>
-                                </div>
-                                <div data-label="Действие">
-                                    <div style="white-space: nowrap">
-                                        <button class="default-btn default-btn--icon-style default-btn--outline">
-                                            <img src="../svg/db/elements/edit_gray.svg" alt="" class="btn-icon">
-                                            <span class="text-tooltip text-tooltip--top">
-                                                Редактировать
-                                            </span>
-                                        </button>
-                                        <button class="default-btn default-btn--icon-style default-btn--outline">
-                                            <img src="../svg/db/elements/copy_gray.svg" alt="" class="btn-icon">
-                                            <span class="text-tooltip text-tooltip--top">
-                                                Копировать
-                                            </span>
-                                        </button>
-                                        <button class="default-btn default-btn--icon-style default-btn--outline">
-                                            <img src="../svg/db/elements/trash_gray.svg" alt="" class="btn-icon">
-                                            <span class="text-tooltip text-tooltip--top">
-                                                Удалить
-                                            </span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Tools table end -->
                     </div>
                 </section>
+
+                <section class="crumbs_process">
+                    <div class="container">
+                        <div class="crumb_block">
+
+                            <img src="../svg/main/elements/settings.svg" alt="" style="width:20px">
+                            <span>Основные настройки</span>
+                            <div class="crumb_line"></div>
+
+                            <img src="../svg/main/elements/docs.svg" alt="" style="width:15px">
+                            <span>Содержимое</span>
+                            <div class="crumb_line"></div>
+
+                            <img src="../svg/main/elements/code.svg" alt="">
+                            <span>Код</span>
+                            <div class="crumb_line"></div>
+
+                            <img src="../svg/main/elements/success.svg" alt="">
+                            <span>Готово</span>
+                        </div>
+                    </div>
+                </section>
+<div class="container">
+            <div class="messenger_content">
+            
+                    <section class="section_form">
+                        
+                     <div class="domen_block">
+                         <h4 class="domen_title">Домен:</h4>
+                         <div class="domen_flex">
+                             <span class="domen_prefix">wep.logo.ai/</span>
+                             <input type="text" class="domen_name" name="domen_name" placeholder="7989007">
+                             <div class="edit_domen_name">
+                                 <img src="../svg/main/elements/edit_domen.svg">
+                             </div>
+                             <button class="btn_copy_domen"> <img src="../svg/main/elements/copy.svg"><span>Скопировать ссылку</span></button>
+                         </div>
+                         
+                     </div>
+
+                        
+                    </section>
+                    <section class="messenger">
+                        <div class="card">
+                            <img src="../img/photo_messenger.png">
+                            <h3 class="card_title">Заголовок</h3>
+                            <p class="card_about">Описание</p>
+                        </div>
+                        <div class="select_messenger">
+                            <span>ШАГ - 1. Выберите Свой Мессенджер</span>
+                            <div class="messengers">
+                                <a href="#"><img src="../img/facebook.png"></a>
+                                <a href="#"><img src="../img/telegram.png"></a>
+                                <a href="#"><img src="../img/vk_messenger.png"></a>
+                            </div>
+                            <p class="work_on">работает на: LOGO</p>
+                        </div>
+                    </section>
+                </div>
+                </div>
             </main>
         </div>
     </div>
 
     <script src="../js/dashboard.js" async></script>
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>

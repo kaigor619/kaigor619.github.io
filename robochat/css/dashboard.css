@@ -28216,6 +28216,8 @@ img.emoji {
     align-items: center;
     justify-content: center;
     margin-right: 10px;
+    position: relative;
+    font-size: 14px;
 }
 .link_on_fb{
     display: flex;
@@ -28353,6 +28355,17 @@ color: #82848b;
     .recipients , .notification , .sending_mail , .group_btn{
         padding-left: 10px;
     }
+    .messenger_content{
+        flex-direction: column;
+    }
+    .card{
+        max-width: 500px;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .card.cupon{
+        max-width: 600px;
+    }
 }
 @media screen and (max-width:576px){
  .group_btns{
@@ -28374,6 +28387,18 @@ color: #82848b;
  .crumb_block span {
     margin-bottom: 10px;
 }
+.cupon_content{
+    flex-wrap:wrap;
+}
+.cupon_image{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+    .card.cupon{
+        /*max-width: 600px;*/
+        width: auto;
+    }
 }
 .media_block{
     display: flex;
@@ -28383,48 +28408,52 @@ color: #82848b;
     display: flex;
     align-items: center;
     margin-right: 20px;
+    cursor:pointer;
 }
 .media_block input{
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
+    width: 23px;
+    height: 23px;
+    margin-right: 10px;
 }
 .image_block{
     margin-top: 30px;
     width: 120px;
-    height: 129px;
+    height: 120px;
     border-radius:5px;   
     display: flex;
     align-items: center;
     justify-content: center;
-    border:1px dashed silver;
+    border:2px dashed silver;
     position: relative;
+    cursor:pointer;
 }
 .image_block .close{
     position: absolute;
     top: 0;
-    right: -20px;
+    right: -30px;
     color:red;
     cursor:pointer;
-}
-.image_block span{
-    font-size: 40px;
 }
 .sections_block{
     margin-top: 40px;
     display: flex;
+    color: #82848b;
 }
 .partition{
-    padding: 10px 20px 10px 20px;
-    border: 1px solid #517df9;
-     border-radius: 7px 0 0 7px;
-   color: #517df9;
-    margin-left: 10px;
+    padding: 10px 25px 10px 25px;
     cursor:pointer;
 }
-.partition:last-child{
-border-radius: 0 7px 7px 0;
-margin-left: 0;
+.partition.first{
+     border: 1px solid #517df9;
+     border-radius: 7px 0 0 7px;
+     color: #517df9;
+     margin-left: 15px;
+}
+.partition.second{
+    border-radius: 0 7px 7px 0;
+    margin-left: 0;
+    border: 1px solid #82848b;
+    color: #82848b;  
 }
 .partition_message{
     margin-top: 30px;
@@ -28438,9 +28467,11 @@ border: 1px solid #d0d0d0;
 background-color: transparent;
 color: #d0d0d0;
 font-size: 16px;
+color:#82848b;
 }
 .call_to_action{
     margin-top: 30px;
+    color:#82848b;
 }
 .about_event{
     padding: 10px 0 30px 15px;
@@ -28461,6 +28492,9 @@ font-size: 16px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
     text-align: center;
 }
+.card img{
+    width: auto;
+}
 .card_title{
     color: #2e2e2e;
     font-size: 24px;
@@ -28469,7 +28503,7 @@ font-size: 16px;
 
 }
 .card_about{
-color: #4d4b4b;
+color: #82848b;
 font-size: 17px;
 }
 .select_messenger{
@@ -28482,6 +28516,11 @@ font-size: 17px;
     color: #82848b;
 font-size: 16px;
 }
+.messengers{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 .messengers img{
     cursor:pointer;
 }
@@ -28489,4 +28528,192 @@ font-size: 16px;
     margin-top: 50px;
     color: #82848b;
 font-size: 11px;
+}
+
+.custom_radio{
+    width: 24px;
+    height: 24px;
+    border-radius:50%;
+    border:1px solid #517df9;
+    margin-right: 15px;
+    position: relative;
+    cursor: pointer;
+}
+.custom_radio:after{
+    content:"";
+    display: none;
+    width: 12px;
+    height: 12px;
+    background-color: #517df9;
+    border-radius:50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+}
+.custom_radio.active:after{
+    display: block;
+}
+.message_block{
+    margin-top: 40px;
+    width: 475px;
+}
+.message_block textarea{
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.message_title{
+    color: #82848b;
+    font-size: 16px;
+}
+.card.user{
+    padding: 20px 10px;
+    width: 350px;
+
+}
+.script_block{
+    margin-top: 40px;
+    width: 475px;
+}
+.script_block .script_title{
+color: #2e2e2e;
+font-size: 13px;
+}
+.script_block .script_note{
+color: #939393;
+font-size: 13px;
+}
+.script_block textarea{
+    margin-top: 10px;
+    font-size: 14px;
+}
+.card.cupon{
+    text-align: left;
+    max-width: 600px;
+    width: 100%;
+}
+.card.cupon .work_on{
+    margin-top: 15px;
+}
+
+.cupon_title{
+    color: #242424;
+    font-size: 23px;
+    text-align: center;
+    font-weight: bold;
+}
+.cupon_content{
+    display: flex;
+}
+.cupon_image{
+    text-align: center;
+}
+.cupon_about{
+    margin-left: 20px;
+}
+.cupon_condition_title{
+    color: #242424;
+font-size: 14px;
+font-weight: bold;
+}
+.list_condition{
+    margin-top: 15px;
+}
+.list_condition li{
+    color: #242424;
+font-size: 14px;
+margin-bottom: 10px;
+}
+.btn_share_cupon{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+background-color: #47c756;
+padding: 10px 20px;
+color: #fff;
+font-weight: bold;
+text-transform: uppercase;
+
+}
+.btn_share_cupon span{
+    margin-left: 10px;
+    font-size:14px;
+}
+.progress_cupon{
+margin-top: 20px;
+width: 100%;
+height: 12px;
+border-radius: 5px;
+background-color: #ecf0f0;
+position: relative;
+}
+.progress_cupon .current_progress{
+border-radius: 5px 0 0 5px;
+background-color: #4a9522;
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+width: 10%;
+}
+.cupon_note{
+    color: #aaaaaa;
+font-size: 12px;
+margin-top: 10px;
+}
+.domen_block{
+    margin-top: 30px;
+}
+.domen_block .domen_title{
+    color: #2e2e2e;
+    font-size: 16px;
+}
+.domen_flex{
+    display: flex;
+    align-items: flex-end;
+
+}
+.domen_prefix{
+    color: #82848b;
+font-size: 18px;
+}
+.domen_flex .domen_name{
+    border:none;
+    background-color: transparent;
+    border-bottom:1px solid silver;
+    color: #82848b;
+font-size: 17px;
+margin-left: 5px;
+width: 200px;
+}
+
+.edit_domen_name{
+    border-radius: 5px;
+border: 1px solid #d0d0d0;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 6px;
+margin-left: 5px;
+cursor:pointer;
+}
+.btn_copy_domen{
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+border-radius: 3px;
+border: 1px solid #517df9;
+color: #517df9;
+font-size: 13px;
+padding: 5px 10px;
+background-color: transparent;
+}
+.btn_copy_domen span{
+    margin-left: 6px;
+}
+.btn_copy_domen.cupon{
+    margin-left: 0;
+    margin-top: 10px;
 }
