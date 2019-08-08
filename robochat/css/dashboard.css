@@ -28766,6 +28766,9 @@ margin-top: 30px;
     .section_form .selection {
         margin-bottom: 100px;
     }
+    .domen_flex{
+        flex-wrap:wrap;
+    }
 
 
 }
