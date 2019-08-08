@@ -28106,6 +28106,7 @@ img.emoji {
     display:flex;
     justify-content:flex-end;
     position: relative;
+    margin-bottom: 200px;
 }
 .selection .arrow{
     cursor:pointer;
@@ -28118,7 +28119,11 @@ img.emoji {
     background-color:#fff;
     border-radius:4px;
     box-shadow: 0 0 4px 1px #c0c0c09e;
+    display: none;
 
+}
+.sub_block.active{
+    display: block;
 }
 .sub_block .block_arrow{
     display: block;
@@ -28351,55 +28356,7 @@ color: #82848b;
 .tab_block.active{
     display: block;
 }
-@media screen and (max-width:992px){
-    .recipients , .notification , .sending_mail , .group_btn{
-        padding-left: 10px;
-    }
-    .messenger_content{
-        flex-direction: column;
-    }
-    .card{
-        max-width: 500px;
-        margin: 0 auto;
-        margin-top: 50px;
-    }
-    .card.cupon{
-        max-width: 600px;
-    }
-}
-@media screen and (max-width:576px){
- .group_btns{
-    flex-direction:column;
-    text-align: center;
- }
- .group_btns span{
-    justify-content: center;
-    margin: 10px 0 10px 0;
- }
- .crumb_block{
-    flex-direction:column;
- }
-.crumb_block .crumb_line{
-    width: 1px;
-    height: 30px;
-    margin-bottom: 10px;
- }
- .crumb_block span {
-    margin-bottom: 10px;
-}
-.cupon_content{
-    flex-wrap:wrap;
-}
-.cupon_image{
-    text-align: center;
-    width: 100%;
-    margin-bottom: 15px;
-}
-    .card.cupon{
-        /*max-width: 600px;*/
-        width: auto;
-    }
-}
+
 .media_block{
     display: flex;
     align-items: center;
@@ -28716,4 +28673,99 @@ background-color: transparent;
 .btn_copy_domen.cupon{
     margin-left: 0;
     margin-top: 10px;
+}
+.dialog_content{
+    text-align: center;
+    padding-top: 80px;
+}
+.dialog_content .dialog_message{
+    color: #82848b;
+font-size: 24px;
+margin-top: 30px;
+}
+@media screen and (max-width:992px){
+    .recipients , .notification , .sending_mail , .group_btn{
+        padding-left: 10px;
+    }
+    .messenger_content{
+        flex-direction: column;
+    }
+    .card{
+        max-width: 500px;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .card.cupon{
+        max-width: 600px;
+    }
+}
+@media screen and (max-width:576px){
+ .group_btns{
+    flex-direction:column;
+    text-align: center;
+ }
+ .group_btns span{
+    justify-content: center;
+    margin: 10px 0 10px 0;
+ }
+ .crumb_block{
+    flex-direction:column;
+ }
+.crumb_block .crumb_line{
+    width: 1px;
+    height: 30px;
+    margin-bottom: 10px;
+ }
+ .crumb_block span {
+    margin-bottom: 10px;
+}
+.cupon_content{
+    flex-wrap:wrap;
+}
+.cupon_image{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+    .card.cupon{
+        /*max-width: 600px;*/
+        width: auto;
+    }
+    .card.cupon img{
+        width: 100%;
+    }
+    .card img{
+        width: 100%;
+    }
+    .card.user img{
+        width: auto;
+    }
+    .card.user {
+        padding: 20px 10px;
+        width: 100%;
+    }
+    .card.user .messengers img{
+        max-width:50px;
+    }
+    .message_block textarea , .about_event{
+        width: 100%;
+    }
+    .message_block , .script_block{
+        width: auto !important;
+    }
+    .domen_prefix{
+        font-size: 16px;
+    }
+    .domen_flex .domen_name{
+        font-size: 16px;
+    width: 150px;
+    }
+    .messengers img{
+        max-width:90px;
+    }
+    .section_form .selection {
+        margin-bottom: 100px;
+    }
+
+
 }

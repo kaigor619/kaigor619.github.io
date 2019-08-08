@@ -35,6 +35,18 @@ for(let i=0;i<tabs_item.length;i++){
 	}
 }
 
+const arrow_sub=document.getElementById('arrow_sublist');
+const sub_block=document.getElementById('sub_block');
+
+arrow_sub.onclick=function(){
+
+	if(sub_block.classList.contains('active')){
+		sub_block.classList.remove('active');
+	}
+	else{
+		sub_block.classList.add('active');
+	}
+}
 
 
 
