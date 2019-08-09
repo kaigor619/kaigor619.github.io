@@ -176,7 +176,8 @@
 }
 
 .bot-selection__step {
-
+	color: #fff;
+	font-size: 25px;
 }
 
 .bot-selection__breadcrumbs {

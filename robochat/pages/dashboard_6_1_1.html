@@ -361,21 +361,20 @@
                 <section class="crumbs_process">
                     <div class="container">
                         <div class="crumb_block">
-
-                            <img src="../svg/main/elements/settings.svg" alt="" style="width:20px">
-                            <span>Основные настройки</span>
+      <img src="../svg/main/elements/settings.svg" alt="" style="width:20px">
+                            <span><a href="dashboard_6_1.html">Основные настройки</a></span>
                             <div class="crumb_line"></div>
 
                             <img src="../svg/main/elements/docs.svg" alt="" style="width:15px">
-                            <span>Содержимое</span>
+                            <span><a href="dashboard_6_1_1.html">Содержимое</a></span>
                             <div class="crumb_line"></div>
 
                             <img src="../svg/main/elements/code.svg" alt="">
-                            <span>Код</span>
+                            <span><a href="dashboard_6_1_2.html">Код</a></span>
                             <div class="crumb_line"></div>
 
                             <img src="../svg/main/elements/success.svg" alt="">
-                            <span>Готово</span>
+                            <span><a href="dashboard_6_1_3.html">Готово</a></span>
                         </div>
                     </div>
                 </section>
@@ -385,19 +384,28 @@
                     <section class="section_form">
                         
                             <div class="media_block">
-                                <label><div class="custom_radio"></div>
+                                <label><div class="custom_radio active"></div>
                                  <span>Изображение</span> </label>
-                                <label><div class="custom_radio active"></div> <span>Видео</span></label>
+                                <label><div class="custom_radio"></div> <span>Видео</span></label>
                             </div>
 
-                            <div class="image_block">
-                                <img src="../img/plus.png">
-                                <div class="close"><img src="../img/close.png"></div>
-                            </div>
+                            <ul class="media_tabs">
+                                <li class="media_tab active">
+                                    <div class="image_block">
+                                        <img src="../img/plus.png">
+                                        <div class="close"><img src="../img/close.png"></div>
+                                    </div>  
+                                </li>
+                                <li class="media_tab">
+                                     <input type="text" name="link_youtube" class="media_input_youtube">
+                                </li>
+                               
+                            </ul>
+
                             <div class="sections_block">
                                 <span>Первый раздел:</span>
-                                <div class="partition first">Заголовок</div>
-                                <div class="partition second">Телефон</div>
+                                <div class="partition active">Заголовок</div>
+                                <div class="partition ">Телефон</div>
                             </div>
                             <textarea class="partition_message" placeholder="Заголовок"></textarea>
 

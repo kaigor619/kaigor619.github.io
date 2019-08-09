@@ -19,25 +19,37 @@ document.body.addEventListener("click", function(t) {
     }
 });
 
-let tabs_item=document.getElementsByClassName('tabs_item');
-let tab_block=document.getElementsByClassName('tab_block');
 
-for(let i=0;i<tabs_item.length;i++){
-	tabs_item[i].onclick=function(){
-		for(let i=0;i<tabs_item.length;i++){
-			tabs_item[i].classList.remove('active');
+
+// Табы в рассылке
+
+try{
+	let tabs_item=document.getElementsByClassName('tabs_item');
+	let tab_block=document.getElementsByClassName('tab_block');
+
+	for(let i=0;i<tabs_item.length;i++){
+		tabs_item[i].onclick=function(){
+			for(let i=0;i<tabs_item.length;i++){
+				tabs_item[i].classList.remove('active');
+			}
+			for(let i=0;i<tab_block.length;i++){
+				tab_block[i].classList.remove('active');
+			}
+			this.classList.add('active');
+			tab_block[i].classList.add('active');
 		}
-		for(let i=0;i<tab_block.length;i++){
-			tab_block[i].classList.remove('active');
-		}
-		this.classList.add('active');
-		tab_block[i].classList.add('active');
 	}
 }
+catch{
 
+}
+
+
+
+// Открытие списка
+try{
 const arrow_sub=document.getElementById('arrow_sublist');
 const sub_block=document.getElementById('sub_block');
-
 arrow_sub.onclick=function(){
 
 	if(sub_block.classList.contains('active')){
@@ -46,6 +58,106 @@ arrow_sub.onclick=function(){
 	else{
 		sub_block.classList.add('active');
 	}
+}
+}
+catch{
+	
+}
+
+// Переключение изображения видео
+try{
+const media_radio=document.getElementsByClassName('media_block')[0];
+const media_tab=document.getElementsByClassName('media_tab');
+
+	let select_elem=media_radio.getElementsByTagName('label');
+
+	for(let i=0;i<select_elem.length;i++){
+
+		select_elem[i].onclick=function(){
+
+			for(let i=0;i<select_elem.length;i++){
+				let circle=select_elem[i].getElementsByClassName('custom_radio')[0];
+				circle.classList.remove('active');
+			}
+			for(let i=0;i<media_tab.length;i++){
+				media_tab[i].classList.remove('active');
+			}
+
+			let circle=select_elem[i].getElementsByClassName('custom_radio')[0];
+			circle.classList.add('active');
+			media_tab[i].classList.add('active');
+
+
+		}
+	}
+
+	const sections_block=document.getElementsByClassName('sections_block');
+	for(let i=0;i<sections_block.length;i++){
+		const partitions=sections_block[i].getElementsByClassName('partition');
+		for(let x=0;x<partitions.length;x++){
+			partitions[x].onclick=function(){
+
+				for(let x=0;x<partitions.length;x++){
+					partitions[x].classList.remove('active');
+				}
+				this.classList.add('active');
+			}
+		}
+
+	}
+
+}
+catch{
+	
+}
+
+
+// Оплата
+try{
+const label_rate=document.getElementsByClassName('label-rate')[0];
+const btn_continue=document.getElementById('btn_continue');
+
+label_rate.onclick=function(){
+	const this_radio=label_rate.getElementsByClassName('custom_radio')[0];
+	if(this_radio.classList.contains('active')){
+		this_radio.classList.remove('active');
+		btn_continue.classList.add('disabled');
+	}
+	else{
+		this_radio.classList.add('active');
+		btn_continue.classList.remove('disabled');
+	}
+
+}
+}
+catch{
+
+}
+
+// Табы Тарифы
+
+
+try{
+const time_title=document.getElementsByClassName('time_title');
+const row_rates=document.getElementsByClassName('row_rates');
+
+
+for(let i=0;i<time_title.length;i++){
+time_title[i].onclick=function(){
+	for(let x=0;x<time_title.length;x++){
+		time_title[x].classList.remove('active');
+	}
+	for(let x=0;x<row_rates.length;x++){
+		row_rates[x].classList.remove('active');
+	}
+	this.classList.add('active');
+	row_rates[i].classList.add('active');
+}
+}
+
+}
+catch{
+
 }
 
 
