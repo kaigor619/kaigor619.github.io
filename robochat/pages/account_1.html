@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>ChatLead.io</title>
+	<meta name="description" content>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="shortcut icon" href="../img/logo_icon.ico" type="image/x-icon">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="../css/dashboard.css?v=1.0.0">
+
+	<!-- DOnt forget to delete -->
+	<link rel="stylesheet" href="../css/temp.css">
+
+	<meta property="og:url" content="">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="../img/logo_icon.png">
+
+	<meta name="theme-color" content="#ffffff">
+	<meta name="msapplication-navbutton-color" content="#ffffff">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
+</head>
+
+<body id="page-body">
+	<div class="layout  js-bot-panel" id="page-layout">
+		<div class="main_layout">
+			<header id="header" class="add-status">
+				<div class="header__container">
+					<div class="header__bot-selector">
+						<div class="header__logo">
+							<a href="main.html" class="inner-link"></a>
+						</div>
+						<div class="community-selector-wrapper">
+							<div class="community-selector" data-tooltip>
+								Тест Бот 1
+								<div class="community-select__list" data-tooltip-ignore>
+									<ul>
+										<li>Тест Бот 1</li>
+										<li>Тест Бот 2</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="mobile-menu-trigger" id="mobile-menu-trigger"></div>
+						<nav class="header__mobile-nav" data-tooltip></nav>
+					</div>
+
+					<div class="header__profile-wrap">
+
+						<div class="header-profile" id="header-active-profile-nav">
+							<div class="header-profile__item">
+								<div class="header-profile__item__trigger" data-tooltip></div>
+								<img src="../img/user.png" alt="Аватар" class="avatar">
+								<div class="header__ui-menu" data-tooltip-ignore>
+									<ul>
+										<li onclick="location.href='account_1.html'" class="communities">
+											Аккаунт
+										</li>
+										<li onclick="location.href='account_2.html'" class="accounts">
+											Тарифы
+										</li>
+										<li onclick="location.href='account_3.html'" class="communities">
+											Партнерам
+										</li>
+										<li onclick="location.href='account_4.html'" class="communities">
+											Панель
+										</li>
+										<li id="user-logout" class="border-top logout" data-app-hide>
+											Выйти
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<main id="main">
+				<!-- Account page  -->
+				<section class="main-page-content account-page">
+					<div class="container">
+						<div class="menu-trigger-btn" id="faq-menu-trigger"> </div>
+						<div class="account">
+							<h2>Профиль пользователя</h2>
+							<form action="#">
+								<div class="account__photo">
+									<img class="account__avatar" src="../img/account/avatar.jpg" alt="Avatar">
+									<div class="account__photo-options">
+										<button class="account__photo-change">Изменить</button>
+										<button class="default-btn account-delete-avatar">
+											<img src="../svg/db/elements/trash_gray.svg" alt="" class="btn-icon">
+											<span class="text-tooltip text-tooltip--top">
+												Удалить
+											</span>
+										</button>
+									</div>
+								</div>
+								<div class="account__data">
+									<div class="form-group">
+										<label for="#">Имя</label>
+										<input type="text" placeholder="Елдос">
+									</div>
+									<div class="form-group">
+										<label for="#">Фамилия</label>
+										<input type="text" placeholder="Жаксынов">
+									</div>
+									<div class="form-group">
+										<label for="#">Email</label>
+										<input type="text" placeholder="eldos.12.02@gmail.com">
+									</div>
+									<div class="form-group">
+										<label for="#">Телефон</label>
+										<input type="text" placeholder="8  778 259 90 40">
+									</div>
+									<div class="account__change-password">
+										<div class="form-group">
+											<label for="#">Старый пароль:</label>
+											<input type="text">
+										</div>
+										<div class="form-group">
+											<label for="#">Новый пароль:</label>
+											<input type="text">
+										</div>
+									</div>
+									<button type="submit" class="btn blue-btn blue-btn-round">Сохранить</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
+	</div>
+
+	<!-- Bot remove modal -->
+	<div class="bot-remove-modal">
+		<div class="bot-remove">
+			<img src="../img/attention.png" alt="Attention">
+			<h3>Подтвердите действие</h3>
+			<p>Вы уверены, что хотите удалить "аватарку"?</p>
+			<div class="bot-remove__buttons">
+				<button class="blue-btn remove">Удалить</button>
+				<button class="blue-btn cansel">Отмена</button>
+			</div>
+		</div>
+	</div>
+
+	<script src="../js/dashboard.js" async></script>
+</body>
+
+</html>
