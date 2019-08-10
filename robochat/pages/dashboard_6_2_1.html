@@ -384,15 +384,23 @@
             
                     <section class="section_form">
                         <div class="media_block">
-                                <label><div class="custom_radio"></div>
+                                <label><div class="custom_radio active"></div>
                                  <span>Изображение</span> </label>
-                                <label><div class="custom_radio active"></div> <span>Видео</span></label>
+                                <label><div class="custom_radio "></div> <span>Видео</span></label>
                             </div>
 
-                            <div class="image_block">
-                                <img src="../img/plus.png">
-                                <div class="close"><img src="../img/close.png"></div>
-                            </div>
+                            <ul class="media_tabs">
+                                <li class="media_tab active">
+                                    <div class="image_block">
+                                        <img src="../img/plus.png">
+                                        <div class="close"><img src="../img/close.png"></div>
+                                    </div>  
+                                </li>
+                                <li class="media_tab">
+                                     <input type="text" name="link_youtube" class="media_input_youtube" placeholder="Ссылка на видео Youtube ">
+                                </li>
+                               
+                            </ul>
 
 
                             <div class="message_block">
