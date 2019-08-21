@@ -1,0 +1,30 @@
+#root{
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.list-route{
+    margin-top: 2rem;
+    list-style: none;
+}
+.list-group-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    border: 1px solid #7777ff;
+    padding: 0.5rem 1rem;
+    border-radius:4px;
+    margin-bottom: .5rem;
+    background-color: white;
+    cursor: move
+}
+.list-group-item .delete-route-path{
+    cursor:pointer;
+    color:red;
+}
+
+@media screen and (max-width:992px){
+
+}
