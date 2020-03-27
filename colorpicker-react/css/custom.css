@@ -1,0 +1,70 @@
+.picker_demonstration {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.wrap_my_swatch {
+    width: 40px;
+    height: inherit;
+    background-color: #000;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.my_swatch_opacity,
+.my_swatch {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+
+.my_swatch {
+    z-index: 10;
+    background-color: rgb(78, 145, 74);
+}
+
+.my_swatch_opacity {
+    background-image: url('./opacity.svg');
+    z-index: 5;
+}
+
+.my_color_value {
+    height: inherit;
+    border: none;
+    outline: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-left: 10px;
+    font-family: "PTSansRegular";
+    background-color: #272f42;
+    color: #ffffffc7;
+    font-size: 16px;
+}
+
+.palette_options {
+    margin-top: 15px;
+    padding-left: 10px;
+}
+
+.palette_options p {
+    color: #ffffffe3;
+    font-family: "PTSansRegular";
+}
+
+.palette_options span {
+    margin-left: 7px;
+    color: #00038e;
+    font-weight: bold;
+}
