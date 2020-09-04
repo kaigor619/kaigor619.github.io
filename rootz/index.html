@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Rootz</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap-grid.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="libs/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css" />
+
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="fullscreen_menu" id="fullscreen_menu">
+      <img
+        class="close"
+        id="fullscreen_menu_close"
+        src="images/icons/close.png"
+        alt="close"
+      />
+      <div class="fullscreen_menu-content">
+        <ul class="fullscreen_menu-list">
+          <li class="active">
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Our mission</a>
+          </li>
+          <li>
+            <a href="#">Places</a>
+          </li>
+          <li>
+            <a href="#">Team</a>
+          </li>
+        </ul>
+
+        <button class="btn_apply">Apply</button>
+      </div>
+    </div>
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="white_background"></div>
+        <header class="header">
+          <div class="row">
+            <div class="col-auto">
+              <a href="/">
+                <img class="logo" src="images/logo.png" alt="Logotype" />
+              </a>
+            </div>
+            <div
+              class="col d-flex align-items-center justify-content-lg-start justify-content-end"
+            >
+              <nav>
+                <ul class="menu">
+                  <li class="menu_item active"><a href="/">Home</a></li>
+                  <li class="menu_item"><a href="/">Our mission</a></li>
+                  <li class="menu_item"><a href="/">Places</a></li>
+                  <li class="menu_item"><a href="/">Team</a></li>
+                </ul>
+              </nav>
+
+              <button class="btn_apply">Apply</button>
+
+              <img
+                src="images/icons/burger.svg"
+                alt="Menu"
+                class="header_burger"
+                id="header_burger"
+              />
+            </div>
+          </div>
+        </header>
+
+        <div class="hero_content" id="hero_content">
+          <div class="row justify-content-md-start justify-content-end">
+            <div class="col-12 col-md-6">
+              <img
+                src="images/hero/headline.png"
+                alt="Headline"
+                class="hero_headline"
+              />
+
+              <div class="general_width">
+                <p class="hero_description">
+                  The scale of the challenges facing our planet can seem
+                  daunting, but we can all do something
+                </p>
+
+                <div class="search">
+                  <div class="location_input_wrap">
+                    <div>
+                      <img
+                        class="search_location"
+                        src="images/icons/location.png"
+                        alt="Location"
+                      />
+                    </div>
+                    <input
+                      class="search_input"
+                      type="text"
+                      placeholder="Find the place to help"
+                    />
+                  </div>
+                  <button class="btn_search">Search</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 col-9 offset-md-1">
+              <img
+                class="parrot_img"
+                src="images/hero/parrot.png"
+                alt="Parrot"
+              />
+
+              <div class="parrot_card">
+                <img
+                  class="parrot_icon"
+                  src="images/icons/card-icon.png"
+                  alt="Parrot icon"
+                />
+                <div class="members">
+                  <h4 class="members_title">Members</h4>
+                  <div class="members_number">29 128</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="posts" id="posts">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="post">
+              <div class="preview photo">
+                <a href="#">
+                  <img
+                    src="images/posts/picture1.png"
+                    alt="Post preview: Travel In Japan"
+                    class="preview_img"
+                  />
+                </a>
+              </div>
+              <div class="post_content">
+                <span class="post_hashtag"># Stories</span>
+                <h5 class="post_title">Travel In Japan: The True Experience</h5>
+
+                <a class="post_link" href="#">see more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="post">
+              <div class="preview video">
+                <a href="#">
+                  <img
+                    src="images/posts/picture2.png"
+                    alt="Post preview: Travel In Japan"
+                    class="preview_img"
+                  />
+                  <div class="play_video">
+                    <img src="images/icons/play.svg" alt="Play video" />
+                  </div>
+                </a>
+              </div>
+              <div class="post_content">
+                <span class="post_hashtag"># VideoTutor</span>
+                <h5 class="post_title">
+                  Helping Wild <br />
+                  Turtles
+                </h5>
+
+                <a class="post_link" href="#">see more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="post">
+              <div class="preview picture">
+                <a href="#">
+                  <img
+                    src="images/posts/picture3.png"
+                    alt="Post preview: Threats of Indusrial World"
+                    class="preview_img"
+                  />
+                </a>
+              </div>
+
+              <div class="post_content">
+                <span class="post_hashtag"># Photostory</span>
+                <h5 class="post_title">
+                  Threats of Indusrial <br />
+                  World
+                </h5>
+
+                <a class="post_link" href="#">see more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slider_section" id="slider_section">
+      <div class="slider">
+        <div class="slider_item slider_item-orange">
+          <div class="row justify-content-between">
+            <div class="col-12 col-sm-7 col-lg-6">
+              <div class="slider_content">
+                <h3 class="slider_title">
+                  Travel In Japan: The True Experience
+                </h3>
+                <p class="slider_description">
+                  When pattern is mentioned in interior design, it is easy to
+                  asso- ciate it with a geometric patterned wallpaper or
+                  colourful prints on interior fabrics.
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-12 col-lg-5 offset-lg-1 col-sm-5 d-flex align-items-end justify-content-center"
+            >
+              <img
+                class="slider_pic"
+                src="images/slider/slider-pic.png"
+                alt="Slider picture"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="slider_item slider_item-pink">
+          <div class="row justify-content-between">
+            <div class="col-12 col-sm-7 col-lg-6">
+              <div class="slider_content">
+                <h3 class="slider_title">
+                  Helping Wild Turtles To Travel In Japan
+                </h3>
+                <p class="slider_description">
+                  The scale of the challenges facing our planet can seem
+                  daunting, but we can all do something. Challenges facing our
+                  planet can seem daunting, but we can all do something.
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-12 col-lg-5 offset-lg-1 col-sm-5 d-flex align-items-end justify-content-center"
+            >
+              <img
+                class="slider_pic"
+                src="images/slider/slider-pic.png"
+                alt="Slider picture"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="slider_item slider_item-violet">
+          <div class="row justify-content-between">
+            <div class="col-12 col-sm-7 col-lg-6">
+              <div class="slider_content">
+                <h3 class="slider_title">Threats of Modern Indusrial World</h3>
+                <p class="slider_description">
+                  The scale of the challenges facing our planet can seem
+                  daunting, but we can all do something. Easy to asso- ciate it
+                  with a geometric patterned wallpaper.
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-12 col-lg-5 offset-lg-1 col-sm-5 d-flex align-items-end justify-content-center"
+            >
+              <img
+                class="slider_pic"
+                src="images/slider/slider-pic.png"
+                alt="Slider picture"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="planet" id="planet">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-md-11 col-12">
+            <div class="title_circle_wrap">
+              <div class="planet_circle"></div>
+              <h2 class="planet_title">
+                The scale of the challenges facing our planet can seem daunting,
+                but we can all do something.
+              </h2>
+
+              <div class="leaves_mobile_group">
+                <div>
+                  <img class="leave1" src="images/leaves/leave_mobile_ls.png" />
+                </div>
+                <div>
+                  <img class="leave2" src="images/leaves/leave_mobile_lb.png" />
+                </div>
+                <div>
+                  <img class="leave3" src="images/leaves/leave_mobile_rb.png" />
+                </div>
+                <div>
+                  <img class="leave4" src="images/leaves/leave_mobile_rs.png" />
+                </div>
+              </div>
+
+              <div class="leaves_left leaves_desktop_group">
+                <img class="leave1" src="images/leaves/leave1-left.png" />
+                <img class="leave2" src="images/leaves/leave2-left.png" />
+                <img class="leave3" src="images/leaves/leave3-left.png" />
+              </div>
+
+              <div class="leaves_right leaves_desktop_group">
+                <img class="leave1" src="images/leaves/leave1-right.png" />
+                <img class="leave2" src="images/leaves/leave2-right.png" />
+                <img class="leave3" src="images/leaves/leave3-right.png" />
+              </div>
+            </div>
+
+            <div class="line_features_wrap">
+              <div class="planet_line"></div>
+
+              <div class="planet_features">
+                <div class="row justify-content-center">
+                  <div class="col-sm-4 col-6">
+                    <div class="feature">
+                      <img
+                        src="images/icons/user-icon.png"
+                        alt="Assets value COMPOSER"
+                      />
+                      <span class="feature_title"
+                        >Assets value <br />
+                        composer</span
+                      >
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-6">
+                    <div class="feature">
+                      <img
+                        src="images/icons/part-icon.png"
+                        alt="Graph budget analyzer"
+                      />
+                      <span class="feature_title"
+                        >Graph budget <br />
+                        analyzer</span
+                      >
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-6">
+                    <div class="feature">
+                      <img
+                        src="images/icons/revenue-icon.png"
+                        alt="Assets value COMPOSER"
+                      />
+                      <span class="feature_title"
+                        >Monthly avg. <br />
+                        revenue</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-12">
+            <div class="footer_info footer_info-contacts">
+              <h3 class="section_title">Contacts</h3>
+              <p class="text">2019 Rootz Foundation. All rights reserved</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-6">
+            <div class="footer_info">
+              <h4 class="section_title">Headquarters</h4>
+              <p class="text">
+                1234 Taliban Los Angeles, La 1234567 <br />
+                (123) 456-7890
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-6">
+            <div class="footer_info footer_info-social">
+              <h4 class="section_title social_title">Social media</h4>
+
+              <div class="socials">
+                <a href="#">
+                  <img src="images/icons/twitter.png" alt="Twitter icon" />
+                </a>
+                <a href="#">
+                  <img src="images/icons/facebook.png" alt="Facebook icon" />
+                </a>
+                <a href="#">
+                  <img src="images/icons/linkedIn.png" alt="LinkedIn icon" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="libs/slick/slick.min.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+.footer {
+  padding: 80px 0;
+  background: #F7F3F4;
+}
+
+@media screen and (max-width: 576px) {
+  .footer {
+    padding: 40px 20px 0 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer .footer_info {
+    margin-bottom: 40px;
+  }
+}
+
+.footer .section_title {
+  margin: 18px 0 37px 0;
+  font-weight: bold;
+  color: #333333;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer .section_title {
+    margin: 0;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer .section_title {
+    font-size: 18px;
+  }
+}
+
+.footer .footer_info-contacts .section_title {
+  font-size: 34px;
+  line-height: 48px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #333333;
+  margin: 0 0 37px 0;
+}
+
+@media screen and (max-width: 992px) {
+  .footer .footer_info-contacts .section_title {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer .footer_info-contacts .section_title {
+    margin: 0 0 10px 0;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer .footer_info-contacts .section_title {
+    font-size: 28px;
+  }
+}
+
+.footer .footer_info-social .section_title {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .footer .footer_info-contacts .text {
+    max-width: 100%;
+  }
+}
+
+.footer .text {
+  margin: 0;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: #333333;
+  mix-blend-mode: normal;
+  letter-spacing: 0.3px;
+  max-width: 160px;
+}
+
+@media screen and (max-width: 576px) {
+  .footer .text {
+    max-width: 110px;
+  }
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .socials {
+    margin-top: 30px;
+  }
+}
+
+.socials a {
+  margin-left: 16px;
+}
+
+.socials a:first-child {
+  margin-left: 0;
+}
+
+.socials img {
+  max-width: 32px;
+}
+/*# sourceMappingURL=footer.css.map */

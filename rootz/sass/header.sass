@@ -1,0 +1,179 @@
+body
+    font-family: 'Poppins', sans-serif
+
+ul
+    margin: 0
+    padding: 0
+    list-style: none
+
+button:focus
+    outline: none    
+
+
+.fullscreen_menu
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(255, 255, 255, 1)
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    opacity: 0
+    z-index: -10
+    transition: .3s
+
+    &.active
+        opacity: 1
+        z-index: 100
+        transition: .3s
+
+    .close
+        position: absolute
+        top: 30px
+        right: 30px
+        width: 32px
+        height: auto
+        padding: 5px
+        cursor: pointer
+
+
+    .fullscreen_menu-content
+        max-width: 400px
+        width: 100%
+
+
+    .fullscreen_menu-list
+        line-height: 100px
+        @media screen and (max-width:576px)
+            line-height: 80px
+
+        li
+            font-size: 30px
+            letter-spacing: 1px
+            transition: .3s
+
+            @media screen and (max-width:576px)
+                font-size: 25px
+
+            a
+                display: block
+                text-decoration: none
+                color: #585858
+
+
+            a:hover
+                transition: .3s
+                color: blue
+
+        li.active
+            font-weight: bold
+
+    .btn_apply
+        margin-top: 30px
+        background-color: #7675fd
+        box-shadow: 0 0 5px 0 #7675fd
+        color: #fff
+        border-radius: 40px
+        font-weight: bold
+        font-size: 18px
+        border: none
+        padding: 15px 50px
+        cursor: pointer
+        transition: .3s    
+
+        &:hover
+            background-color: #f26c74
+            box-shadow: 0 0 5px 0 #f26c74
+            transition: .3s 
+
+
+// -------- HEADER
+.header
+    padding: 32px 0
+    border-bottom: 4px solid #222433
+
+    @media screen and (max-width:576px)
+        padding: 43px 0 27px 0
+        border-bottom: 3px solid #222433
+   
+
+    nav
+        flex: 1
+        display: flex
+        justify-content: center
+
+        @media screen and (max-width:992px)
+            display: none
+
+    .menu
+        display: flex
+        align-items: center
+
+        li
+            margin-right: 102px
+            font-size: 16px
+
+            @media screen and (max-width:1200px)
+                margin-right: 50px
+
+            a
+                text-decoration: none
+                color: #000
+                transition: .3s
+
+                &:hover
+                    color: #7675fd
+                    transition: .3s
+
+            &:last-child
+                margin-right: 0
+
+        .active a
+            font-weight: bold
+
+    .btn_apply
+        background-color: #ffffff
+        box-shadow: 0px 30px 40px rgba(240, 101, 126, 0.05)
+        border-radius: 40px
+        font-weight: bold
+        font-size: 16px
+        border: none
+        padding: 13px 48px
+        cursor: pointer
+        transition: .3s    
+        border: 2px solid #fff
+        box-sizing: border-box
+
+        @media screen and (max-width:992px)
+            display: none
+
+        &:hover
+            background-color: #7675fd
+            border-color: #7675fd
+            color: #fff  
+            transition: .3s    
+
+        &:active
+            transform: translateY(7px)
+            border-color: #7675fd
+            transition: .3s   
+
+        &:focus
+            transition: .3s    
+            border-color: #7675fd       
+
+
+    .header_burger
+        width: 26px
+        display: none
+        cursor: pointer
+
+        @media screen and (max-width:992px)
+            display: block
+        @media screen and (max-width:576px)
+            width: 22px
